@@ -1,0 +1,45 @@
+===========================================================================
+ respeaker_xvf3800Key - jak zbudowac
+===========================================================================
+
+--- 0. POBRANIA (raz) -------------------------------------------------------
+ models\pobierz_model.bat        modele Whisper (large-v3-turbo-q8_0 + small, ~1.3 GB)
+ tts\pobierz_tts.bat             espeak-ng + onnxruntime + polskie glosy Piper
+ tts\pobierz_tts.bat dml         opcjonalnie: onnxruntime DirectML (vsasr_gpu -ttsgpu)
+ kws\pobierz_negatywy.bat        opcjonalnie: polska mowa LibriVox do treningu (ffmpeg)
+
+--- 1. FIRMWARE ESP32-S3 (ESP-IDF 5.4) --------------------------------------
+ UWAGA: ESP-IDF NIE dziala pod MSys/MinGW (git bash) - zwykly cmd / PowerShell.
+      e:\Projects\dev\esp-idf\export.bat
+      cd /d e:\Projects\C\jacTcc\Clode\respeaker_xvf3800Key
+      idf.py set-target esp32s3        (tylko za pierwszym razem)
+      idf.py build
+      idf.py -p COMx flash monitor     (wgrywa tez kws\models\punapu.kws do partycji "kws")
+ Sprawdzone: build OK, 61% wolnego w partycji app 2 MB, PSRAM wlaczony.
+ W monitorze: "wolna pamiec", "model punapu ... prog", "siec: srednio X ms na wnioskowanie".
+
+--- 2. HOSTY (TCC64; tcc dociagany z hostCPU\AddTccPath.bat) ----------------
+ hostCPU\build.bat    -> vsasr_cpu.exe   (Whisper CPU AVX2 przez MSVC + Piper TTS)
+ hostCPU\build.bat tcc                   (to samo przez TCC, bez SIMD - ~8x wolniej)
+ hostGPU\build.bat    -> vsasr_gpu.exe   (Whisper CUDA + Piper TTS; kernels.ptx obok exe)
+ kws\build.bat        -> kwstool.exe     (slowo kluczowe: record / train / test / upload)
+ host\build_win.bat   -> vsmic.exe       (WAV)
+ TTS dolacza sie automatycznie, gdy jest tts\include (z pobierz_tts.bat).
+
+--- 3. UZYCIE -----------------------------------------------------------------
+ vsasr_gpu <ip> -doa -v          spi do slowa kluczowego, rozpoznaje polecenie, odpowiada glosem
+ vsasr_gpu <ip> -cont            stary tryb: staly strumien + VAD na hoscie
+ vsasr_gpu <ip> -say "tekst"     powiedz tekst glosnikiem ReSpeakera
+ vsasr_cpu -saywav "tekst" a.wav synteza do pliku
+ vsasr_cpu -f plik.wav -l auto   transkrypcja pliku
+
+--- 4. WLASNE SLOWO KLUCZOWE ---------------------------------------------------
+ cd kws
+ kwstool record <ip> dataset\keyword -prefix punapu       mow slowo co ~1 s (min. 50 razy)
+ kwstool record <ip> dataset\negative\moje -prefix inne    podobne slowa / zwykla mowa
+ pobierz_negatywy.bat                                      + polska mowa (LibriVox)
+ kwstool train dataset -o models\moje.kws -keyword punapu  (~4 min, tabela progow na koncu)
+ kwstool test models\moje.kws nagranie.wav -v              sprawdz na nagraniu
+ kwstool upload <ip> models\moje.kws                       do urzadzenia, bez flashowania
+ test referencyjny: kwstool test models\punapu.kws ..\testdata\stream_test.wav
+===========================================================================

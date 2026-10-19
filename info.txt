@@ -1,0 +1,34 @@
+
+Wszystko działa lokalnie, bez ReSpeakera. Polecenia uruchamiasz z katalogu e:\Projects\C\jacTcc\Clode\respeaker_xvf3800Key.
+
+1. Test modelu na pliku WAV
+
+Słowo kluczowe (ten sam kod co na ESP32):
+kws\kwstool.exe test kws\models\punapu.kws nagranie.wav
+Wypisuje każde wykrycie z czasem i wynikiem, np. 12.34 s  wykryto "punapu"  wynik 0.91. Przydatne opcje:
+- -v – wykres wyniku co 100 ms z kreską progu, dobry do szukania przyczyn pominięć;
+- -thr 0.6 – inny próg niż zapisany w modelu (0,77).
+
+Detektor potrzebuje ok. 1 s nagrania przed słowem. Plik z samym słowem, bez ciszy na początku, może nie dać wykrycia.
+
+Rozpoznawanie mowy (Whisper):
+hostGPU\vsasr_gpu.exe -f nagranie.wav
+hostCPU\vsasr_cpu.exe -f nagranie.wav -l auto -v
+Tekst trafia na stdout. Opcja -v dodaje czas, wykryty język i pewność, a -l auto sam wykrywa język (domyślnie jest pl).
+
+Format WAV: PCM 16-bit, dowolna częstotliwość, mono lub stereo. Program sam przelicza do 16 kHz mono.
+
+2. Generowanie WAV z tekstu (Piper TTS)
+
+hostCPU\vsasr_cpu.exe -saywav "Dzień dobry, która jest godzina?" wynik.wav
+Inny głos wybierasz przez -tts:
+hostCPU\vsasr_cpu.exe -tts tts\voices\pl_PL-darkman-medium.onnx -saywav "Włączam światło." wynik.wav
+Dostępne głosy: pl_PL-gosia-medium (domyślny), pl_PL-darkman-medium, pl_PL-mc_speech-medium. Plik wychodzi jako 16 kHz mono 16-bit. Działa to samo z hostGPU\vsasr_gpu.exe, a z dodatkowym -ttsgpu synteza idzie przez DirectML.
+
+Oba naraz – szybki test bez mikrofonu
+
+hostCPU\vsasr_cpu.exe -saywav "Która jest godzina?" pytanie.wav
+hostGPU\vsasr_gpu.exe -f pytanie.wav
+Pierwsze polecenie syntezuje zdanie, drugie powinno zwrócić ten sam tekst.
+
+Możesz też w ten sposób zrobić nagranie testowe dla słowa kluczowego. Wygeneruj -saywav "punapu", dołóż przed nim ok. 1 s ciszy i podaj do kwstool test. Głos syntezatora nie jest jednak miarodajny dla prawdziwych głosów, więc ostateczny test rób na własnym nagraniu, np. host\vsmic.exe <ip> record test.wav 10.

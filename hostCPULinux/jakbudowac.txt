@@ -1,0 +1,85 @@
+===========================================================================
+ vsasr_cpu (Linux) - jak zbudowac i uruchomic na Ubuntu / Proxmox VE
+===========================================================================
+ Wersja linuksowa hostCPU: te same kernele AVX2 / AVX-VNNI i ten sam Whisper
+ (../asr/whisper.c), ale pthreads, sockety BSD i dlopen zamiast Win32.
+ Pliki Windows (hostCPU, asr/asr_main.c, asr/tts.c) nie sa uzywane.
+ Sprawdzone: Ubuntu 22.04 (gcc 11.4) - transkrypcja, synteza mowy, tryb sieciowy.
+
+--- 0. PROXMOX VE: VM czy kontener LXC ----------------------------------------
+ Oba warianty dzialaja. Najwazniejsze: system goscia musi WIDZIEC AVX2 i AVX-VNNI.
+
+ a) Maszyna wirtualna (VM) z Ubuntu Server 22.04 / 24.04
+    - Hardware -> Processors -> Type: host        <- KONIECZNIE
+      (domyslne x86-64-v2-AES / kvm64 ukrywaja AVX2 - program sie wtedy nie uruchomi
+       albo trzeba budowac "make SIMD=0", kilka razy wolniej)
+      z konsoli hosta:  qm set <VMID> --cpu host
+    - Cores: 8 (i3-N305 ma 8 rdzeni bez HT; mniej rdzeni = wolniej proporcjonalnie)
+    - Memory: min. 3 GB (program ~1.1 GB + system); wylacz Ballooning dla stalej pamieci
+    - Siec: most vmbr0, zeby VM widziala ReSpeakera w LAN (port TCP 7778)
+
+ b) Kontener LXC (lzejszy, zalecany przy 8 GB RAM na calym hoscie)
+    - szablon ubuntu-22.04 albo ubuntu-24.04, moze byc nieuprzywilejowany
+    - flagi procesora sa widoczne od razu (wspolne jadro z hostem) - nic nie ustawiasz
+    - Cores: 8, Memory: min. 3 GB, siec przez vmbr0
+
+ Sprawdzenie w gosciu:
+      grep -o -w 'avx2\|fma\|avx_vnni' /proc/cpuinfo | sort -u
+    ma pokazac: avx2, avx_vnni, fma
+
+--- 1. PAKIETY ----------------------------------------------------------------
+      sudo apt update
+      sudo apt install build-essential curl ca-certificates
+ (gcc >= 9; instrukcja AVX-VNNI jest w asm - wymaga binutils >= 2.36:
+  Ubuntu 22.04 i 24.04 maja nowsze)
+
+--- 2. PLIKI ------------------------------------------------------------------
+ Skopiuj katalog projektu z zachowaniem ukladu (np. do /opt/respeaker_xvf3800Key):
+      asr/            whisper.c, whisper.h, backend.h, tts.h  (wspolne)
+      host/           audio_proto.h                            (wspolne)
+      hostCPULinux/   ten katalog
+      models/         (model pobierze skrypt - albo skopiuj ggml-large-v3-turbo-q8_0.bin)
+      tts/            (include/ i voices/ mozna skopiowac z Windows, bin_linux/ pobierze skrypt)
+ Z Windows np.:  scp -r asr host hostCPULinux uzytkownik@ubuntu:/opt/respeaker_xvf3800Key/
+ Skrypty .sh musza miec konce linii LF (tak sa zapisane) - nie edytuj ich Notatnikiem.
+
+--- 3. POBRANIA (raz) ---------------------------------------------------------
+      cd /opt/respeaker_xvf3800Key/hostCPULinux
+      sh pobierz_model.sh        -> ../models/ggml-large-v3-turbo-q8_0.bin (834 MB)
+      sh pobierz_tts.sh          -> ../tts/bin_linux (libespeak-ng, libonnxruntime 1.20.1),
+                                    ../tts/include, ../tts/voices (glosy polskie)
+ Synteza mowy jest opcjonalna; bez ../tts/include program buduje sie bez niej.
+
+--- 4. BUDOWANIE --------------------------------------------------------------
+      make              AVX2 + FMA, AVX-VNNI wybierane przy starcie
+      make SIMD=0       bez AVX2 (np. VM bez typu CPU "host")
+      make clean
+ Wynik: ./vsasr_cpu
+
+--- 5. URUCHOMIENIE -----------------------------------------------------------
+      ./vsasr_cpu -f ../models/jfk.wav -l en -v -tts off     test na pliku
+      ./vsasr_cpu -saywav "Dzień dobry" /tmp/a.wav              test syntezy mowy
+      ./vsasr_cpu 192.168.1.50 -doa -v                          praca z ReSpeakerem
+ Pierwsza linia na stderr:
+      backend: CPU AVX2 + AVX-VNNI, 8 watkow
+ Opcje jak w Windows (./vsasr_cpu bez argumentow wypisuje liste), m.in.:
+      -t N            watki (domyslnie wszystkie rdzenie)
+      -ac N           kontekst audio (domyslnie dopasowany do dlugosci; 0 = pelne 30 s)
+      ASR_NOVNNI=1 ./vsasr_cpu ...    wymus sciezke AVX2 (porownanie)
+ Nie ma -ttsgpu (DirectML jest tylko w Windows).
+
+--- 6. USLUGA SYSTEMD (start z systemem) ---------------------------------------
+ Plik vsasr.service - popraw User, sciezki i IP urzadzenia, potem:
+      sudo cp vsasr.service /etc/systemd/system/
+      sudo systemctl daemon-reload
+      sudo systemctl enable --now vsasr
+      journalctl -u vsasr -f
+ Program sam ponawia polaczenie po zerwaniu (co 2 s), Ctrl-C / SIGTERM konczy.
+
+--- 7. UWAGI ------------------------------------------------------------------
+ - Pamiec: ~1.1 GB RAM w czasie pracy (wagi Q8_0 ~870 MB).
+ - Wydajnosc (i5-13500, 8 watkow, WSL2): jfk.wav 11 s -> 1.8 s; na i3-N305 bedzie
+   kilka razy wolniej (rdzenie Gracemont), krotkie polecenia - kilka sekund.
+ - Bardzo krotki kontekst audio (-ac 256..384) potrafi w large-v3-turbo powtarzac
+   zdania; gdy to widac, podaj -ac 512 (wolniej, ale stabilniej).
+===========================================================================

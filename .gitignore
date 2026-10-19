@@ -1,0 +1,51 @@
+# ==========================================
+# Katalogi generowane automatycznie (Build i logi)
+# ==========================================
+build/
+**/obj/
+log/
+.ninja_deps
+.ninja_log
+
+# ==========================================
+# Pliki binarne i wykonywalne (Executable & Link)
+# ==========================================
+*.exe
+*.elf
+*.bin
+*.map
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.so.*
+*.pdb
+*.ptx
+
+# ==========================================
+# Modele AI i pliki danych (Duże pliki binarne)
+# ==========================================
+*.onnx
+*.kws
+*.ort
+
+# ==========================================
+# Pliki Audio (Nagrania .wav)
+# ==========================================
+*.wav
+**/*.wav
+
+# ==========================================
+# Pobrane archiwa i paczki
+# ==========================================
+*.zip
+*.tar.gz
+*.tgz
+
+# ==========================================
+# Konfiguracje lokalne użytkownika
+# ==========================================
+sdkconfig
+!sdkconfig.defaults

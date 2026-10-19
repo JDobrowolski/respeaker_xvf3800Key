@@ -1,0 +1,1 @@
+set PATH=%PATH%;e:\Projects\C\Tcc28\win32\

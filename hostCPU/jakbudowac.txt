@@ -1,0 +1,85 @@
+===========================================================================
+ vsasr_cpu.exe - jak zbudowac w Visual Studio (AVX2 + AVX-VNNI)
+===========================================================================
+
+--- 0. WYMAGANIA -------------------------------------------------------------
+ Visual Studio 2022 (wystarczy Community) z pakietem
+   "Programowanie aplikacji klasycznych w jezyku C++"
+   (Desktop development with C++) - zawiera cl.exe, Windows SDK, vcvars64.bat.
+ Opcjonalnie synteza mowy: ..\tts\pobierz_tts.bat  (tworzy ..\tts\include i ..\tts\bin)
+ Model: ..\models\pobierz_model.bat  -> ggml-large-v3-turbo-q8_0.bin (834 MB)
+
+--- 1. NAJPROSCIEJ: build.bat --------------------------------------------------
+ Zwykly cmd albo PowerShell:
+      cd /d e:\Projects\C\jacTcc\Clode\respeaker_xvf3800Key\hostCPU
+      build.bat
+ Skrypt sam znajduje Visual Studio (vswhere + vcvars64.bat) i kompiluje:
+      cl /O2 /Oi /arch:AVX2 ...
+ Na koncu ma byc:  GOTOWE: vsasr_cpu.exe (AVX2)
+ Pliki posrednie .obj laduja w hostCPU\obj\.
+
+ build.bat tcc    - stara droga przez TCC64 (bez SIMD, ~8x wolniej)
+
+--- 2. RECZNIE: "x64 Native Tools Command Prompt for VS 2022" -----------------
+ Menu Start -> Visual Studio 2022 -> x64 Native Tools Command Prompt
+ (UWAGA: koniecznie x64, nie x86 - inaczej exe bedzie 32-bitowy).
+      cd /d e:\Projects\C\jacTcc\Clode\respeaker_xvf3800Key\hostCPU
+      mkdir obj
+      cl /nologo /O2 /Oi /arch:AVX2 /W3 /D_CRT_SECURE_NO_WARNINGS /Foobj\ ^
+         /Fe:vsasr_cpu.exe ..\asr\asr_main.c ..\asr\whisper.c backend_cpu.c ^
+         -DASR_TTS -I..\tts\include ..\asr\tts.c ws2_32.lib
+ Bez syntezy mowy: pomin "-DASR_TTS -I..\tts\include ..\asr\tts.c".
+
+ NIE dodawaj -I..\tts  (tam jest specstrings.h - zaslepka tylko dla TCC,
+ z MSVC daje setki bledow w fileapi.h).
+
+--- 3. W IDE VISUAL STUDIO (projekt .vcxproj) ---------------------------------
+ 1) Plik -> Nowy -> Projekt -> "Pusty projekt" (C++), nazwa np. vsasr_cpu.
+ 2) Na gorze: konfiguracja "Release", platforma "x64".
+ 3) Eksplorator rozwiazan -> Pliki zrodlowe -> Dodaj -> Istniejacy element:
+      ..\asr\asr_main.c
+      ..\asr\whisper.c
+      hostCPU\backend_cpu.c
+      ..\asr\tts.c                 (tylko z synteza mowy)
+ 4) Projekt -> Wlasciwosci (Release | x64):
+    C/C++ -> Ogolne
+      Dodatkowe katalogi plikow naglowkowych: ...\respeaker_xvf3800Key\tts\include
+    C/C++ -> Optymalizacja
+      Optymalizacja: Maksymalizuj szybkosc (/O2)
+      Wlacz funkcje wewnetrzne: Tak (/Oi)
+    C/C++ -> Generowanie kodu
+      Wlacz rozszerzony zestaw instrukcji: Advanced Vector Extensions 2 (/arch:AVX2)
+    C/C++ -> Preprocesor -> Definicje:
+      _CRT_SECURE_NO_WARNINGS;ASR_TTS    (ASR_TTS tylko z synteza mowy)
+    C/C++ -> Jezyk C: domyslny wystarcza (kod to C99, MSVC 2022 go kompiluje)
+    Konsolidator -> Dane wejsciowe -> Dodatkowe zaleznosci: dopisz ws2_32.lib
+    Konsolidator -> System -> Podsystem: Konsola (/SUBSYSTEM:CONSOLE)
+ 5) Kompilacja -> Kompiluj rozwiazanie (Ctrl+Shift+B).
+ 6) Exe laduje w x64\Release\. Skopiuj go do hostCPU\ - program szuka modelu
+    w <katalog exe>\..\models\ i syntezy w <katalog exe>\..\tts\
+    (albo podaj model jawnie: -m sciezka\ggml-large-v3-turbo-q8_0.bin).
+ Debugowanie: konfiguracja Debug tez dziala, ale jest kilkadziesiat razy wolniejsza.
+ Argumenty do F5: Projekt -> Wlasciwosci -> Debugowanie -> Argumenty polecenia,
+    np.  -f ..\..\..\models\pl_test.wav -v
+
+--- 4. SPRAWDZENIE -------------------------------------------------------------
+      vsasr_cpu -f ..\models\jfk.wav -l en -v -tts off
+ Pierwsze linie na stderr:
+      backend: CPU AVX2 + AVX-VNNI, 8 watkow       (na i3-N305)
+      model: ...ggml-large-v3-turbo-q8_0.bin, ..., wagi Q8_0
+ Porownanie bez VNNI:   set ASR_NOVNNI=1   (PowerShell: $env:ASR_NOVNNI=1)
+ Liczba watkow:         -t N  (domyslnie wszystkie rdzenie)
+ Procesor bez AVX2/FMA: program konczy sie komunikatem - wtedy build.bat tcc.
+
+--- 5. PRZENIESIENIE NA DOCELOWY KOMPUTER (i3-N305, 8 GB) ----------------------
+ Skopiuj z zachowaniem ukladu katalogow:
+      hostCPU\vsasr_cpu.exe
+      models\ggml-large-v3-turbo-q8_0.bin
+      tts\bin\  i  tts\voices\        (gdy uzywasz syntezy mowy)
+ Exe z build.bat ma CRT wbudowany statycznie (cl domyslnie /MT) - potrzebuje tylko
+ KERNEL32.dll i WS2_32.dll, nic nie trzeba doinstalowywac.
+ Projekt z IDE domyslnie ma /MD (wymaga "Microsoft Visual C++ Redistributable x64");
+ zeby bylo jak w build.bat: C/C++ -> Generowanie kodu -> Biblioteka wykonawcza:
+ Wielowatkowa (/MT).
+ Zuzycie pamieci: ~1.1 GB RAM.
+===========================================================================

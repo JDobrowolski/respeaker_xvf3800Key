@@ -1,0 +1,174 @@
+menu "ReSpeaker XVF3800 (strumien audio + sesja wektorowa)"
+
+    menu "Plytka"
+        config RSX_BOOT_GPIO
+            int "GPIO przycisku BOOT (aktywny niskim stanem; ESP32-S3: 0)"
+            default 0
+        config RSX_RESET_HOLD_MS
+            int "Przytrzymanie BOOT [ms], ktore kasuje siec i wraca do punktu dostepowego"
+            range 500 20000
+            default 2000
+    endmenu
+
+    menu "Audio / I2S (laczy z XVF3800)"
+        comment "XVF3800 oddaje PRZETWORZONY strumien (beamforming + AEC + odszumianie) po I2S."
+        comment "Magistrala: 48 kHz / 32-bit / stereo (firmware XVF3800 pod Home Assistant)."
+        comment "Firmware redukuje to do 16 kHz / mono / 16-bit na strumien sieciowy (wejscie AI)."
+
+        choice RSX_I2S_ROLE
+            prompt "Rola I2S ESP32-S3"
+            default RSX_I2S_SLAVE
+            help
+                XVF3800 mozna skonfigurowac jako I2S slave lub master. Tutaj wybierasz
+                rolę ESP32-S3. Musi byc przeciwna do XMOS: jeden daje zegary (master),
+                drugi je odbiera (slave). Firmware XVF3800 pod Home Assistant jest
+                I2S MASTER, wiec ESP32-S3 = SLAVE (domyslnie).
+            config RSX_I2S_MASTER
+                bool "ESP32-S3 master (XVF3800 slave)"
+            config RSX_I2S_SLAVE
+                bool "ESP32-S3 slave (XVF3800 master)"
+        endchoice
+
+        config RSX_I2S_BCLK_GPIO
+            int "GPIO I2S BCLK (bit clock)"
+            default 8
+        config RSX_I2S_WS_GPIO
+            int "GPIO I2S WS/LRCLK (word select)"
+            default 7
+        config RSX_I2S_DIN_GPIO
+            int "GPIO I2S DIN (wejscie - przetworzony mikrofon z XVF3800)"
+            default 43
+        config RSX_I2S_DOUT_GPIO
+            int "GPIO I2S DOUT (wyjscie - do glosnika XVF3800; -1 = brak)"
+            default 44
+        config RSX_I2S_MCLK_GPIO
+            int "GPIO I2S MCLK (zegar glowny; -1 = brak)"
+            default -1
+
+        config RSX_I2S_RATE
+            int "Czestotliwosc probkowania na magistrali I2S [Hz]"
+            default 48000
+            help
+                Czestotliwosc, ktora XVF3800 zegaruje na I2S. Firmware pod Home
+                Assistant uzywa 48000. W trybie slave ESP32-S3 musi to przyjac;
+                strumien sieciowy jest nizej redukowany do RSX_STREAM_RATE.
+        config RSX_STREAM_RATE
+            int "Czestotliwosc strumienia sieciowego / AI [Hz]"
+            default 16000
+            help
+                Docelowa czestotliwosc wysylana po sieci (i zalecana dla modeli AI:
+                ASR/KWS/klasyfikacja). Firmware decymuje z RSX_I2S_RATE calkowitym
+                wspolczynnikiem (48000/16000 = 3). Faktyczna czestotliwosc to
+                RSX_I2S_RATE / round(RSX_I2S_RATE/RSX_STREAM_RATE).
+        choice RSX_I2S_BITS
+            prompt "Szerokosc slotu I2S"
+            default RSX_I2S_BITS32
+            help
+                XVF3800 nadaje w slotach 32-bit (dane w gornych bitach). Strumien
+                sieciowy i tak jest zawsze 16-bit (s16le).
+            config RSX_I2S_BITS16
+                bool "16-bit"
+            config RSX_I2S_BITS32
+                bool "32-bit (dane w gornych 16 bitach)"
+        endchoice
+        config RSX_I2S_CHANNELS
+            int "Liczba kanalow na magistrali I2S (XVF3800 pod HA = 2/stereo)"
+            range 1 2
+            default 2
+            help
+                Ile slotow na ramke I2S daje XVF3800. Strumien sieciowy jest zawsze
+                mono (jeden kanal wybrany ponizej), bo to wejscie modeli AI.
+        choice RSX_MIC_SELECT
+            prompt "Zrodlo mono strumienia (z kanalow I2S)"
+            default RSX_MIC_LEFT
+            help
+                Gdy magistrala jest stereo, ktory kanal trafia do mono strumienia.
+                XVF3800 zwykle daje przetworzony glos w jednym kanale; drugi bywa
+                referencja AEC. Domyslnie lewy (indeks 0).
+            config RSX_MIC_LEFT
+                bool "Lewy (kanal 0)"
+            config RSX_MIC_RIGHT
+                bool "Prawy (kanal 1)"
+            config RSX_MIC_MIX
+                bool "Srednia obu kanalow"
+        endchoice
+    endmenu
+
+    menu "Sterowanie XVF3800 / I2C"
+        comment "Glosnosc, wzmocnienie mikrofonu i odczyt kierunku (DOA) przez protokol kontrolny XVF3800."
+        config RSX_I2C_SDA_GPIO
+            int "GPIO I2C SDA"
+            default 5
+        config RSX_I2C_SCL_GPIO
+            int "GPIO I2C SCL"
+            default 6
+        config RSX_I2C_FREQ_HZ
+            int "Czestotliwosc I2C [Hz]"
+            default 100000
+        config RSX_XVF_ADDR
+            hex "Adres I2C XVF3800 (7-bit; domyslnie 0x2C)"
+            default 0x2C
+        config RSX_XVF_DOA
+            bool "Odczytuj kierunek zrodla (DOA) z XVF3800"
+            default y
+    endmenu
+
+    menu "Slowo kluczowe"
+        comment "Model (.kws) w partycji flash 'kws': idf.py flash wgrywa kws/models/punapu.kws,"
+        comment "nowy model bez flashowania: kwstool upload <ip> model.kws"
+        config RSX_KWS_PREROLL_MS
+            int "Audio sprzed wykrycia dolaczane do polecenia [ms]"
+            range 0 1000
+            default 300
+            help
+                Wykrycie nastepuje chwile po koncu slowa; jesli polecenie mowione jest
+                bez przerwy ("punapu wlacz swiatlo"), ten zapas zabezpiecza jego poczatek.
+        config RSX_KWS_END_SIL_MS
+            int "Cisza konczaca polecenie [ms]"
+            range 300 3000
+            default 800
+        config RSX_KWS_NOSPEECH_MS
+            int "Koniec, gdy po slowie nikt nic nie mowi [ms]"
+            range 1000 10000
+            default 4000
+        config RSX_KWS_MAX_MS
+            int "Najdluzsze polecenie [ms]"
+            range 2000 30000
+            default 10000
+        config RSX_KWS_BEEP
+            bool "Krotki sygnal z glosnika po wykryciu slowa"
+            default y
+    endmenu
+
+    menu "WiFi"
+        config RSX_NAME
+            string "Nazwa urzadzenia (SSID punktu dostepowego: vsapp_<nazwa>-XXXX)"
+            default "mic"
+        config RSX_NAME_MAC_SUFFIX
+            bool "Dopisz do nazwy koncowke adresu MAC (-XXXX)"
+            default y
+        config RSX_AP_PASS
+            string "Haslo punktu dostepowego (puste = otwarty, min. 8 znakow)"
+            default ""
+        config RSX_AP_CHANNEL
+            int "Kanal punktu dostepowego"
+            range 1 13
+            default 6
+        config RSX_STA_MAX_FAILS
+            int "Nieudane proby polaczenia, po ktorych wraca tymczasowo punkt dostepowy"
+            range 1 100
+            default 6
+        config RSX_FALLBACK_RETRY_MIN
+            int "Co ile minut (bez klientow AP) znow probowac zapamietanej sieci (0 = po restarcie)"
+            range 0 1440
+            default 10
+    endmenu
+
+    config RSX_VS_PORT
+        int "Port TCP sesji wektorowej (stan WiFi + ustawienia audio)"
+        default 7777
+    config RSX_AUDIO_PORT
+        int "Port TCP strumienia audio (mikrofon -> host, host -> glosnik)"
+        default 7778
+
+endmenu

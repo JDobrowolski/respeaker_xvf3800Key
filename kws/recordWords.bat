@@ -1,0 +1,1 @@
+kwstool record 192.168.1.35 dataset\keyword

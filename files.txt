@@ -1,0 +1,5354 @@
+Folder PATH listing for volume New Volume
+Volume serial number is AE5C-3606
+E:.
+¦   .gitignore
+¦   budowanie.txt
+¦   CMakeLists.txt
+¦   files.txt
+¦   info.txt
+¦   partitions.csv
+¦   pinout.txt
+¦   README.md
+¦   sdkconfig
+¦   sdkconfig.defaults
+¦   
++---asr
+¦       asr_main.c
+¦       backend.h
+¦       tts.c
+¦       tts.h
+¦       whisper.c
+¦       whisper.h
+¦       
++---build
+¦   ¦   .bin_timestamp
+¦   ¦   .ninja_deps
+¦   ¦   .ninja_log
+¦   ¦   app-flash_args
+¦   ¦   bootloader-flash_args
+¦   ¦   build.ninja
+¦   ¦   CMakeCache.txt
+¦   ¦   cmake_install.cmake
+¦   ¦   compile_commands.json
+¦   ¦   config.env
+¦   ¦   flasher_args.json
+¦   ¦   flash_app_args
+¦   ¦   flash_args
+¦   ¦   flash_args.in
+¦   ¦   flash_bootloader_args
+¦   ¦   flash_project_args
+¦   ¦   kconfigs.in
+¦   ¦   kconfigs_projbuild.in
+¦   ¦   ldgen_libraries
+¦   ¦   ldgen_libraries.in
+¦   ¦   partition-table-flash_args
+¦   ¦   project_description.json
+¦   ¦   project_elf_src_esp32s3.c
+¦   ¦   respeaker_xvf3800Key.bin
+¦   ¦   respeaker_xvf3800Key.elf
+¦   ¦   respeaker_xvf3800Key.map
+¦   ¦   x509_crt_bundle.S
+¦   ¦   
+¦   +---bootloader
+¦   ¦   ¦   .bin_timestamp
+¦   ¦   ¦   .ninja_deps
+¦   ¦   ¦   .ninja_log
+¦   ¦   ¦   bootloader.bin
+¦   ¦   ¦   bootloader.elf
+¦   ¦   ¦   bootloader.map
+¦   ¦   ¦   build.ninja
+¦   ¦   ¦   CMakeCache.txt
+¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   compile_commands.json
+¦   ¦   ¦   config.env
+¦   ¦   ¦   kconfigs.in
+¦   ¦   ¦   kconfigs_projbuild.in
+¦   ¦   ¦   project_description.json
+¦   ¦   ¦   project_elf_src_esp32s3.c
+¦   ¦   ¦   
+¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦   clean_additional.cmake
+¦   ¦   ¦   ¦   cmake.check_cache
+¦   ¦   ¦   ¦   CMakeConfigureLog.yaml
+¦   ¦   ¦   ¦   rules.ninja
+¦   ¦   ¦   ¦   TargetDirectories.txt
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---3.30.2
+¦   ¦   ¦   ¦   ¦   CMakeASMCompiler.cmake
+¦   ¦   ¦   ¦   ¦   CMakeCCompiler.cmake
+¦   ¦   ¦   ¦   ¦   CMakeCXXCompiler.cmake
+¦   ¦   ¦   ¦   ¦   CMakeDetermineCompilerABI_C.bin
+¦   ¦   ¦   ¦   ¦   CMakeDetermineCompilerABI_CXX.bin
+¦   ¦   ¦   ¦   ¦   CMakeSystem.cmake
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CompilerIdASM
+¦   ¦   ¦   ¦   +---CompilerIdC
+¦   ¦   ¦   ¦   ¦   ¦   a.out
+¦   ¦   ¦   ¦   ¦   ¦   CMakeCCompilerId.c
+¦   ¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   ¦   +---tmp
+¦   ¦   ¦   ¦   +---CompilerIdCXX
+¦   ¦   ¦   ¦       ¦   a.out
+¦   ¦   ¦   ¦       ¦   CMakeCXXCompilerId.cpp
+¦   ¦   ¦   ¦       ¦   
+¦   ¦   ¦   ¦       +---tmp
+¦   ¦   ¦   +---bootloader.elf.dir
+¦   ¦   ¦   ¦       project_elf_src_esp32s3.c.obj
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---CMakeScratch
+¦   ¦   ¦   +---git-data
+¦   ¦   ¦   ¦       grabRef.cmake
+¦   ¦   ¦   ¦       HEAD
+¦   ¦   ¦   ¦       head-ref
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---pkgRedirects
+¦   ¦   +---config
+¦   ¦   ¦       kconfig_menus.json
+¦   ¦   ¦       sdkconfig.cmake
+¦   ¦   ¦       sdkconfig.h
+¦   ¦   ¦       sdkconfig.json
+¦   ¦   ¦       
+¦   ¦   +---esp-idf
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---bootloader
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   +---bootloader_support
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   libbootloader_support.a
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦       +---__idf_bootloader_support.dir
+¦   ¦   ¦   ¦           +---bootloader_flash
+¦   ¦   ¦   ¦           ¦   +---src
+¦   ¦   ¦   ¦           ¦           bootloader_flash.c.obj
+¦   ¦   ¦   ¦           ¦           bootloader_flash_config_esp32s3.c.obj
+¦   ¦   ¦   ¦           ¦           flash_qio_mode.c.obj
+¦   ¦   ¦   ¦           ¦           
+¦   ¦   ¦   ¦           +---src
+¦   ¦   ¦   ¦               ¦   bootloader_clock_init.c.obj
+¦   ¦   ¦   ¦               ¦   bootloader_clock_loader.c.obj
+¦   ¦   ¦   ¦               ¦   bootloader_common.c.obj
+¦   ¦   ¦   ¦               ¦   bootloader_common_loader.c.obj
+¦   ¦   ¦   ¦               ¦   bootloader_console.c.obj
+¦   ¦   ¦   ¦               ¦   bootloader_console_loader.c.obj
+¦   ¦   ¦   ¦               ¦   bootloader_efuse.c.obj
+¦   ¦   ¦   ¦               ¦   bootloader_init.c.obj
+¦   ¦   ¦   ¦               ¦   bootloader_mem.c.obj
+¦   ¦   ¦   ¦               ¦   bootloader_panic.c.obj
+¦   ¦   ¦   ¦               ¦   bootloader_random.c.obj
+¦   ¦   ¦   ¦               ¦   bootloader_random_esp32s3.c.obj
+¦   ¦   ¦   ¦               ¦   bootloader_utility.c.obj
+¦   ¦   ¦   ¦               ¦   esp_image_format.c.obj
+¦   ¦   ¦   ¦               ¦   flash_encrypt.c.obj
+¦   ¦   ¦   ¦               ¦   flash_partitions.c.obj
+¦   ¦   ¦   ¦               ¦   secure_boot.c.obj
+¦   ¦   ¦   ¦               ¦   
+¦   ¦   ¦   ¦               +---esp32s3
+¦   ¦   ¦   ¦                       bootloader_esp32s3.c.obj
+¦   ¦   ¦   ¦                       bootloader_sha.c.obj
+¦   ¦   ¦   ¦                       bootloader_soc.c.obj
+¦   ¦   ¦   ¦                       
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   +---efuse
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   libefuse.a
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦       +---__idf_efuse.dir
+¦   ¦   ¦   ¦           +---esp32s3
+¦   ¦   ¦   ¦           ¦       esp_efuse_fields.c.obj
+¦   ¦   ¦   ¦           ¦       esp_efuse_rtc_calib.c.obj
+¦   ¦   ¦   ¦           ¦       esp_efuse_table.c.obj
+¦   ¦   ¦   ¦           ¦       esp_efuse_utility.c.obj
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---src
+¦   ¦   ¦   ¦               ¦   esp_efuse_api.c.obj
+¦   ¦   ¦   ¦               ¦   esp_efuse_fields.c.obj
+¦   ¦   ¦   ¦               ¦   esp_efuse_utility.c.obj
+¦   ¦   ¦   ¦               ¦   
+¦   ¦   ¦   ¦               +---efuse_controller
+¦   ¦   ¦   ¦                   +---keys
+¦   ¦   ¦   ¦                       +---with_key_purposes
+¦   ¦   ¦   ¦                               esp_efuse_api_key.c.obj
+¦   ¦   ¦   ¦                               
+¦   ¦   ¦   +---esptool_py
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   +---esp_app_format
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   +---esp_bootloader_format
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   libesp_bootloader_format.a
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦       +---__idf_esp_bootloader_format.dir
+¦   ¦   ¦   ¦               esp_bootloader_desc.c.obj
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---esp_common
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   libesp_common.a
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦       +---__idf_esp_common.dir
+¦   ¦   ¦   ¦           +---src
+¦   ¦   ¦   ¦                   esp_err_to_name.c.obj
+¦   ¦   ¦   ¦                   
+¦   ¦   ¦   +---esp_hw_support
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   libesp_hw_support.a
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦   ¦   +---__idf_esp_hw_support.dir
+¦   ¦   ¦   ¦   ¦       ¦   cpu.c.obj
+¦   ¦   ¦   ¦   ¦       ¦   esp_memory_utils.c.obj
+¦   ¦   ¦   ¦   ¦       ¦   
+¦   ¦   ¦   ¦   ¦       +---port
+¦   ¦   ¦   ¦   ¦           +---esp32s3
+¦   ¦   ¦   ¦   ¦                   chip_info.c.obj
+¦   ¦   ¦   ¦   ¦                   cpu_region_protect.c.obj
+¦   ¦   ¦   ¦   ¦                   esp_cpu_intr.c.obj
+¦   ¦   ¦   ¦   ¦                   rtc_clk.c.obj
+¦   ¦   ¦   ¦   ¦                   rtc_clk_init.c.obj
+¦   ¦   ¦   ¦   ¦                   rtc_init.c.obj
+¦   ¦   ¦   ¦   ¦                   rtc_sleep.c.obj
+¦   ¦   ¦   ¦   ¦                   rtc_time.c.obj
+¦   ¦   ¦   ¦   ¦                   
+¦   ¦   ¦   ¦   +---lowpower
+¦   ¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦   +---port
+¦   ¦   ¦   ¦       +---esp32s3
+¦   ¦   ¦   ¦           ¦   cmake_install.cmake
+¦   ¦   ¦   ¦           ¦   
+¦   ¦   ¦   ¦           +---CMakeFiles
+¦   ¦   ¦   +---esp_rom
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   libesp_rom.a
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦       +---__idf_esp_rom.dir
+¦   ¦   ¦   ¦           +---patches
+¦   ¦   ¦   ¦                   esp_rom_cache_esp32s2_esp32s3.c.obj
+¦   ¦   ¦   ¦                   esp_rom_cache_writeback_esp32s3.S.obj
+¦   ¦   ¦   ¦                   esp_rom_crc.c.obj
+¦   ¦   ¦   ¦                   esp_rom_efuse.c.obj
+¦   ¦   ¦   ¦                   esp_rom_gpio.c.obj
+¦   ¦   ¦   ¦                   esp_rom_longjmp.S.obj
+¦   ¦   ¦   ¦                   esp_rom_print.c.obj
+¦   ¦   ¦   ¦                   esp_rom_spiflash.c.obj
+¦   ¦   ¦   ¦                   esp_rom_sys.c.obj
+¦   ¦   ¦   ¦                   esp_rom_systimer.c.obj
+¦   ¦   ¦   ¦                   esp_rom_uart.c.obj
+¦   ¦   ¦   ¦                   esp_rom_wdt.c.obj
+¦   ¦   ¦   ¦                   
+¦   ¦   ¦   +---esp_security
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   +---esp_system
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   libesp_system.a
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦       +---__idf_esp_system.dir
+¦   ¦   ¦   ¦               esp_err.c.obj
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---freertos
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   +---hal
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   libhal.a
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦       +---__idf_hal.dir
+¦   ¦   ¦   ¦           ¦   cache_hal.c.obj
+¦   ¦   ¦   ¦           ¦   efuse_hal.c.obj
+¦   ¦   ¦   ¦           ¦   hal_utils.c.obj
+¦   ¦   ¦   ¦           ¦   mmu_hal.c.obj
+¦   ¦   ¦   ¦           ¦   mpu_hal.c.obj
+¦   ¦   ¦   ¦           ¦   
+¦   ¦   ¦   ¦           +---esp32s3
+¦   ¦   ¦   ¦                   efuse_hal.c.obj
+¦   ¦   ¦   ¦                   
+¦   ¦   ¦   +---log
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   liblog.a
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦       +---__idf_log.dir
+¦   ¦   ¦   ¦           +---src
+¦   ¦   ¦   ¦               ¦   log_timestamp_common.c.obj
+¦   ¦   ¦   ¦               ¦   
+¦   ¦   ¦   ¦               +---noos
+¦   ¦   ¦   ¦                       log_lock.c.obj
+¦   ¦   ¦   ¦                       log_timestamp.c.obj
+¦   ¦   ¦   ¦                       
+¦   ¦   ¦   +---main
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   libmain.a
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦       +---__idf_main.dir
+¦   ¦   ¦   ¦               bootloader_start.c.obj
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---micro-ecc
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   libmicro-ecc.a
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦       +---__idf_micro-ecc.dir
+¦   ¦   ¦   ¦               uECC_verify_antifault.c.obj
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---newlib
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   +---partition_table
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   +---soc
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   libsoc.a
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦       +---__idf_soc.dir
+¦   ¦   ¦   ¦           ¦   dport_access_common.c.obj
+¦   ¦   ¦   ¦           ¦   lldesc.c.obj
+¦   ¦   ¦   ¦           ¦   
+¦   ¦   ¦   ¦           +---esp32s3
+¦   ¦   ¦   ¦                   adc_periph.c.obj
+¦   ¦   ¦   ¦                   dedic_gpio_periph.c.obj
+¦   ¦   ¦   ¦                   gdma_periph.c.obj
+¦   ¦   ¦   ¦                   gpio_periph.c.obj
+¦   ¦   ¦   ¦                   i2c_periph.c.obj
+¦   ¦   ¦   ¦                   i2s_periph.c.obj
+¦   ¦   ¦   ¦                   interrupts.c.obj
+¦   ¦   ¦   ¦                   lcd_periph.c.obj
+¦   ¦   ¦   ¦                   ledc_periph.c.obj
+¦   ¦   ¦   ¦                   mcpwm_periph.c.obj
+¦   ¦   ¦   ¦                   mpi_periph.c.obj
+¦   ¦   ¦   ¦                   pcnt_periph.c.obj
+¦   ¦   ¦   ¦                   rmt_periph.c.obj
+¦   ¦   ¦   ¦                   rtc_io_periph.c.obj
+¦   ¦   ¦   ¦                   sdmmc_periph.c.obj
+¦   ¦   ¦   ¦                   sdm_periph.c.obj
+¦   ¦   ¦   ¦                   spi_periph.c.obj
+¦   ¦   ¦   ¦                   temperature_sensor_periph.c.obj
+¦   ¦   ¦   ¦                   timer_periph.c.obj
+¦   ¦   ¦   ¦                   touch_sensor_periph.c.obj
+¦   ¦   ¦   ¦                   twai_periph.c.obj
+¦   ¦   ¦   ¦                   uart_periph.c.obj
+¦   ¦   ¦   ¦                   usb_dwc_periph.c.obj
+¦   ¦   ¦   ¦                   wdt_periph.c.obj
+¦   ¦   ¦   ¦                   
+¦   ¦   ¦   +---spi_flash
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   libspi_flash.a
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦       +---__idf_spi_flash.dir
+¦   ¦   ¦   ¦               spi_flash_wrap.c.obj
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---xtensa
+¦   ¦   ¦       ¦   cmake_install.cmake
+¦   ¦   ¦       ¦   libxtensa.a
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---CMakeFiles
+¦   ¦   ¦           +---__idf_xtensa.dir
+¦   ¦   ¦                   eri.c.obj
+¦   ¦   ¦                   xt_trax.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---gdbinit
+¦   ¦           connect
+¦   ¦           gdbinit
+¦   ¦           prefix_map
+¦   ¦           py_extensions
+¦   ¦           symbols
+¦   ¦           
+¦   +---bootloader-prefix
+¦   ¦   +---src
+¦   ¦   ¦   +---bootloader-stamp
+¦   ¦   ¦           bootloader-configure
+¦   ¦   ¦           bootloader-done
+¦   ¦   ¦           bootloader-download
+¦   ¦   ¦           bootloader-mkdir
+¦   ¦   ¦           bootloader-patch
+¦   ¦   ¦           bootloader-patch-info.txt
+¦   ¦   ¦           bootloader-source_dirinfo.txt
+¦   ¦   ¦           bootloader-update
+¦   ¦   ¦           bootloader-update-info.txt
+¦   ¦   ¦           
+¦   ¦   +---tmp
+¦   ¦           bootloader-cfgcmd.txt
+¦   ¦           bootloader-mkdirs.cmake
+¦   ¦           
+¦   +---CMakeFiles
+¦   ¦   ¦   bootloader-complete
+¦   ¦   ¦   clean_additional.cmake
+¦   ¦   ¦   cmake.check_cache
+¦   ¦   ¦   CMakeConfigureLog.yaml
+¦   ¦   ¦   rules.ninja
+¦   ¦   ¦   TargetDirectories.txt
+¦   ¦   ¦   
+¦   ¦   +---3.30.2
+¦   ¦   ¦   ¦   CMakeASMCompiler.cmake
+¦   ¦   ¦   ¦   CMakeCCompiler.cmake
+¦   ¦   ¦   ¦   CMakeCXXCompiler.cmake
+¦   ¦   ¦   ¦   CMakeDetermineCompilerABI_C.bin
+¦   ¦   ¦   ¦   CMakeDetermineCompilerABI_CXX.bin
+¦   ¦   ¦   ¦   CMakeSystem.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CompilerIdASM
+¦   ¦   ¦   +---CompilerIdC
+¦   ¦   ¦   ¦   ¦   a.out
+¦   ¦   ¦   ¦   ¦   CMakeCCompilerId.c
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---tmp
+¦   ¦   ¦   +---CompilerIdCXX
+¦   ¦   ¦       ¦   a.out
+¦   ¦   ¦       ¦   CMakeCXXCompilerId.cpp
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---tmp
+¦   ¦   +---bootloader.dir
+¦   ¦   ¦       Labels.json
+¦   ¦   ¦       Labels.txt
+¦   ¦   ¦       
+¦   ¦   +---CMakeScratch
+¦   ¦   +---git-data
+¦   ¦   ¦       grabRef.cmake
+¦   ¦   ¦       HEAD
+¦   ¦   ¦       head-ref
+¦   ¦   ¦       
+¦   ¦   +---pkgRedirects
+¦   ¦   +---respeaker_xvf3800Key.elf.dir
+¦   ¦           project_elf_src_esp32s3.c.obj
+¦   ¦           
+¦   +---config
+¦   ¦       kconfig_menus.json
+¦   ¦       sdkconfig.cmake
+¦   ¦       sdkconfig.h
+¦   ¦       sdkconfig.json
+¦   ¦       
+¦   +---esp-idf
+¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   
+¦   ¦   +---app_trace
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libapp_trace.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_app_trace.dir
+¦   ¦   ¦           ¦   app_trace.c.obj
+¦   ¦   ¦           ¦   app_trace_util.c.obj
+¦   ¦   ¦           ¦   host_file_io.c.obj
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---port
+¦   ¦   ¦                   port_uart.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---app_update
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libapp_update.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_app_update.dir
+¦   ¦   ¦               esp_ota_app_desc.c.obj
+¦   ¦   ¦               esp_ota_ops.c.obj
+¦   ¦   ¦               
+¦   ¦   +---bootloader
+¦   ¦   ¦   ¦   bootloader-flash_args.in
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---bootloader_support
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libbootloader_support.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_bootloader_support.dir
+¦   ¦   ¦           +---bootloader_flash
+¦   ¦   ¦           ¦   +---src
+¦   ¦   ¦           ¦           bootloader_flash.c.obj
+¦   ¦   ¦           ¦           bootloader_flash_config_esp32s3.c.obj
+¦   ¦   ¦           ¦           flash_qio_mode.c.obj
+¦   ¦   ¦           ¦           
+¦   ¦   ¦           +---src
+¦   ¦   ¦               ¦   bootloader_clock_init.c.obj
+¦   ¦   ¦               ¦   bootloader_common.c.obj
+¦   ¦   ¦               ¦   bootloader_common_loader.c.obj
+¦   ¦   ¦               ¦   bootloader_efuse.c.obj
+¦   ¦   ¦               ¦   bootloader_mem.c.obj
+¦   ¦   ¦               ¦   bootloader_random.c.obj
+¦   ¦   ¦               ¦   bootloader_random_esp32s3.c.obj
+¦   ¦   ¦               ¦   bootloader_utility.c.obj
+¦   ¦   ¦               ¦   esp_image_format.c.obj
+¦   ¦   ¦               ¦   flash_encrypt.c.obj
+¦   ¦   ¦               ¦   flash_partitions.c.obj
+¦   ¦   ¦               ¦   secure_boot.c.obj
+¦   ¦   ¦               ¦   
+¦   ¦   ¦               +---esp32s3
+¦   ¦   ¦               ¦       secure_boot_secure_features.c.obj
+¦   ¦   ¦               ¦       
+¦   ¦   ¦               +---idf
+¦   ¦   ¦                       bootloader_sha.c.obj
+¦   ¦   ¦                       
+¦   ¦   +---bt
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---CMakeFiles
+¦   ¦   +---cmock
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libcmock.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_cmock.dir
+¦   ¦   ¦           +---CMock
+¦   ¦   ¦               +---src
+¦   ¦   ¦                       cmock.c.obj
+¦   ¦   ¦                       
+¦   ¦   +---console
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libconsole.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_console.dir
+¦   ¦   ¦           ¦   commands.c.obj
+¦   ¦   ¦           ¦   esp_console_common.c.obj
+¦   ¦   ¦           ¦   esp_console_repl_chip.c.obj
+¦   ¦   ¦           ¦   split_argv.c.obj
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---argtable3
+¦   ¦   ¦           ¦       argtable3.c.obj
+¦   ¦   ¦           ¦       arg_cmd.c.obj
+¦   ¦   ¦           ¦       arg_date.c.obj
+¦   ¦   ¦           ¦       arg_dbl.c.obj
+¦   ¦   ¦           ¦       arg_dstr.c.obj
+¦   ¦   ¦           ¦       arg_end.c.obj
+¦   ¦   ¦           ¦       arg_file.c.obj
+¦   ¦   ¦           ¦       arg_hashtable.c.obj
+¦   ¦   ¦           ¦       arg_int.c.obj
+¦   ¦   ¦           ¦       arg_lit.c.obj
+¦   ¦   ¦           ¦       arg_rem.c.obj
+¦   ¦   ¦           ¦       arg_rex.c.obj
+¦   ¦   ¦           ¦       arg_str.c.obj
+¦   ¦   ¦           ¦       arg_utils.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---linenoise
+¦   ¦   ¦                   linenoise.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---cxx
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libcxx.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_cxx.dir
+¦   ¦   ¦               cxx_exception_stubs.cpp.obj
+¦   ¦   ¦               cxx_guards.cpp.obj
+¦   ¦   ¦               cxx_init.cpp.obj
+¦   ¦   ¦               
+¦   ¦   +---driver
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libdriver.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_driver.dir
+¦   ¦   ¦           +---deprecated
+¦   ¦   ¦           ¦       adc_dma_legacy.c.obj
+¦   ¦   ¦           ¦       adc_legacy.c.obj
+¦   ¦   ¦           ¦       i2s_legacy.c.obj
+¦   ¦   ¦           ¦       mcpwm_legacy.c.obj
+¦   ¦   ¦           ¦       pcnt_legacy.c.obj
+¦   ¦   ¦           ¦       rmt_legacy.c.obj
+¦   ¦   ¦           ¦       rtc_temperature_legacy.c.obj
+¦   ¦   ¦           ¦       sigma_delta_legacy.c.obj
+¦   ¦   ¦           ¦       timer_legacy.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---i2c
+¦   ¦   ¦           ¦       i2c.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---touch_sensor
+¦   ¦   ¦           ¦   ¦   touch_sensor_common.c.obj
+¦   ¦   ¦           ¦   ¦   
+¦   ¦   ¦           ¦   +---esp32s3
+¦   ¦   ¦           ¦           touch_sensor.c.obj
+¦   ¦   ¦           ¦           
+¦   ¦   ¦           +---twai
+¦   ¦   ¦                   twai.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---efuse
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libefuse.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_efuse.dir
+¦   ¦   ¦           +---esp32s3
+¦   ¦   ¦           ¦       esp_efuse_fields.c.obj
+¦   ¦   ¦           ¦       esp_efuse_rtc_calib.c.obj
+¦   ¦   ¦           ¦       esp_efuse_table.c.obj
+¦   ¦   ¦           ¦       esp_efuse_utility.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---src
+¦   ¦   ¦               ¦   esp_efuse_api.c.obj
+¦   ¦   ¦               ¦   esp_efuse_fields.c.obj
+¦   ¦   ¦               ¦   esp_efuse_startup.c.obj
+¦   ¦   ¦               ¦   esp_efuse_utility.c.obj
+¦   ¦   ¦               ¦   
+¦   ¦   ¦               +---efuse_controller
+¦   ¦   ¦                   +---keys
+¦   ¦   ¦                       +---with_key_purposes
+¦   ¦   ¦                               esp_efuse_api_key.c.obj
+¦   ¦   ¦                               
+¦   ¦   +---esp-tls
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp-tls.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp-tls.dir
+¦   ¦   ¦           ¦   esp_tls.c.obj
+¦   ¦   ¦           ¦   esp_tls_error_capture.c.obj
+¦   ¦   ¦           ¦   esp_tls_mbedtls.c.obj
+¦   ¦   ¦           ¦   esp_tls_platform_port.c.obj
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---esp-tls-crypto
+¦   ¦   ¦                   esp_tls_crypto.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---espcoredump
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libespcoredump.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_espcoredump.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦               ¦   core_dump_binary.c.obj
+¦   ¦   ¦               ¦   core_dump_common.c.obj
+¦   ¦   ¦               ¦   core_dump_crc.c.obj
+¦   ¦   ¦               ¦   core_dump_elf.c.obj
+¦   ¦   ¦               ¦   core_dump_flash.c.obj
+¦   ¦   ¦               ¦   core_dump_init.c.obj
+¦   ¦   ¦               ¦   core_dump_sha.c.obj
+¦   ¦   ¦               ¦   core_dump_uart.c.obj
+¦   ¦   ¦               ¦   
+¦   ¦   ¦               +---port
+¦   ¦   ¦                   +---xtensa
+¦   ¦   ¦                           core_dump_port.c.obj
+¦   ¦   ¦                           
+¦   ¦   +---esptool_py
+¦   ¦   ¦   ¦   app-flash_args.in
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   flasher_args.json.in
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---esp_adc
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_adc.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_adc.dir
+¦   ¦   ¦           ¦   adc_cali.c.obj
+¦   ¦   ¦           ¦   adc_cali_curve_fitting.c.obj
+¦   ¦   ¦           ¦   adc_common.c.obj
+¦   ¦   ¦           ¦   adc_continuous.c.obj
+¦   ¦   ¦           ¦   adc_filter.c.obj
+¦   ¦   ¦           ¦   adc_monitor.c.obj
+¦   ¦   ¦           ¦   adc_oneshot.c.obj
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---deprecated
+¦   ¦   ¦           ¦   ¦   esp_adc_cal_common_legacy.c.obj
+¦   ¦   ¦           ¦   ¦   
+¦   ¦   ¦           ¦   +---esp32s3
+¦   ¦   ¦           ¦           esp_adc_cal_legacy.c.obj
+¦   ¦   ¦           ¦           
+¦   ¦   ¦           +---esp32s3
+¦   ¦   ¦           ¦       curve_fitting_coefficients.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---gdma
+¦   ¦   ¦                   adc_dma.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_app_format
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_app_format.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_app_format.dir
+¦   ¦   ¦               esp_app_desc.c.obj
+¦   ¦   ¦               
+¦   ¦   +---esp_bootloader_format
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_bootloader_format.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_bootloader_format.dir
+¦   ¦   ¦               esp_bootloader_desc.c.obj
+¦   ¦   ¦               
+¦   ¦   +---esp_coex
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_coex.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_coex.dir
+¦   ¦   ¦           +---esp32s3
+¦   ¦   ¦           ¦       esp_coex_adapter.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   coexist_debug.c.obj
+¦   ¦   ¦                   coexist_debug_diagram.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_common
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_common.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_common.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   esp_err_to_name.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_driver_ana_cmpr
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---esp_driver_cam
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_driver_cam.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_driver_cam.dir
+¦   ¦   ¦               dvp_share_ctrl.c.obj
+¦   ¦   ¦               esp_cam_ctlr.c.obj
+¦   ¦   ¦               
+¦   ¦   +---esp_driver_dac
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---esp_driver_gpio
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_driver_gpio.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_driver_gpio.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   dedic_gpio.c.obj
+¦   ¦   ¦                   gpio.c.obj
+¦   ¦   ¦                   gpio_glitch_filter_ops.c.obj
+¦   ¦   ¦                   gpio_pin_glitch_filter.c.obj
+¦   ¦   ¦                   rtc_io.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_driver_gptimer
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_driver_gptimer.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_driver_gptimer.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   gptimer.c.obj
+¦   ¦   ¦                   gptimer_common.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_driver_i2c
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_driver_i2c.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_driver_i2c.dir
+¦   ¦   ¦               i2c_common.c.obj
+¦   ¦   ¦               i2c_master.c.obj
+¦   ¦   ¦               i2c_slave.c.obj
+¦   ¦   ¦               
+¦   ¦   +---esp_driver_i2s
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_driver_i2s.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_driver_i2s.dir
+¦   ¦   ¦               i2s_common.c.obj
+¦   ¦   ¦               i2s_pdm.c.obj
+¦   ¦   ¦               i2s_platform.c.obj
+¦   ¦   ¦               i2s_std.c.obj
+¦   ¦   ¦               i2s_tdm.c.obj
+¦   ¦   ¦               
+¦   ¦   +---esp_driver_isp
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---esp_driver_jpeg
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---esp_driver_ledc
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_driver_ledc.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_driver_ledc.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   ledc.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_driver_mcpwm
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_driver_mcpwm.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_driver_mcpwm.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   mcpwm_cap.c.obj
+¦   ¦   ¦                   mcpwm_cmpr.c.obj
+¦   ¦   ¦                   mcpwm_com.c.obj
+¦   ¦   ¦                   mcpwm_fault.c.obj
+¦   ¦   ¦                   mcpwm_gen.c.obj
+¦   ¦   ¦                   mcpwm_oper.c.obj
+¦   ¦   ¦                   mcpwm_sync.c.obj
+¦   ¦   ¦                   mcpwm_timer.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_driver_parlio
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---esp_driver_pcnt
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_driver_pcnt.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_driver_pcnt.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   pulse_cnt.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_driver_ppa
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---esp_driver_rmt
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_driver_rmt.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_driver_rmt.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   rmt_common.c.obj
+¦   ¦   ¦                   rmt_encoder.c.obj
+¦   ¦   ¦                   rmt_rx.c.obj
+¦   ¦   ¦                   rmt_tx.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_driver_sdio
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---esp_driver_sdm
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_driver_sdm.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_driver_sdm.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   sdm.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_driver_sdmmc
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_driver_sdmmc.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_driver_sdmmc.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   sdmmc_host.c.obj
+¦   ¦   ¦                   sdmmc_transaction.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_driver_sdspi
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_driver_sdspi.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_driver_sdspi.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   sdspi_crc.c.obj
+¦   ¦   ¦                   sdspi_host.c.obj
+¦   ¦   ¦                   sdspi_transaction.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_driver_spi
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_driver_spi.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_driver_spi.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦               +---gpspi
+¦   ¦   ¦                       spi_common.c.obj
+¦   ¦   ¦                       spi_dma.c.obj
+¦   ¦   ¦                       spi_master.c.obj
+¦   ¦   ¦                       spi_slave.c.obj
+¦   ¦   ¦                       spi_slave_hd.c.obj
+¦   ¦   ¦                       
+¦   ¦   +---esp_driver_touch_sens
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---esp_driver_tsens
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_driver_tsens.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_driver_tsens.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   temperature_sensor.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_driver_uart
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_driver_uart.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_driver_uart.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   uart.c.obj
+¦   ¦   ¦                   uart_vfs.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_driver_usb_serial_jtag
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_driver_usb_serial_jtag.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_driver_usb_serial_jtag.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   usb_serial_jtag.c.obj
+¦   ¦   ¦                   usb_serial_jtag_connection_monitor.c.obj
+¦   ¦   ¦                   usb_serial_jtag_vfs.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_eth
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_eth.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_eth.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦               ¦   esp_eth.c.obj
+¦   ¦   ¦               ¦   esp_eth_netif_glue.c.obj
+¦   ¦   ¦               ¦   
+¦   ¦   ¦               +---phy
+¦   ¦   ¦                       esp_eth_phy_802_3.c.obj
+¦   ¦   ¦                       
+¦   ¦   +---esp_event
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_event.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_event.dir
+¦   ¦   ¦               default_event_loop.c.obj
+¦   ¦   ¦               esp_event.c.obj
+¦   ¦   ¦               esp_event_private.c.obj
+¦   ¦   ¦               
+¦   ¦   +---esp_gdbstub
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_gdbstub.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_gdbstub.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦               ¦   gdbstub.c.obj
+¦   ¦   ¦               ¦   gdbstub_transport.c.obj
+¦   ¦   ¦               ¦   packet.c.obj
+¦   ¦   ¦               ¦   
+¦   ¦   ¦               +---port
+¦   ¦   ¦                   +---xtensa
+¦   ¦   ¦                           gdbstub-entry.S.obj
+¦   ¦   ¦                           gdbstub_xtensa.c.obj
+¦   ¦   ¦                           xt_debugexception.S.obj
+¦   ¦   ¦                           
+¦   ¦   +---esp_hid
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_hid.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_hid.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   esp_hidd.c.obj
+¦   ¦   ¦                   esp_hidh.c.obj
+¦   ¦   ¦                   esp_hid_common.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_https_ota
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_https_ota.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_https_ota.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   esp_https_ota.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_https_server
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_https_server.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_https_server.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   https_server.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_http_client
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_http_client.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_http_client.dir
+¦   ¦   ¦           ¦   esp_http_client.c.obj
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---lib
+¦   ¦   ¦                   http_auth.c.obj
+¦   ¦   ¦                   http_header.c.obj
+¦   ¦   ¦                   http_utils.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_http_server
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_http_server.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_http_server.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦               ¦   httpd_main.c.obj
+¦   ¦   ¦               ¦   httpd_parse.c.obj
+¦   ¦   ¦               ¦   httpd_sess.c.obj
+¦   ¦   ¦               ¦   httpd_txrx.c.obj
+¦   ¦   ¦               ¦   httpd_uri.c.obj
+¦   ¦   ¦               ¦   httpd_ws.c.obj
+¦   ¦   ¦               ¦   
+¦   ¦   ¦               +---util
+¦   ¦   ¦                       ctrl_sock.c.obj
+¦   ¦   ¦                       
+¦   ¦   +---esp_hw_support
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_hw_support.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦   +---__idf_esp_hw_support.dir
+¦   ¦   ¦   ¦       ¦   adc_share_hw_ctrl.c.obj
+¦   ¦   ¦   ¦       ¦   clk_ctrl_os.c.obj
+¦   ¦   ¦   ¦       ¦   clk_utils.c.obj
+¦   ¦   ¦   ¦       ¦   cpu.c.obj
+¦   ¦   ¦   ¦       ¦   esp_clk.c.obj
+¦   ¦   ¦   ¦       ¦   esp_clock_output.c.obj
+¦   ¦   ¦   ¦       ¦   esp_gpio_reserve.c.obj
+¦   ¦   ¦   ¦       ¦   esp_memory_utils.c.obj
+¦   ¦   ¦   ¦       ¦   hw_random.c.obj
+¦   ¦   ¦   ¦       ¦   intr_alloc.c.obj
+¦   ¦   ¦   ¦       ¦   mac_addr.c.obj
+¦   ¦   ¦   ¦       ¦   mspi_timing_by_mspi_delay.c.obj
+¦   ¦   ¦   ¦       ¦   mspi_timing_tuning.c.obj
+¦   ¦   ¦   ¦       ¦   periph_ctrl.c.obj
+¦   ¦   ¦   ¦       ¦   regi2c_ctrl.c.obj
+¦   ¦   ¦   ¦       ¦   revision.c.obj
+¦   ¦   ¦   ¦       ¦   rtc_module.c.obj
+¦   ¦   ¦   ¦       ¦   sar_periph_ctrl_common.c.obj
+¦   ¦   ¦   ¦       ¦   sleep_console.c.obj
+¦   ¦   ¦   ¦       ¦   sleep_event.c.obj
+¦   ¦   ¦   ¦       ¦   sleep_gpio.c.obj
+¦   ¦   ¦   ¦       ¦   sleep_modem.c.obj
+¦   ¦   ¦   ¦       ¦   sleep_modes.c.obj
+¦   ¦   ¦   ¦       ¦   sleep_usb.c.obj
+¦   ¦   ¦   ¦       ¦   sleep_wake_stub.c.obj
+¦   ¦   ¦   ¦       ¦   spi_bus_lock.c.obj
+¦   ¦   ¦   ¦       ¦   spi_share_hw_ctrl.c.obj
+¦   ¦   ¦   ¦       ¦   
+¦   ¦   ¦   ¦       +---deprecated
+¦   ¦   ¦   ¦       ¦       gdma_legacy.c.obj
+¦   ¦   ¦   ¦       ¦       
+¦   ¦   ¦   ¦       +---dma
+¦   ¦   ¦   ¦       ¦       async_memcpy_gdma.c.obj
+¦   ¦   ¦   ¦       ¦       esp_async_memcpy.c.obj
+¦   ¦   ¦   ¦       ¦       esp_dma_utils.c.obj
+¦   ¦   ¦   ¦       ¦       gdma.c.obj
+¦   ¦   ¦   ¦       ¦       gdma_link.c.obj
+¦   ¦   ¦   ¦       ¦       
+¦   ¦   ¦   ¦       +---lowpower
+¦   ¦   ¦   ¦       ¦   +---port
+¦   ¦   ¦   ¦       ¦       +---esp32s3
+¦   ¦   ¦   ¦       ¦               sleep_cpu.c.obj
+¦   ¦   ¦   ¦       ¦               
+¦   ¦   ¦   ¦       +---port
+¦   ¦   ¦   ¦           ¦   esp_clk_tree_common.c.obj
+¦   ¦   ¦   ¦           ¦   esp_memprot_conv.c.obj
+¦   ¦   ¦   ¦           ¦   
+¦   ¦   ¦   ¦           +---esp32s3
+¦   ¦   ¦   ¦                   chip_info.c.obj
+¦   ¦   ¦   ¦                   cpu_region_protect.c.obj
+¦   ¦   ¦   ¦                   esp_clk_tree.c.obj
+¦   ¦   ¦   ¦                   esp_cpu_intr.c.obj
+¦   ¦   ¦   ¦                   esp_memprot.c.obj
+¦   ¦   ¦   ¦                   io_mux.c.obj
+¦   ¦   ¦   ¦                   mspi_timing_config.c.obj
+¦   ¦   ¦   ¦                   rtc_clk.c.obj
+¦   ¦   ¦   ¦                   rtc_clk_init.c.obj
+¦   ¦   ¦   ¦                   rtc_init.c.obj
+¦   ¦   ¦   ¦                   rtc_sleep.c.obj
+¦   ¦   ¦   ¦                   rtc_time.c.obj
+¦   ¦   ¦   ¦                   sar_periph_ctrl.c.obj
+¦   ¦   ¦   ¦                   systimer.c.obj
+¦   ¦   ¦   ¦                   
+¦   ¦   ¦   +---lowpower
+¦   ¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   +---port
+¦   ¦   ¦       +---esp32s3
+¦   ¦   ¦           ¦   cmake_install.cmake
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---CMakeFiles
+¦   ¦   +---esp_lcd
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_lcd.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_lcd.dir
+¦   ¦   ¦           +---i2c
+¦   ¦   ¦           ¦       esp_lcd_panel_io_i2c_v1.c.obj
+¦   ¦   ¦           ¦       esp_lcd_panel_io_i2c_v2.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---i80
+¦   ¦   ¦           ¦       esp_lcd_panel_io_i80.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---rgb
+¦   ¦   ¦           ¦       esp_lcd_panel_rgb.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---spi
+¦   ¦   ¦           ¦       esp_lcd_panel_io_spi.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   esp_lcd_common.c.obj
+¦   ¦   ¦                   esp_lcd_panel_io.c.obj
+¦   ¦   ¦                   esp_lcd_panel_nt35510.c.obj
+¦   ¦   ¦                   esp_lcd_panel_ops.c.obj
+¦   ¦   ¦                   esp_lcd_panel_ssd1306.c.obj
+¦   ¦   ¦                   esp_lcd_panel_st7789.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_local_ctrl
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_local_ctrl.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_local_ctrl.dir
+¦   ¦   ¦           +---proto-c
+¦   ¦   ¦           ¦       esp_local_ctrl.pb-c.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   esp_local_ctrl.c.obj
+¦   ¦   ¦                   esp_local_ctrl_handler.c.obj
+¦   ¦   ¦                   esp_local_ctrl_transport_httpd.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_mm
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_mm.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_mm.dir
+¦   ¦   ¦           ¦   esp_cache.c.obj
+¦   ¦   ¦           ¦   esp_mmu_map.c.obj
+¦   ¦   ¦           ¦   heap_align_hw.c.obj
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---port
+¦   ¦   ¦               +---esp32s3
+¦   ¦   ¦                       ext_mem_layout.c.obj
+¦   ¦   ¦                       
+¦   ¦   +---esp_netif
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_netif.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_netif.dir
+¦   ¦   ¦           ¦   esp_netif_defaults.c.obj
+¦   ¦   ¦           ¦   esp_netif_handlers.c.obj
+¦   ¦   ¦           ¦   esp_netif_objects.c.obj
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---lwip
+¦   ¦   ¦               ¦   esp_netif_lwip.c.obj
+¦   ¦   ¦               ¦   esp_netif_lwip_defaults.c.obj
+¦   ¦   ¦               ¦   esp_netif_sntp.c.obj
+¦   ¦   ¦               ¦   
+¦   ¦   ¦               +---netif
+¦   ¦   ¦                       esp_pbuf_ref.c.obj
+¦   ¦   ¦                       ethernetif.c.obj
+¦   ¦   ¦                       wlanif.c.obj
+¦   ¦   ¦                       
+¦   ¦   +---esp_netif_stack
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---esp_partition
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_partition.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_partition.dir
+¦   ¦   ¦               partition.c.obj
+¦   ¦   ¦               partition_target.c.obj
+¦   ¦   ¦               
+¦   ¦   +---esp_phy
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_phy.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_phy.dir
+¦   ¦   ¦           +---esp32s3
+¦   ¦   ¦           ¦       phy_init_data.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   btbb_init.c.obj
+¦   ¦   ¦                   lib_printf.c.obj
+¦   ¦   ¦                   phy_common.c.obj
+¦   ¦   ¦                   phy_init.c.obj
+¦   ¦   ¦                   phy_override.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_pm
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_pm.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_pm.dir
+¦   ¦   ¦               pm_impl.c.obj
+¦   ¦   ¦               pm_locks.c.obj
+¦   ¦   ¦               pm_trace.c.obj
+¦   ¦   ¦               
+¦   ¦   +---esp_psram
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_psram.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_psram.dir
+¦   ¦   ¦           ¦   esp_psram.c.obj
+¦   ¦   ¦           ¦   mmu_psram_flash.c.obj
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---esp32s3
+¦   ¦   ¦                   esp_psram_impl_octal.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_ringbuf
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_ringbuf.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_ringbuf.dir
+¦   ¦   ¦               ringbuf.c.obj
+¦   ¦   ¦               
+¦   ¦   +---esp_rom
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_rom.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_rom.dir
+¦   ¦   ¦           +---patches
+¦   ¦   ¦                   esp_rom_cache_esp32s2_esp32s3.c.obj
+¦   ¦   ¦                   esp_rom_cache_writeback_esp32s3.S.obj
+¦   ¦   ¦                   esp_rom_crc.c.obj
+¦   ¦   ¦                   esp_rom_efuse.c.obj
+¦   ¦   ¦                   esp_rom_gpio.c.obj
+¦   ¦   ¦                   esp_rom_longjmp.S.obj
+¦   ¦   ¦                   esp_rom_print.c.obj
+¦   ¦   ¦                   esp_rom_spiflash.c.obj
+¦   ¦   ¦                   esp_rom_sys.c.obj
+¦   ¦   ¦                   esp_rom_systimer.c.obj
+¦   ¦   ¦                   esp_rom_uart.c.obj
+¦   ¦   ¦                   esp_rom_wdt.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_security
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_security.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_security.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   esp_crypto_lock.c.obj
+¦   ¦   ¦                   esp_ds.c.obj
+¦   ¦   ¦                   esp_hmac.c.obj
+¦   ¦   ¦                   init.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_system
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_system.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦   +---__idf_esp_system.dir
+¦   ¦   ¦   ¦       ¦   crosscore_int.c.obj
+¦   ¦   ¦   ¦       ¦   esp_err.c.obj
+¦   ¦   ¦   ¦       ¦   esp_ipc.c.obj
+¦   ¦   ¦   ¦       ¦   esp_system.c.obj
+¦   ¦   ¦   ¦       ¦   freertos_hooks.c.obj
+¦   ¦   ¦   ¦       ¦   int_wdt.c.obj
+¦   ¦   ¦   ¦       ¦   panic.c.obj
+¦   ¦   ¦   ¦       ¦   stack_check.c.obj
+¦   ¦   ¦   ¦       ¦   startup.c.obj
+¦   ¦   ¦   ¦       ¦   startup_funcs.c.obj
+¦   ¦   ¦   ¦       ¦   system_time.c.obj
+¦   ¦   ¦   ¦       ¦   ubsan.c.obj
+¦   ¦   ¦   ¦       ¦   xt_wdt.c.obj
+¦   ¦   ¦   ¦       ¦   
+¦   ¦   ¦   ¦       +---port
+¦   ¦   ¦   ¦       ¦   ¦   brownout.c.obj
+¦   ¦   ¦   ¦       ¦   ¦   cpu_start.c.obj
+¦   ¦   ¦   ¦       ¦   ¦   esp_ipc_isr.c.obj
+¦   ¦   ¦   ¦       ¦   ¦   esp_system_chip.c.obj
+¦   ¦   ¦   ¦       ¦   ¦   image_process.c.obj
+¦   ¦   ¦   ¦       ¦   ¦   panic_handler.c.obj
+¦   ¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦   ¦       ¦   +---arch
+¦   ¦   ¦   ¦       ¦   ¦   +---xtensa
+¦   ¦   ¦   ¦       ¦   ¦           debug_helpers.c.obj
+¦   ¦   ¦   ¦       ¦   ¦           debug_helpers_asm.S.obj
+¦   ¦   ¦   ¦       ¦   ¦           debug_stubs.c.obj
+¦   ¦   ¦   ¦       ¦   ¦           esp_ipc_isr_handler.S.obj
+¦   ¦   ¦   ¦       ¦   ¦           esp_ipc_isr_port.c.obj
+¦   ¦   ¦   ¦       ¦   ¦           esp_ipc_isr_routines.S.obj
+¦   ¦   ¦   ¦       ¦   ¦           expression_with_stack.c.obj
+¦   ¦   ¦   ¦       ¦   ¦           expression_with_stack_asm.S.obj
+¦   ¦   ¦   ¦       ¦   ¦           panic_arch.c.obj
+¦   ¦   ¦   ¦       ¦   ¦           panic_handler_asm.S.obj
+¦   ¦   ¦   ¦       ¦   ¦           trax.c.obj
+¦   ¦   ¦   ¦       ¦   ¦           
+¦   ¦   ¦   ¦       ¦   +---soc
+¦   ¦   ¦   ¦       ¦       +---esp32s3
+¦   ¦   ¦   ¦       ¦               apb_backup_dma.c.obj
+¦   ¦   ¦   ¦       ¦               cache_err_int.c.obj
+¦   ¦   ¦   ¦       ¦               clk.c.obj
+¦   ¦   ¦   ¦       ¦               highint_hdl.S.obj
+¦   ¦   ¦   ¦       ¦               reset_reason.c.obj
+¦   ¦   ¦   ¦       ¦               system_internal.c.obj
+¦   ¦   ¦   ¦       ¦               
+¦   ¦   ¦   ¦       +---task_wdt
+¦   ¦   ¦   ¦               task_wdt.c.obj
+¦   ¦   ¦   ¦               task_wdt_impl_timergroup.c.obj
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---ld
+¦   ¦   ¦   ¦       linker_script_generator.cmake
+¦   ¦   ¦   ¦       memory.ld
+¦   ¦   ¦   ¦       sections.ld
+¦   ¦   ¦   ¦       sections.ld.in
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---port
+¦   ¦   ¦       ¦   cmake_install.cmake
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---CMakeFiles
+¦   ¦   ¦       +---soc
+¦   ¦   ¦           +---esp32s3
+¦   ¦   ¦               ¦   cmake_install.cmake
+¦   ¦   ¦               ¦   
+¦   ¦   ¦               +---CMakeFiles
+¦   ¦   +---esp_timer
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_timer.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_timer.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   esp_timer.c.obj
+¦   ¦   ¦                   esp_timer_impl_common.c.obj
+¦   ¦   ¦                   esp_timer_impl_systimer.c.obj
+¦   ¦   ¦                   esp_timer_init.c.obj
+¦   ¦   ¦                   ets_timer_legacy.c.obj
+¦   ¦   ¦                   system_time.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---esp_vfs_console
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_vfs_console.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_vfs_console.dir
+¦   ¦   ¦               vfs_console.c.obj
+¦   ¦   ¦               
+¦   ¦   +---esp_wifi
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libesp_wifi.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_esp_wifi.dir
+¦   ¦   ¦           +---esp32s3
+¦   ¦   ¦           ¦       esp_adapter.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   lib_printf.c.obj
+¦   ¦   ¦                   mesh_event.c.obj
+¦   ¦   ¦                   smartconfig.c.obj
+¦   ¦   ¦                   smartconfig_ack.c.obj
+¦   ¦   ¦                   wifi_default.c.obj
+¦   ¦   ¦                   wifi_default_ap.c.obj
+¦   ¦   ¦                   wifi_init.c.obj
+¦   ¦   ¦                   wifi_netif.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---fatfs
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libfatfs.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_fatfs.dir
+¦   ¦   ¦           +---diskio
+¦   ¦   ¦           ¦       diskio.c.obj
+¦   ¦   ¦           ¦       diskio_rawflash.c.obj
+¦   ¦   ¦           ¦       diskio_sdmmc.c.obj
+¦   ¦   ¦           ¦       diskio_wl.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---port
+¦   ¦   ¦           ¦   +---freertos
+¦   ¦   ¦           ¦           ffsystem.c.obj
+¦   ¦   ¦           ¦           
+¦   ¦   ¦           +---src
+¦   ¦   ¦           ¦       ff.c.obj
+¦   ¦   ¦           ¦       ffunicode.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---vfs
+¦   ¦   ¦                   vfs_fat.c.obj
+¦   ¦   ¦                   vfs_fat_sdmmc.c.obj
+¦   ¦   ¦                   vfs_fat_spiflash.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---freertos
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libfreertos.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_freertos.dir
+¦   ¦   ¦           ¦   app_startup.c.obj
+¦   ¦   ¦           ¦   heap_idf.c.obj
+¦   ¦   ¦           ¦   port_common.c.obj
+¦   ¦   ¦           ¦   port_systick.c.obj
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---esp_additions
+¦   ¦   ¦           ¦       freertos_compatibility.c.obj
+¦   ¦   ¦           ¦       idf_additions.c.obj
+¦   ¦   ¦           ¦       idf_additions_event_groups.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---FreeRTOS-Kernel
+¦   ¦   ¦               ¦   event_groups.c.obj
+¦   ¦   ¦               ¦   list.c.obj
+¦   ¦   ¦               ¦   queue.c.obj
+¦   ¦   ¦               ¦   stream_buffer.c.obj
+¦   ¦   ¦               ¦   tasks.c.obj
+¦   ¦   ¦               ¦   timers.c.obj
+¦   ¦   ¦               ¦   
+¦   ¦   ¦               +---portable
+¦   ¦   ¦                   +---xtensa
+¦   ¦   ¦                           port.c.obj
+¦   ¦   ¦                           portasm.S.obj
+¦   ¦   ¦                           xtensa_init.c.obj
+¦   ¦   ¦                           xtensa_overlay_os_hook.c.obj
+¦   ¦   ¦                           
+¦   ¦   +---hal
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libhal.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_hal.dir
+¦   ¦   ¦           ¦   adc_hal.c.obj
+¦   ¦   ¦           ¦   adc_hal_common.c.obj
+¦   ¦   ¦           ¦   adc_oneshot_hal.c.obj
+¦   ¦   ¦           ¦   aes_hal.c.obj
+¦   ¦   ¦           ¦   brownout_hal.c.obj
+¦   ¦   ¦           ¦   cache_hal.c.obj
+¦   ¦   ¦           ¦   color_hal.c.obj
+¦   ¦   ¦           ¦   ds_hal.c.obj
+¦   ¦   ¦           ¦   efuse_hal.c.obj
+¦   ¦   ¦           ¦   gdma_hal_ahb_v1.c.obj
+¦   ¦   ¦           ¦   gdma_hal_top.c.obj
+¦   ¦   ¦           ¦   gpio_hal.c.obj
+¦   ¦   ¦           ¦   hal_utils.c.obj
+¦   ¦   ¦           ¦   hmac_hal.c.obj
+¦   ¦   ¦           ¦   i2c_hal.c.obj
+¦   ¦   ¦           ¦   i2c_hal_iram.c.obj
+¦   ¦   ¦           ¦   i2s_hal.c.obj
+¦   ¦   ¦           ¦   lcd_hal.c.obj
+¦   ¦   ¦           ¦   ledc_hal.c.obj
+¦   ¦   ¦           ¦   ledc_hal_iram.c.obj
+¦   ¦   ¦           ¦   mcpwm_hal.c.obj
+¦   ¦   ¦           ¦   mmu_hal.c.obj
+¦   ¦   ¦           ¦   mpi_hal.c.obj
+¦   ¦   ¦           ¦   mpu_hal.c.obj
+¦   ¦   ¦           ¦   pcnt_hal.c.obj
+¦   ¦   ¦           ¦   rmt_hal.c.obj
+¦   ¦   ¦           ¦   rtc_io_hal.c.obj
+¦   ¦   ¦           ¦   sdmmc_hal.c.obj
+¦   ¦   ¦           ¦   sdm_hal.c.obj
+¦   ¦   ¦           ¦   sha_hal.c.obj
+¦   ¦   ¦           ¦   spi_flash_encrypt_hal_iram.c.obj
+¦   ¦   ¦           ¦   spi_flash_hal.c.obj
+¦   ¦   ¦           ¦   spi_flash_hal_gpspi.c.obj
+¦   ¦   ¦           ¦   spi_flash_hal_iram.c.obj
+¦   ¦   ¦           ¦   spi_hal.c.obj
+¦   ¦   ¦           ¦   spi_hal_iram.c.obj
+¦   ¦   ¦           ¦   spi_slave_hal.c.obj
+¦   ¦   ¦           ¦   spi_slave_hal_iram.c.obj
+¦   ¦   ¦           ¦   spi_slave_hd_hal.c.obj
+¦   ¦   ¦           ¦   systimer_hal.c.obj
+¦   ¦   ¦           ¦   timer_hal.c.obj
+¦   ¦   ¦           ¦   touch_sensor_hal.c.obj
+¦   ¦   ¦           ¦   twai_hal.c.obj
+¦   ¦   ¦           ¦   twai_hal_iram.c.obj
+¦   ¦   ¦           ¦   uart_hal.c.obj
+¦   ¦   ¦           ¦   uart_hal_iram.c.obj
+¦   ¦   ¦           ¦   usb_dwc_hal.c.obj
+¦   ¦   ¦           ¦   usb_serial_jtag_hal.c.obj
+¦   ¦   ¦           ¦   usb_wrap_hal.c.obj
+¦   ¦   ¦           ¦   xt_wdt_hal.c.obj
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---esp32s3
+¦   ¦   ¦                   clk_tree_hal.c.obj
+¦   ¦   ¦                   efuse_hal.c.obj
+¦   ¦   ¦                   rtc_cntl_hal.c.obj
+¦   ¦   ¦                   touch_sensor_hal.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---heap
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libheap.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_heap.dir
+¦   ¦   ¦           ¦   heap_caps.c.obj
+¦   ¦   ¦           ¦   heap_caps_base.c.obj
+¦   ¦   ¦           ¦   heap_caps_init.c.obj
+¦   ¦   ¦           ¦   multi_heap.c.obj
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---port
+¦   ¦   ¦           ¦   ¦   memory_layout_utils.c.obj
+¦   ¦   ¦           ¦   ¦   
+¦   ¦   ¦           ¦   +---esp32s3
+¦   ¦   ¦           ¦           memory_layout.c.obj
+¦   ¦   ¦           ¦           
+¦   ¦   ¦           +---tlsf
+¦   ¦   ¦                   tlsf.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---http_parser
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libhttp_parser.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_http_parser.dir
+¦   ¦   ¦               http_parser.c.obj
+¦   ¦   ¦               
+¦   ¦   +---idf_test
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---ieee802154
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---json
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libjson.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_json.dir
+¦   ¦   ¦           +---cJSON
+¦   ¦   ¦                   cJSON.c.obj
+¦   ¦   ¦                   cJSON_Utils.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---kws
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libkws.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_kws.dir
+¦   ¦   ¦               kws_detect.c.obj
+¦   ¦   ¦               kws_feat.c.obj
+¦   ¦   ¦               nn.c.obj
+¦   ¦   ¦               
+¦   ¦   +---log
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   liblog.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_log.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦               ¦   log_timestamp_common.c.obj
+¦   ¦   ¦               ¦   util.c.obj
+¦   ¦   ¦               ¦   
+¦   ¦   ¦               +---buffer
+¦   ¦   ¦               ¦       log_buffers.c.obj
+¦   ¦   ¦               ¦       
+¦   ¦   ¦               +---log_level
+¦   ¦   ¦               ¦   ¦   log_level.c.obj
+¦   ¦   ¦               ¦   ¦   
+¦   ¦   ¦               ¦   +---tag_log_level
+¦   ¦   ¦               ¦       ¦   tag_log_level.c.obj
+¦   ¦   ¦               ¦       ¦   
+¦   ¦   ¦               ¦       +---cache
+¦   ¦   ¦               ¦       ¦       log_binary_heap.c.obj
+¦   ¦   ¦               ¦       ¦       
+¦   ¦   ¦               ¦       +---linked_list
+¦   ¦   ¦               ¦               log_linked_list.c.obj
+¦   ¦   ¦               ¦               
+¦   ¦   ¦               +---os
+¦   ¦   ¦                       log_lock.c.obj
+¦   ¦   ¦                       log_timestamp.c.obj
+¦   ¦   ¦                       log_write.c.obj
+¦   ¦   ¦                       
+¦   ¦   +---lwip
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   liblwip.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_lwip.dir
+¦   ¦   ¦           +---apps
+¦   ¦   ¦           ¦   +---dhcpserver
+¦   ¦   ¦           ¦   ¦       dhcpserver.c.obj
+¦   ¦   ¦           ¦   ¦       
+¦   ¦   ¦           ¦   +---ping
+¦   ¦   ¦           ¦   ¦       esp_ping.c.obj
+¦   ¦   ¦           ¦   ¦       ping.c.obj
+¦   ¦   ¦           ¦   ¦       ping_sock.c.obj
+¦   ¦   ¦           ¦   ¦       
+¦   ¦   ¦           ¦   +---sntp
+¦   ¦   ¦           ¦           sntp.c.obj
+¦   ¦   ¦           ¦           
+¦   ¦   ¦           +---lwip
+¦   ¦   ¦           ¦   +---src
+¦   ¦   ¦           ¦       +---api
+¦   ¦   ¦           ¦       ¦       api_lib.c.obj
+¦   ¦   ¦           ¦       ¦       api_msg.c.obj
+¦   ¦   ¦           ¦       ¦       err.c.obj
+¦   ¦   ¦           ¦       ¦       if_api.c.obj
+¦   ¦   ¦           ¦       ¦       netbuf.c.obj
+¦   ¦   ¦           ¦       ¦       netdb.c.obj
+¦   ¦   ¦           ¦       ¦       netifapi.c.obj
+¦   ¦   ¦           ¦       ¦       sockets.c.obj
+¦   ¦   ¦           ¦       ¦       tcpip.c.obj
+¦   ¦   ¦           ¦       ¦       
+¦   ¦   ¦           ¦       +---apps
+¦   ¦   ¦           ¦       ¦   +---netbiosns
+¦   ¦   ¦           ¦       ¦   ¦       netbiosns.c.obj
+¦   ¦   ¦           ¦       ¦   ¦       
+¦   ¦   ¦           ¦       ¦   +---sntp
+¦   ¦   ¦           ¦       ¦           sntp.c.obj
+¦   ¦   ¦           ¦       ¦           
+¦   ¦   ¦           ¦       +---core
+¦   ¦   ¦           ¦       ¦   ¦   def.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   dns.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   inet_chksum.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   init.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   ip.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   mem.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   memp.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   netif.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   pbuf.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   raw.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   stats.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   sys.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   tcp.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   tcp_in.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   tcp_out.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   timeouts.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   udp.c.obj
+¦   ¦   ¦           ¦       ¦   ¦   
+¦   ¦   ¦           ¦       ¦   +---ipv4
+¦   ¦   ¦           ¦       ¦   ¦       autoip.c.obj
+¦   ¦   ¦           ¦       ¦   ¦       dhcp.c.obj
+¦   ¦   ¦           ¦       ¦   ¦       etharp.c.obj
+¦   ¦   ¦           ¦       ¦   ¦       icmp.c.obj
+¦   ¦   ¦           ¦       ¦   ¦       igmp.c.obj
+¦   ¦   ¦           ¦       ¦   ¦       ip4.c.obj
+¦   ¦   ¦           ¦       ¦   ¦       ip4_addr.c.obj
+¦   ¦   ¦           ¦       ¦   ¦       ip4_frag.c.obj
+¦   ¦   ¦           ¦       ¦   ¦       ip4_napt.c.obj
+¦   ¦   ¦           ¦       ¦   ¦       
+¦   ¦   ¦           ¦       ¦   +---ipv6
+¦   ¦   ¦           ¦       ¦           dhcp6.c.obj
+¦   ¦   ¦           ¦       ¦           ethip6.c.obj
+¦   ¦   ¦           ¦       ¦           icmp6.c.obj
+¦   ¦   ¦           ¦       ¦           inet6.c.obj
+¦   ¦   ¦           ¦       ¦           ip6.c.obj
+¦   ¦   ¦           ¦       ¦           ip6_addr.c.obj
+¦   ¦   ¦           ¦       ¦           ip6_frag.c.obj
+¦   ¦   ¦           ¦       ¦           mld6.c.obj
+¦   ¦   ¦           ¦       ¦           nd6.c.obj
+¦   ¦   ¦           ¦       ¦           
+¦   ¦   ¦           ¦       +---netif
+¦   ¦   ¦           ¦           ¦   bridgeif.c.obj
+¦   ¦   ¦           ¦           ¦   bridgeif_fdb.c.obj
+¦   ¦   ¦           ¦           ¦   ethernet.c.obj
+¦   ¦   ¦           ¦           ¦   slipif.c.obj
+¦   ¦   ¦           ¦           ¦   
+¦   ¦   ¦           ¦           +---ppp
+¦   ¦   ¦           ¦               ¦   auth.c.obj
+¦   ¦   ¦           ¦               ¦   ccp.c.obj
+¦   ¦   ¦           ¦               ¦   chap-md5.c.obj
+¦   ¦   ¦           ¦               ¦   chap-new.c.obj
+¦   ¦   ¦           ¦               ¦   chap_ms.c.obj
+¦   ¦   ¦           ¦               ¦   demand.c.obj
+¦   ¦   ¦           ¦               ¦   eap.c.obj
+¦   ¦   ¦           ¦               ¦   ecp.c.obj
+¦   ¦   ¦           ¦               ¦   eui64.c.obj
+¦   ¦   ¦           ¦               ¦   fsm.c.obj
+¦   ¦   ¦           ¦               ¦   ipcp.c.obj
+¦   ¦   ¦           ¦               ¦   ipv6cp.c.obj
+¦   ¦   ¦           ¦               ¦   lcp.c.obj
+¦   ¦   ¦           ¦               ¦   magic.c.obj
+¦   ¦   ¦           ¦               ¦   mppe.c.obj
+¦   ¦   ¦           ¦               ¦   multilink.c.obj
+¦   ¦   ¦           ¦               ¦   ppp.c.obj
+¦   ¦   ¦           ¦               ¦   pppapi.c.obj
+¦   ¦   ¦           ¦               ¦   pppcrypt.c.obj
+¦   ¦   ¦           ¦               ¦   pppoe.c.obj
+¦   ¦   ¦           ¦               ¦   pppol2tp.c.obj
+¦   ¦   ¦           ¦               ¦   pppos.c.obj
+¦   ¦   ¦           ¦               ¦   upap.c.obj
+¦   ¦   ¦           ¦               ¦   utils.c.obj
+¦   ¦   ¦           ¦               ¦   vj.c.obj
+¦   ¦   ¦           ¦               ¦   
+¦   ¦   ¦           ¦               +---polarssl
+¦   ¦   ¦           ¦                       arc4.c.obj
+¦   ¦   ¦           ¦                       des.c.obj
+¦   ¦   ¦           ¦                       md4.c.obj
+¦   ¦   ¦           ¦                       md5.c.obj
+¦   ¦   ¦           ¦                       sha1.c.obj
+¦   ¦   ¦           ¦                       
+¦   ¦   ¦           +---port
+¦   ¦   ¦               ¦   acd_dhcp_check.c.obj
+¦   ¦   ¦               ¦   sockets_ext.c.obj
+¦   ¦   ¦               ¦   
+¦   ¦   ¦               +---debug
+¦   ¦   ¦               ¦       lwip_debug.c.obj
+¦   ¦   ¦               ¦       
+¦   ¦   ¦               +---esp32xx
+¦   ¦   ¦               ¦       vfs_lwip.c.obj
+¦   ¦   ¦               ¦       
+¦   ¦   ¦               +---freertos
+¦   ¦   ¦               ¦       sys_arch.c.obj
+¦   ¦   ¦               ¦       
+¦   ¦   ¦               +---hooks
+¦   ¦   ¦                       lwip_default_hooks.c.obj
+¦   ¦   ¦                       tcp_isn_default.c.obj
+¦   ¦   ¦                       
+¦   ¦   +---main
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libmain.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_main.dir
+¦   ¦   ¦               audio.c.obj
+¦   ¦   ¦               audio_net.c.obj
+¦   ¦   ¦               main.c.obj
+¦   ¦   ¦               mic.c.obj
+¦   ¦   ¦               net.c.obj
+¦   ¦   ¦               vsproto.c.obj
+¦   ¦   ¦               vs_app.c.obj
+¦   ¦   ¦               vs_session.c.obj
+¦   ¦   ¦               wake.c.obj
+¦   ¦   ¦               xvf3800.c.obj
+¦   ¦   ¦               
+¦   ¦   +---mbedtls
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libmbedtls.a
+¦   ¦   ¦   ¦   x509_crt_bundle
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦   +---__idf_mbedtls.dir
+¦   ¦   ¦   ¦       +---esp_crt_bundle
+¦   ¦   ¦   ¦       ¦       esp_crt_bundle.c.obj
+¦   ¦   ¦   ¦       ¦       
+¦   ¦   ¦   ¦       +---__
+¦   ¦   ¦   ¦           +---__
+¦   ¦   ¦   ¦                   x509_crt_bundle.S.obj
+¦   ¦   ¦   ¦                   
+¦   ¦   ¦   +---mbedtls
+¦   ¦   ¦       ¦   cmake_install.cmake
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---3rdparty
+¦   ¦   ¦       ¦   ¦   cmake_install.cmake
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---CMakeFiles
+¦   ¦   ¦       ¦   +---everest
+¦   ¦   ¦       ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦       ¦   ¦   ¦   libeverest.a
+¦   ¦   ¦       ¦   ¦   ¦   
+¦   ¦   ¦       ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       ¦   ¦       +---everest.dir
+¦   ¦   ¦       ¦   ¦           +---library
+¦   ¦   ¦       ¦   ¦                   everest.c.obj
+¦   ¦   ¦       ¦   ¦                   Hacl_Curve25519_joined.c.obj
+¦   ¦   ¦       ¦   ¦                   x25519.c.obj
+¦   ¦   ¦       ¦   ¦                   
+¦   ¦   ¦       ¦   +---p256-m
+¦   ¦   ¦       ¦       ¦   cmake_install.cmake
+¦   ¦   ¦       ¦       ¦   libp256m.a
+¦   ¦   ¦       ¦       ¦   
+¦   ¦   ¦       ¦       +---CMakeFiles
+¦   ¦   ¦       ¦           +---p256m.dir
+¦   ¦   ¦       ¦               ¦   p256-m_driver_entrypoints.c.obj
+¦   ¦   ¦       ¦               ¦   
+¦   ¦   ¦       ¦               +---p256-m
+¦   ¦   ¦       ¦                       p256-m.c.obj
+¦   ¦   ¦       ¦                       
+¦   ¦   ¦       +---CMakeFiles
+¦   ¦   ¦       +---include
+¦   ¦   ¦       ¦   ¦   cmake_install.cmake
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---CMakeFiles
+¦   ¦   ¦       +---library
+¦   ¦   ¦       ¦   ¦   cmake_install.cmake
+¦   ¦   ¦       ¦   ¦   error.c
+¦   ¦   ¦       ¦   ¦   libmbedcrypto.a
+¦   ¦   ¦       ¦   ¦   libmbedtls.a
+¦   ¦   ¦       ¦   ¦   libmbedx509.a
+¦   ¦   ¦       ¦   ¦   psa_crypto_driver_wrappers_no_static.c
+¦   ¦   ¦       ¦   ¦   ssl_debug_helpers_generated.c
+¦   ¦   ¦       ¦   ¦   version_features.c
+¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦       ¦   +---CMakeFiles
+¦   ¦   ¦       ¦       +---mbedcrypto.dir
+¦   ¦   ¦       ¦       ¦   ¦   aes.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   aesce.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   aesni.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   aria.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   asn1parse.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   asn1write.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   base64.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   bignum.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   bignum_core.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   bignum_mod.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   bignum_mod_raw.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   block_cipher.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   camellia.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ccm.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   chacha20.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   chachapoly.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   cipher.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   cipher_wrap.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   cmac.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   constant_time.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ctr_drbg.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   des.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   dhm.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ecdh.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ecdsa.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ecjpake.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ecp.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ecp_curves.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ecp_curves_new.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   entropy.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   entropy_poll.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   error.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   gcm.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   hkdf.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   hmac_drbg.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   lmots.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   lms.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   md.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   md5.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   memory_buffer_alloc.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   nist_kw.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   oid.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   padlock.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   pem.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   pk.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   pkcs12.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   pkcs5.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   pkparse.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   pkwrite.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   pk_ecc.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   pk_wrap.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   platform.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   platform_util.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   poly1305.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   psa_crypto.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   psa_crypto_aead.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   psa_crypto_cipher.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   psa_crypto_client.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   psa_crypto_driver_wrappers_no_static.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   psa_crypto_ecp.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   psa_crypto_ffdh.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   psa_crypto_hash.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   psa_crypto_mac.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   psa_crypto_pake.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   psa_crypto_rsa.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   psa_crypto_se.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   psa_crypto_slot_management.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   psa_crypto_storage.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   psa_its_file.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   psa_util.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ripemd160.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   rsa.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   rsa_alt_helpers.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   sha1.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   sha256.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   sha3.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   sha512.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   threading.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   timing.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   version.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   version_features.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   
+¦   ¦   ¦       ¦       ¦   +---E_
+¦   ¦   ¦       ¦       ¦       +---Projects
+¦   ¦   ¦       ¦       ¦           +---dev
+¦   ¦   ¦       ¦       ¦               +---esp-idf
+¦   ¦   ¦       ¦       ¦                   +---components
+¦   ¦   ¦       ¦       ¦                       +---mbedtls
+¦   ¦   ¦       ¦       ¦                           +---port
+¦   ¦   ¦       ¦       ¦                               ¦   esp_hardware.c.obj
+¦   ¦   ¦       ¦       ¦                               ¦   esp_mem.c.obj
+¦   ¦   ¦       ¦       ¦                               ¦   esp_timing.c.obj
+¦   ¦   ¦       ¦       ¦                               ¦   
+¦   ¦   ¦       ¦       ¦                               +---aes
+¦   ¦   ¦       ¦       ¦                               ¦   ¦   esp_aes_common.c.obj
+¦   ¦   ¦       ¦       ¦                               ¦   ¦   esp_aes_gcm.c.obj
+¦   ¦   ¦       ¦       ¦                               ¦   ¦   esp_aes_xts.c.obj
+¦   ¦   ¦       ¦       ¦                               ¦   ¦   
+¦   ¦   ¦       ¦       ¦                               ¦   +---dma
+¦   ¦   ¦       ¦       ¦                               ¦           esp_aes.c.obj
+¦   ¦   ¦       ¦       ¦                               ¦           esp_aes_dma_core.c.obj
+¦   ¦   ¦       ¦       ¦                               ¦           esp_aes_gdma_impl.c.obj
+¦   ¦   ¦       ¦       ¦                               ¦           
+¦   ¦   ¦       ¦       ¦                               +---bignum
+¦   ¦   ¦       ¦       ¦                               ¦       bignum_alt.c.obj
+¦   ¦   ¦       ¦       ¦                               ¦       esp_bignum.c.obj
+¦   ¦   ¦       ¦       ¦                               ¦       
+¦   ¦   ¦       ¦       ¦                               +---crypto_shared_gdma
+¦   ¦   ¦       ¦       ¦                               ¦       esp_crypto_shared_gdma.c.obj
+¦   ¦   ¦       ¦       ¦                               ¦       
+¦   ¦   ¦       ¦       ¦                               +---esp_ds
+¦   ¦   ¦       ¦       ¦                               ¦       esp_rsa_sign_alt.c.obj
+¦   ¦   ¦       ¦       ¦                               ¦       
+¦   ¦   ¦       ¦       ¦                               +---md
+¦   ¦   ¦       ¦       ¦                               ¦       esp_md.c.obj
+¦   ¦   ¦       ¦       ¦                               ¦       
+¦   ¦   ¦       ¦       ¦                               +---sha
+¦   ¦   ¦       ¦       ¦                                   ¦   esp_sha.c.obj
+¦   ¦   ¦       ¦       ¦                                   ¦   
+¦   ¦   ¦       ¦       ¦                                   +---dma
+¦   ¦   ¦       ¦       ¦                                           esp_sha1.c.obj
+¦   ¦   ¦       ¦       ¦                                           esp_sha256.c.obj
+¦   ¦   ¦       ¦       ¦                                           esp_sha512.c.obj
+¦   ¦   ¦       ¦       ¦                                           esp_sha_gdma_impl.c.obj
+¦   ¦   ¦       ¦       ¦                                           sha.c.obj
+¦   ¦   ¦       ¦       ¦                                           
+¦   ¦   ¦       ¦       +---mbedtls.dir
+¦   ¦   ¦       ¦       ¦   ¦   debug.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   mps_reader.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   mps_trace.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ssl_cache.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ssl_ciphersuites.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ssl_client.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ssl_cookie.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ssl_debug_helpers_generated.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ssl_msg.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ssl_ticket.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ssl_tls.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ssl_tls12_client.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ssl_tls12_server.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ssl_tls13_client.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ssl_tls13_generic.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ssl_tls13_keys.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   ssl_tls13_server.c.obj
+¦   ¦   ¦       ¦       ¦   ¦   
+¦   ¦   ¦       ¦       ¦   +---E_
+¦   ¦   ¦       ¦       ¦       +---Projects
+¦   ¦   ¦       ¦       ¦           +---dev
+¦   ¦   ¦       ¦       ¦               +---esp-idf
+¦   ¦   ¦       ¦       ¦                   +---components
+¦   ¦   ¦       ¦       ¦                       +---mbedtls
+¦   ¦   ¦       ¦       ¦                           +---port
+¦   ¦   ¦       ¦       ¦                                   esp_platform_time.c.obj
+¦   ¦   ¦       ¦       ¦                                   mbedtls_debug.c.obj
+¦   ¦   ¦       ¦       ¦                                   net_sockets.c.obj
+¦   ¦   ¦       ¦       ¦                                   
+¦   ¦   ¦       ¦       +---mbedx509.dir
+¦   ¦   ¦       ¦               pkcs7.c.obj
+¦   ¦   ¦       ¦               x509.c.obj
+¦   ¦   ¦       ¦               x509write.c.obj
+¦   ¦   ¦       ¦               x509write_crt.c.obj
+¦   ¦   ¦       ¦               x509write_csr.c.obj
+¦   ¦   ¦       ¦               x509_create.c.obj
+¦   ¦   ¦       ¦               x509_crl.c.obj
+¦   ¦   ¦       ¦               x509_crt.c.obj
+¦   ¦   ¦       ¦               x509_csr.c.obj
+¦   ¦   ¦       ¦               
+¦   ¦   ¦       +---pkgconfig
+¦   ¦   ¦           ¦   cmake_install.cmake
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---CMakeFiles
+¦   ¦   +---mqtt
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libmqtt.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_mqtt.dir
+¦   ¦   ¦           +---esp-mqtt
+¦   ¦   ¦               ¦   mqtt_client.c.obj
+¦   ¦   ¦               ¦   
+¦   ¦   ¦               +---lib
+¦   ¦   ¦                       mqtt_msg.c.obj
+¦   ¦   ¦                       mqtt_outbox.c.obj
+¦   ¦   ¦                       platform_esp32_idf.c.obj
+¦   ¦   ¦                       
+¦   ¦   +---newlib
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libnewlib.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦   ¦   +---__idf_newlib.dir
+¦   ¦   ¦   ¦       ¦   abort.c.obj
+¦   ¦   ¦   ¦       ¦   assert.c.obj
+¦   ¦   ¦   ¦       ¦   flockfile.c.obj
+¦   ¦   ¦   ¦       ¦   getentropy.c.obj
+¦   ¦   ¦   ¦       ¦   heap.c.obj
+¦   ¦   ¦   ¦       ¦   locks.c.obj
+¦   ¦   ¦   ¦       ¦   newlib_init.c.obj
+¦   ¦   ¦   ¦       ¦   poll.c.obj
+¦   ¦   ¦   ¦       ¦   pthread.c.obj
+¦   ¦   ¦   ¦       ¦   random.c.obj
+¦   ¦   ¦   ¦       ¦   realpath.c.obj
+¦   ¦   ¦   ¦       ¦   reent_init.c.obj
+¦   ¦   ¦   ¦       ¦   scandir.c.obj
+¦   ¦   ¦   ¦       ¦   stdatomic.c.obj
+¦   ¦   ¦   ¦       ¦   syscalls.c.obj
+¦   ¦   ¦   ¦       ¦   sysconf.c.obj
+¦   ¦   ¦   ¦       ¦   termios.c.obj
+¦   ¦   ¦   ¦       ¦   time.c.obj
+¦   ¦   ¦   ¦       ¦   
+¦   ¦   ¦   ¦       +---port
+¦   ¦   ¦   ¦           ¦   esp_time_impl.c.obj
+¦   ¦   ¦   ¦           ¦   
+¦   ¦   ¦   ¦           +---xtensa
+¦   ¦   ¦   ¦                   stdatomic_s32c1i.c.obj
+¦   ¦   ¦   ¦                   
+¦   ¦   ¦   +---port
+¦   ¦   ¦       ¦   cmake_install.cmake
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---CMakeFiles
+¦   ¦   +---nvs_flash
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libnvs_flash.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_nvs_flash.dir
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   nvs_api.cpp.obj
+¦   ¦   ¦                   nvs_bootloader.c.obj
+¦   ¦   ¦                   nvs_cxx_api.cpp.obj
+¦   ¦   ¦                   nvs_encrypted_partition.cpp.obj
+¦   ¦   ¦                   nvs_handle_locked.cpp.obj
+¦   ¦   ¦                   nvs_handle_simple.cpp.obj
+¦   ¦   ¦                   nvs_item_hash_list.cpp.obj
+¦   ¦   ¦                   nvs_page.cpp.obj
+¦   ¦   ¦                   nvs_pagemanager.cpp.obj
+¦   ¦   ¦                   nvs_partition.cpp.obj
+¦   ¦   ¦                   nvs_partition_lookup.cpp.obj
+¦   ¦   ¦                   nvs_partition_manager.cpp.obj
+¦   ¦   ¦                   nvs_platform.cpp.obj
+¦   ¦   ¦                   nvs_storage.cpp.obj
+¦   ¦   ¦                   nvs_types.cpp.obj
+¦   ¦   ¦                   
+¦   ¦   +---nvs_sec_provider
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libnvs_sec_provider.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_nvs_sec_provider.dir
+¦   ¦   ¦               nvs_sec_provider.c.obj
+¦   ¦   ¦               
+¦   ¦   +---openthread
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---partition_table
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   partition-table-flash_args.in
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---perfmon
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libperfmon.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_perfmon.dir
+¦   ¦   ¦               xtensa_perfmon_access.c.obj
+¦   ¦   ¦               xtensa_perfmon_apis.c.obj
+¦   ¦   ¦               xtensa_perfmon_masks.c.obj
+¦   ¦   ¦               
+¦   ¦   +---protobuf-c
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libprotobuf-c.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_protobuf-c.dir
+¦   ¦   ¦           +---protobuf-c
+¦   ¦   ¦               +---protobuf-c
+¦   ¦   ¦                       protobuf-c.c.obj
+¦   ¦   ¦                       
+¦   ¦   +---protocomm
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libprotocomm.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_protocomm.dir
+¦   ¦   ¦           +---proto-c
+¦   ¦   ¦           ¦       constants.pb-c.c.obj
+¦   ¦   ¦           ¦       sec0.pb-c.c.obj
+¦   ¦   ¦           ¦       sec1.pb-c.c.obj
+¦   ¦   ¦           ¦       sec2.pb-c.c.obj
+¦   ¦   ¦           ¦       session.pb-c.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---src
+¦   ¦   ¦               +---common
+¦   ¦   ¦               ¦       protocomm.c.obj
+¦   ¦   ¦               ¦       
+¦   ¦   ¦               +---crypto
+¦   ¦   ¦               ¦   +---srp6a
+¦   ¦   ¦               ¦           esp_srp.c.obj
+¦   ¦   ¦               ¦           esp_srp_mpi.c.obj
+¦   ¦   ¦               ¦           
+¦   ¦   ¦               +---security
+¦   ¦   ¦               ¦       security0.c.obj
+¦   ¦   ¦               ¦       security1.c.obj
+¦   ¦   ¦               ¦       security2.c.obj
+¦   ¦   ¦               ¦       
+¦   ¦   ¦               +---transports
+¦   ¦   ¦                       protocomm_console.c.obj
+¦   ¦   ¦                       protocomm_httpd.c.obj
+¦   ¦   ¦                       
+¦   ¦   +---pthread
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libpthread.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_pthread.dir
+¦   ¦   ¦               pthread.c.obj
+¦   ¦   ¦               pthread_cond_var.c.obj
+¦   ¦   ¦               pthread_local_storage.c.obj
+¦   ¦   ¦               pthread_rwlock.c.obj
+¦   ¦   ¦               pthread_semaphore.c.obj
+¦   ¦   ¦               
+¦   ¦   +---rt
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   librt.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_rt.dir
+¦   ¦   ¦               FreeRTOS_POSIX_mqueue.c.obj
+¦   ¦   ¦               FreeRTOS_POSIX_utils.c.obj
+¦   ¦   ¦               
+¦   ¦   +---sdmmc
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libsdmmc.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_sdmmc.dir
+¦   ¦   ¦           ¦   sdmmc_cmd.c.obj
+¦   ¦   ¦           ¦   sdmmc_common.c.obj
+¦   ¦   ¦           ¦   sdmmc_init.c.obj
+¦   ¦   ¦           ¦   sdmmc_io.c.obj
+¦   ¦   ¦           ¦   sdmmc_mmc.c.obj
+¦   ¦   ¦           ¦   sdmmc_sd.c.obj
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---sd_pwr_ctrl
+¦   ¦   ¦                   sd_pwr_ctrl.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---soc
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libsoc.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_soc.dir
+¦   ¦   ¦           ¦   dport_access_common.c.obj
+¦   ¦   ¦           ¦   lldesc.c.obj
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---esp32s3
+¦   ¦   ¦                   adc_periph.c.obj
+¦   ¦   ¦                   dedic_gpio_periph.c.obj
+¦   ¦   ¦                   gdma_periph.c.obj
+¦   ¦   ¦                   gpio_periph.c.obj
+¦   ¦   ¦                   i2c_periph.c.obj
+¦   ¦   ¦                   i2s_periph.c.obj
+¦   ¦   ¦                   interrupts.c.obj
+¦   ¦   ¦                   lcd_periph.c.obj
+¦   ¦   ¦                   ledc_periph.c.obj
+¦   ¦   ¦                   mcpwm_periph.c.obj
+¦   ¦   ¦                   mpi_periph.c.obj
+¦   ¦   ¦                   pcnt_periph.c.obj
+¦   ¦   ¦                   rmt_periph.c.obj
+¦   ¦   ¦                   rtc_io_periph.c.obj
+¦   ¦   ¦                   sdmmc_periph.c.obj
+¦   ¦   ¦                   sdm_periph.c.obj
+¦   ¦   ¦                   spi_periph.c.obj
+¦   ¦   ¦                   temperature_sensor_periph.c.obj
+¦   ¦   ¦                   timer_periph.c.obj
+¦   ¦   ¦                   touch_sensor_periph.c.obj
+¦   ¦   ¦                   twai_periph.c.obj
+¦   ¦   ¦                   uart_periph.c.obj
+¦   ¦   ¦                   usb_dwc_periph.c.obj
+¦   ¦   ¦                   wdt_periph.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---spiffs
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libspiffs.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_spiffs.dir
+¦   ¦   ¦           ¦   esp_spiffs.c.obj
+¦   ¦   ¦           ¦   spiffs_api.c.obj
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---spiffs
+¦   ¦   ¦               +---src
+¦   ¦   ¦                       spiffs_cache.c.obj
+¦   ¦   ¦                       spiffs_check.c.obj
+¦   ¦   ¦                       spiffs_gc.c.obj
+¦   ¦   ¦                       spiffs_hydrogen.c.obj
+¦   ¦   ¦                       spiffs_nucleus.c.obj
+¦   ¦   ¦                       
+¦   ¦   +---spi_flash
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libspi_flash.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_spi_flash.dir
+¦   ¦   ¦           ¦   cache_utils.c.obj
+¦   ¦   ¦           ¦   esp_flash_api.c.obj
+¦   ¦   ¦           ¦   esp_flash_spi_init.c.obj
+¦   ¦   ¦           ¦   flash_brownout_hook.c.obj
+¦   ¦   ¦           ¦   flash_mmap.c.obj
+¦   ¦   ¦           ¦   flash_ops.c.obj
+¦   ¦   ¦           ¦   memspi_host_driver.c.obj
+¦   ¦   ¦           ¦   spi_flash_chip_boya.c.obj
+¦   ¦   ¦           ¦   spi_flash_chip_drivers.c.obj
+¦   ¦   ¦           ¦   spi_flash_chip_gd.c.obj
+¦   ¦   ¦           ¦   spi_flash_chip_generic.c.obj
+¦   ¦   ¦           ¦   spi_flash_chip_issi.c.obj
+¦   ¦   ¦           ¦   spi_flash_chip_mxic.c.obj
+¦   ¦   ¦           ¦   spi_flash_chip_mxic_opi.c.obj
+¦   ¦   ¦           ¦   spi_flash_chip_th.c.obj
+¦   ¦   ¦           ¦   spi_flash_chip_winbond.c.obj
+¦   ¦   ¦           ¦   spi_flash_hpm_enable.c.obj
+¦   ¦   ¦           ¦   spi_flash_os_func_app.c.obj
+¦   ¦   ¦           ¦   spi_flash_os_func_noos.c.obj
+¦   ¦   ¦           ¦   spi_flash_wrap.c.obj
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---esp32s3
+¦   ¦   ¦                   spi_flash_oct_flash_init.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---tcp_transport
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libtcp_transport.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_tcp_transport.dir
+¦   ¦   ¦               transport.c.obj
+¦   ¦   ¦               transport_internal.c.obj
+¦   ¦   ¦               transport_socks_proxy.c.obj
+¦   ¦   ¦               transport_ssl.c.obj
+¦   ¦   ¦               transport_ws.c.obj
+¦   ¦   ¦               
+¦   ¦   +---touch_element
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libtouch_element.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_touch_element.dir
+¦   ¦   ¦               touch_button.c.obj
+¦   ¦   ¦               touch_element.c.obj
+¦   ¦   ¦               touch_matrix.c.obj
+¦   ¦   ¦               touch_slider.c.obj
+¦   ¦   ¦               
+¦   ¦   +---ulp
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   +---unity
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libunity.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_unity.dir
+¦   ¦   ¦           ¦   unity_compat.c.obj
+¦   ¦   ¦           ¦   unity_port_esp32.c.obj
+¦   ¦   ¦           ¦   unity_runner.c.obj
+¦   ¦   ¦           ¦   unity_utils_cache.c.obj
+¦   ¦   ¦           ¦   unity_utils_freertos.c.obj
+¦   ¦   ¦           ¦   unity_utils_memory.c.obj
+¦   ¦   ¦           ¦   
+¦   ¦   ¦           +---port
+¦   ¦   ¦           ¦   +---esp
+¦   ¦   ¦           ¦           unity_utils_memory_esp.c.obj
+¦   ¦   ¦           ¦           
+¦   ¦   ¦           +---unity
+¦   ¦   ¦               +---src
+¦   ¦   ¦                       unity.c.obj
+¦   ¦   ¦                       
+¦   ¦   +---usb
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libusb.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_usb.dir
+¦   ¦   ¦               enum.c.obj
+¦   ¦   ¦               hcd_dwc.c.obj
+¦   ¦   ¦               hub.c.obj
+¦   ¦   ¦               usbh.c.obj
+¦   ¦   ¦               usb_helpers.c.obj
+¦   ¦   ¦               usb_host.c.obj
+¦   ¦   ¦               usb_phy.c.obj
+¦   ¦   ¦               usb_private.c.obj
+¦   ¦   ¦               
+¦   ¦   +---vfs
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libvfs.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_vfs.dir
+¦   ¦   ¦               nullfs.c.obj
+¦   ¦   ¦               vfs.c.obj
+¦   ¦   ¦               vfs_eventfd.c.obj
+¦   ¦   ¦               vfs_semihost.c.obj
+¦   ¦   ¦               
+¦   ¦   +---wear_levelling
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libwear_levelling.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_wear_levelling.dir
+¦   ¦   ¦               crc32.cpp.obj
+¦   ¦   ¦               Partition.cpp.obj
+¦   ¦   ¦               SPI_Flash.cpp.obj
+¦   ¦   ¦               wear_levelling.cpp.obj
+¦   ¦   ¦               WL_Ext_Perf.cpp.obj
+¦   ¦   ¦               WL_Ext_Safe.cpp.obj
+¦   ¦   ¦               WL_Flash.cpp.obj
+¦   ¦   ¦               
+¦   ¦   +---wifi_provisioning
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libwifi_provisioning.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_wifi_provisioning.dir
+¦   ¦   ¦           +---proto-c
+¦   ¦   ¦           ¦       wifi_config.pb-c.c.obj
+¦   ¦   ¦           ¦       wifi_constants.pb-c.c.obj
+¦   ¦   ¦           ¦       wifi_ctrl.pb-c.c.obj
+¦   ¦   ¦           ¦       wifi_scan.pb-c.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---src
+¦   ¦   ¦                   handlers.c.obj
+¦   ¦   ¦                   manager.c.obj
+¦   ¦   ¦                   scheme_console.c.obj
+¦   ¦   ¦                   scheme_softap.c.obj
+¦   ¦   ¦                   wifi_config.c.obj
+¦   ¦   ¦                   wifi_ctrl.c.obj
+¦   ¦   ¦                   wifi_scan.c.obj
+¦   ¦   ¦                   
+¦   ¦   +---wpa_supplicant
+¦   ¦   ¦   ¦   cmake_install.cmake
+¦   ¦   ¦   ¦   libwpa_supplicant.a
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---CMakeFiles
+¦   ¦   ¦       +---__idf_wpa_supplicant.dir
+¦   ¦   ¦           +---esp_supplicant
+¦   ¦   ¦           ¦   +---src
+¦   ¦   ¦           ¦       ¦   esp_common.c.obj
+¦   ¦   ¦           ¦       ¦   esp_eap_client.c.obj
+¦   ¦   ¦           ¦       ¦   esp_hostap.c.obj
+¦   ¦   ¦           ¦       ¦   esp_owe.c.obj
+¦   ¦   ¦           ¦       ¦   esp_wpa2_api_port.c.obj
+¦   ¦   ¦           ¦       ¦   esp_wpa3.c.obj
+¦   ¦   ¦           ¦       ¦   esp_wpas_glue.c.obj
+¦   ¦   ¦           ¦       ¦   esp_wpa_main.c.obj
+¦   ¦   ¦           ¦       ¦   esp_wps.c.obj
+¦   ¦   ¦           ¦       ¦   
+¦   ¦   ¦           ¦       +---crypto
+¦   ¦   ¦           ¦               crypto_mbedtls-bignum.c.obj
+¦   ¦   ¦           ¦               crypto_mbedtls-ec.c.obj
+¦   ¦   ¦           ¦               crypto_mbedtls-rsa.c.obj
+¦   ¦   ¦           ¦               crypto_mbedtls.c.obj
+¦   ¦   ¦           ¦               fastpbkdf2.c.obj
+¦   ¦   ¦           ¦               tls_mbedtls.c.obj
+¦   ¦   ¦           ¦               
+¦   ¦   ¦           +---port
+¦   ¦   ¦           ¦       eloop.c.obj
+¦   ¦   ¦           ¦       os_xtensa.c.obj
+¦   ¦   ¦           ¦       
+¦   ¦   ¦           +---src
+¦   ¦   ¦               +---ap
+¦   ¦   ¦               ¦       ap_config.c.obj
+¦   ¦   ¦               ¦       comeback_token.c.obj
+¦   ¦   ¦               ¦       ieee802_11.c.obj
+¦   ¦   ¦               ¦       ieee802_1x.c.obj
+¦   ¦   ¦               ¦       pmksa_cache_auth.c.obj
+¦   ¦   ¦               ¦       sta_info.c.obj
+¦   ¦   ¦               ¦       wpa_auth.c.obj
+¦   ¦   ¦               ¦       wpa_auth_ie.c.obj
+¦   ¦   ¦               ¦       
+¦   ¦   ¦               +---common
+¦   ¦   ¦               ¦       dragonfly.c.obj
+¦   ¦   ¦               ¦       ieee802_11_common.c.obj
+¦   ¦   ¦               ¦       sae.c.obj
+¦   ¦   ¦               ¦       sae_pk.c.obj
+¦   ¦   ¦               ¦       wpa_common.c.obj
+¦   ¦   ¦               ¦       
+¦   ¦   ¦               +---crypto
+¦   ¦   ¦               ¦       aes-ccm.c.obj
+¦   ¦   ¦               ¦       aes-gcm.c.obj
+¦   ¦   ¦               ¦       aes-siv.c.obj
+¦   ¦   ¦               ¦       aes-unwrap.c.obj
+¦   ¦   ¦               ¦       aes-wrap.c.obj
+¦   ¦   ¦               ¦       ccmp.c.obj
+¦   ¦   ¦               ¦       crypto_ops.c.obj
+¦   ¦   ¦               ¦       des-internal.c.obj
+¦   ¦   ¦               ¦       dh_group5.c.obj
+¦   ¦   ¦               ¦       dh_groups.c.obj
+¦   ¦   ¦               ¦       md4-internal.c.obj
+¦   ¦   ¦               ¦       ms_funcs.c.obj
+¦   ¦   ¦               ¦       rc4.c.obj
+¦   ¦   ¦               ¦       sha1-prf.c.obj
+¦   ¦   ¦               ¦       sha1-tlsprf.c.obj
+¦   ¦   ¦               ¦       sha1-tprf.c.obj
+¦   ¦   ¦               ¦       sha256-kdf.c.obj
+¦   ¦   ¦               ¦       sha256-prf.c.obj
+¦   ¦   ¦               ¦       sha256-tlsprf.c.obj
+¦   ¦   ¦               ¦       sha384-prf.c.obj
+¦   ¦   ¦               ¦       sha384-tlsprf.c.obj
+¦   ¦   ¦               ¦       
+¦   ¦   ¦               +---eap_common
+¦   ¦   ¦               ¦       eap_wsc_common.c.obj
+¦   ¦   ¦               ¦       
+¦   ¦   ¦               +---eap_peer
+¦   ¦   ¦               ¦       chap.c.obj
+¦   ¦   ¦               ¦       eap.c.obj
+¦   ¦   ¦               ¦       eap_common.c.obj
+¦   ¦   ¦               ¦       eap_fast.c.obj
+¦   ¦   ¦               ¦       eap_fast_common.c.obj
+¦   ¦   ¦               ¦       eap_fast_pac.c.obj
+¦   ¦   ¦               ¦       eap_mschapv2.c.obj
+¦   ¦   ¦               ¦       eap_peap.c.obj
+¦   ¦   ¦               ¦       eap_peap_common.c.obj
+¦   ¦   ¦               ¦       eap_tls.c.obj
+¦   ¦   ¦               ¦       eap_tls_common.c.obj
+¦   ¦   ¦               ¦       eap_ttls.c.obj
+¦   ¦   ¦               ¦       mschapv2.c.obj
+¦   ¦   ¦               ¦       
+¦   ¦   ¦               +---rsn_supp
+¦   ¦   ¦               ¦       pmksa_cache.c.obj
+¦   ¦   ¦               ¦       wpa.c.obj
+¦   ¦   ¦               ¦       wpa_ie.c.obj
+¦   ¦   ¦               ¦       
+¦   ¦   ¦               +---utils
+¦   ¦   ¦               ¦       base64.c.obj
+¦   ¦   ¦               ¦       bitfield.c.obj
+¦   ¦   ¦               ¦       common.c.obj
+¦   ¦   ¦               ¦       ext_password.c.obj
+¦   ¦   ¦               ¦       json.c.obj
+¦   ¦   ¦               ¦       uuid.c.obj
+¦   ¦   ¦               ¦       wpabuf.c.obj
+¦   ¦   ¦               ¦       wpa_debug.c.obj
+¦   ¦   ¦               ¦       
+¦   ¦   ¦               +---wps
+¦   ¦   ¦                       wps.c.obj
+¦   ¦   ¦                       wps_attr_build.c.obj
+¦   ¦   ¦                       wps_attr_parse.c.obj
+¦   ¦   ¦                       wps_attr_process.c.obj
+¦   ¦   ¦                       wps_common.c.obj
+¦   ¦   ¦                       wps_dev_attr.c.obj
+¦   ¦   ¦                       wps_enrollee.c.obj
+¦   ¦   ¦                       
+¦   ¦   +---xtensa
+¦   ¦       ¦   cmake_install.cmake
+¦   ¦       ¦   libxtensa.a
+¦   ¦       ¦   
+¦   ¦       +---CMakeFiles
+¦   ¦           +---__idf_xtensa.dir
+¦   ¦                   eri.c.obj
+¦   ¦                   xtensa_context.S.obj
+¦   ¦                   xtensa_intr.c.obj
+¦   ¦                   xtensa_intr_asm.S.obj
+¦   ¦                   xtensa_vectors.S.obj
+¦   ¦                   xt_trax.c.obj
+¦   ¦                   
+¦   +---gdbinit
+¦   ¦       connect
+¦   ¦       gdbinit
+¦   ¦       prefix_map
+¦   ¦       py_extensions
+¦   ¦       symbols
+¦   ¦       
+¦   +---log
+¦   ¦       idf_py_stderr_output_27180
+¦   ¦       idf_py_stderr_output_5512
+¦   ¦       idf_py_stderr_output_5596
+¦   ¦       idf_py_stdout_output_27180
+¦   ¦       idf_py_stdout_output_5512
+¦   ¦       idf_py_stdout_output_5596
+¦   ¦       
+¦   +---partition_table
+¦           partition-table.bin
+¦           
++---components
+¦   +---kws
+¦           CMakeLists.txt
+¦           kws_detect.c
+¦           kws_detect.h
+¦           kws_feat.c
+¦           kws_feat.h
+¦           nn.c
+¦           nn.h
+¦           
++---host
+¦       AddTccPath.bat
+¦       audio_proto.h
+¦       build_win.bat
+¦       Makefile
+¦       nagranie.wav
+¦       Name.wav
+¦       Name16.wav
+¦       vsmic.c
+¦       vsmic.exe
+¦       
++---hostCPU
+¦   ¦   AddTccPath.bat
+¦   ¦   backend_cpu.c
+¦   ¦   build.bat
+¦   ¦   jakbudowac.txt
+¦   ¦   vsasr_cpu.exe
+¦   ¦   wynik.wav
+¦   ¦   
+¦   +---obj
+¦           asr_main.obj
+¦           backend_cpu.obj
+¦           tts.obj
+¦           whisper.obj
+¦           
++---hostCPULinux
+¦       asr_main.c
+¦       backend_cpu.c
+¦       jakbudowac.txt
+¦       Makefile
+¦       pobierz_model.sh
+¦       pobierz_tts.sh
+¦       tts.c
+¦       vsasr.service
+¦       vsasr_cpu
+¦       
++---hostGPU
+¦       AddTccPath.bat
+¦       backend_cuda.c
+¦       build.bat
+¦       kernels.cu
+¦       kernels.ptx
+¦       vsasr_gpu.exe
+¦       wynik.wav
+¦       
++---kws
+¦   ¦   build.bat
+¦   ¦   kwstool.c
+¦   ¦   kwstool.exe
+¦   ¦   nn_train.c
+¦   ¦   nn_train.h
+¦   ¦   pobierz_negatywy.bat
+¦   ¦   recordWords.bat
+¦   ¦   tts_synth.ps1
+¦   ¦   
+¦   +---dataset
+¦   ¦   +---keyword
+¦   ¦   ¦       punapu_0001.wav
+¦   ¦   ¦       punapu_0002.wav
+¦   ¦   ¦       punapu_0003.wav
+¦   ¦   ¦       punapu_0004.wav
+¦   ¦   ¦       punapu_0006.wav
+¦   ¦   ¦       punapu_0009.wav
+¦   ¦   ¦       punapu_0010.wav
+¦   ¦   ¦       punapu_0011.wav
+¦   ¦   ¦       punapu_0013.wav
+¦   ¦   ¦       punapu_0014.wav
+¦   ¦   ¦       punapu_0015.wav
+¦   ¦   ¦       punapu_0016.wav
+¦   ¦   ¦       punapu_0017.wav
+¦   ¦   ¦       punapu_0018.wav
+¦   ¦   ¦       punapu_0019.wav
+¦   ¦   ¦       punapu_0021.wav
+¦   ¦   ¦       punapu_0022.wav
+¦   ¦   ¦       punapu_0023.wav
+¦   ¦   ¦       punapu_0024.wav
+¦   ¦   ¦       punapu_0025.wav
+¦   ¦   ¦       punapu_0026.wav
+¦   ¦   ¦       punapu_0028.wav
+¦   ¦   ¦       punapu_0031.wav
+¦   ¦   ¦       punapu_0032.wav
+¦   ¦   ¦       punapu_0034.wav
+¦   ¦   ¦       punapu_0035.wav
+¦   ¦   ¦       punapu_0036.wav
+¦   ¦   ¦       punapu_0037.wav
+¦   ¦   ¦       punapu_0038.wav
+¦   ¦   ¦       punapu_0039.wav
+¦   ¦   ¦       punapu_0040.wav
+¦   ¦   ¦       punapu_0041.wav
+¦   ¦   ¦       punapu_0042.wav
+¦   ¦   ¦       punapu_0043.wav
+¦   ¦   ¦       punapu_0044.wav
+¦   ¦   ¦       punapu_0045.wav
+¦   ¦   ¦       punapu_0046.wav
+¦   ¦   ¦       punapu_0047.wav
+¦   ¦   ¦       punapu_0049.wav
+¦   ¦   ¦       punapu_0050.wav
+¦   ¦   ¦       punapu_0052.wav
+¦   ¦   ¦       punapu_0053.wav
+¦   ¦   ¦       punapu_0054.wav
+¦   ¦   ¦       punapu_0055.wav
+¦   ¦   ¦       punapu_0056.wav
+¦   ¦   ¦       punapu_0058.wav
+¦   ¦   ¦       punapu_0059.wav
+¦   ¦   ¦       punapu_0060.wav
+¦   ¦   ¦       punapu_0061.wav
+¦   ¦   ¦       punapu_0062.wav
+¦   ¦   ¦       punapu_0063.wav
+¦   ¦   ¦       punapu_0065.wav
+¦   ¦   ¦       punapu_0066.wav
+¦   ¦   ¦       tts_0001.wav
+¦   ¦   ¦       tts_0003.wav
+¦   ¦   ¦       tts_0005.wav
+¦   ¦   ¦       tts_0007.wav
+¦   ¦   ¦       tts_0009.wav
+¦   ¦   ¦       tts_0011.wav
+¦   ¦   ¦       tts_0013.wav
+¦   ¦   ¦       tts_0015.wav
+¦   ¦   ¦       tts_0017.wav
+¦   ¦   ¦       tts_0019.wav
+¦   ¦   ¦       tts_0021.wav
+¦   ¦   ¦       tts_0023.wav
+¦   ¦   ¦       tts_0025.wav
+¦   ¦   ¦       tts_0027.wav
+¦   ¦   ¦       tts_0029.wav
+¦   ¦   ¦       tts_0031.wav
+¦   ¦   ¦       tts_0033.wav
+¦   ¦   ¦       tts_0035.wav
+¦   ¦   ¦       tts_0037.wav
+¦   ¦   ¦       tts_0039.wav
+¦   ¦   ¦       tts_0043.wav
+¦   ¦   ¦       tts_0045.wav
+¦   ¦   ¦       tts_0047.wav
+¦   ¦   ¦       tts_0051.wav
+¦   ¦   ¦       tts_0053.wav
+¦   ¦   ¦       tts_0055.wav
+¦   ¦   ¦       tts_0057.wav
+¦   ¦   ¦       tts_0059.wav
+¦   ¦   ¦       tts_0061.wav
+¦   ¦   ¦       tts_0063.wav
+¦   ¦   ¦       tts_0065.wav
+¦   ¦   ¦       tts_0067.wav
+¦   ¦   ¦       tts_0069.wav
+¦   ¦   ¦       tts_0071.wav
+¦   ¦   ¦       tts_0073.wav
+¦   ¦   ¦       tts_0075.wav
+¦   ¦   ¦       tts_0077.wav
+¦   ¦   ¦       tts_0079.wav
+¦   ¦   ¦       tts_0081.wav
+¦   ¦   ¦       tts_0083.wav
+¦   ¦   ¦       tts_0085.wav
+¦   ¦   ¦       tts_0087.wav
+¦   ¦   ¦       tts_0089.wav
+¦   ¦   ¦       tts_0091.wav
+¦   ¦   ¦       tts_0093.wav
+¦   ¦   ¦       tts_0095.wav
+¦   ¦   ¦       tts_0097.wav
+¦   ¦   ¦       tts_0099.wav
+¦   ¦   ¦       tts_0101.wav
+¦   ¦   ¦       tts_0103.wav
+¦   ¦   ¦       tts_0105.wav
+¦   ¦   ¦       tts_0107.wav
+¦   ¦   ¦       tts_0109.wav
+¦   ¦   ¦       tts_0111.wav
+¦   ¦   ¦       tts_0113.wav
+¦   ¦   ¦       tts_0115.wav
+¦   ¦   ¦       tts_0117.wav
+¦   ¦   ¦       tts_0119.wav
+¦   ¦   ¦       tts_0121.wav
+¦   ¦   ¦       tts_0123.wav
+¦   ¦   ¦       tts_0127.wav
+¦   ¦   ¦       tts_0129.wav
+¦   ¦   ¦       tts_0131.wav
+¦   ¦   ¦       tts_0133.wav
+¦   ¦   ¦       tts_0135.wav
+¦   ¦   ¦       tts_0137.wav
+¦   ¦   ¦       tts_0139.wav
+¦   ¦   ¦       tts_0147.wav
+¦   ¦   ¦       tts_0157.wav
+¦   ¦   ¦       tts_0159.wav
+¦   ¦   ¦       tts_0161.wav
+¦   ¦   ¦       tts_0163.wav
+¦   ¦   ¦       tts_0165.wav
+¦   ¦   ¦       tts_0167.wav
+¦   ¦   ¦       tts_0169.wav
+¦   ¦   ¦       tts_0171.wav
+¦   ¦   ¦       tts_0173.wav
+¦   ¦   ¦       tts_0175.wav
+¦   ¦   ¦       tts_0177.wav
+¦   ¦   ¦       tts_0179.wav
+¦   ¦   ¦       tts_0181.wav
+¦   ¦   ¦       tts_0183.wav
+¦   ¦   ¦       tts_0185.wav
+¦   ¦   ¦       tts_0187.wav
+¦   ¦   ¦       tts_0189.wav
+¦   ¦   ¦       tts_0191.wav
+¦   ¦   ¦       tts_0193.wav
+¦   ¦   ¦       tts_0195.wav
+¦   ¦   ¦       tts_0197.wav
+¦   ¦   ¦       tts_0199.wav
+¦   ¦   ¦       
+¦   ¦   +---negative
+¦   ¦       +---librivox
+¦   ¦       ¦       boy1.wav
+¦   ¦       ¦       globie1.wav
+¦   ¦       ¦       potop1.wav
+¦   ¦       ¦       siedem1.wav
+¦   ¦       ¦       
+¦   ¦       +---tts
+¦   ¦               punapu_0012.wav
+¦   ¦               tts_0000.wav
+¦   ¦               tts_0001.wav
+¦   ¦               tts_0002.wav
+¦   ¦               tts_0003.wav
+¦   ¦               tts_0004.wav
+¦   ¦               tts_0005.wav
+¦   ¦               tts_0006.wav
+¦   ¦               tts_0007.wav
+¦   ¦               tts_0008.wav
+¦   ¦               tts_0009.wav
+¦   ¦               tts_0010.wav
+¦   ¦               tts_0011.wav
+¦   ¦               tts_0012.wav
+¦   ¦               tts_0013.wav
+¦   ¦               tts_0014.wav
+¦   ¦               tts_0015.wav
+¦   ¦               tts_0016.wav
+¦   ¦               tts_0017.wav
+¦   ¦               tts_0018.wav
+¦   ¦               tts_0019.wav
+¦   ¦               tts_0020.wav
+¦   ¦               tts_0021.wav
+¦   ¦               tts_0022.wav
+¦   ¦               tts_0023.wav
+¦   ¦               tts_0024.wav
+¦   ¦               tts_0025.wav
+¦   ¦               tts_0026.wav
+¦   ¦               tts_0027.wav
+¦   ¦               tts_0028.wav
+¦   ¦               tts_0029.wav
+¦   ¦               tts_0030.wav
+¦   ¦               tts_0031.wav
+¦   ¦               tts_0032.wav
+¦   ¦               tts_0033.wav
+¦   ¦               tts_0034.wav
+¦   ¦               tts_0035.wav
+¦   ¦               tts_0036.wav
+¦   ¦               tts_0037.wav
+¦   ¦               tts_0038.wav
+¦   ¦               tts_0039.wav
+¦   ¦               tts_0040.wav
+¦   ¦               tts_0041.wav
+¦   ¦               tts_0042.wav
+¦   ¦               tts_0043.wav
+¦   ¦               tts_0044.wav
+¦   ¦               tts_0045.wav
+¦   ¦               tts_0046.wav
+¦   ¦               tts_0047.wav
+¦   ¦               tts_0048.wav
+¦   ¦               tts_0049.wav
+¦   ¦               tts_0050.wav
+¦   ¦               tts_0051.wav
+¦   ¦               tts_0052.wav
+¦   ¦               tts_0053.wav
+¦   ¦               tts_0054.wav
+¦   ¦               tts_0055.wav
+¦   ¦               tts_0056.wav
+¦   ¦               tts_0057.wav
+¦   ¦               tts_0058.wav
+¦   ¦               tts_0059.wav
+¦   ¦               tts_0060.wav
+¦   ¦               tts_0061.wav
+¦   ¦               tts_0062.wav
+¦   ¦               tts_0063.wav
+¦   ¦               tts_0064.wav
+¦   ¦               tts_0065.wav
+¦   ¦               tts_0066.wav
+¦   ¦               tts_0067.wav
+¦   ¦               tts_0068.wav
+¦   ¦               tts_0069.wav
+¦   ¦               tts_0070.wav
+¦   ¦               tts_0071.wav
+¦   ¦               tts_0072.wav
+¦   ¦               tts_0073.wav
+¦   ¦               tts_0074.wav
+¦   ¦               tts_0075.wav
+¦   ¦               tts_0076.wav
+¦   ¦               tts_0077.wav
+¦   ¦               tts_0078.wav
+¦   ¦               tts_0079.wav
+¦   ¦               tts_0080.wav
+¦   ¦               tts_0081.wav
+¦   ¦               tts_0082.wav
+¦   ¦               tts_0083.wav
+¦   ¦               tts_0084.wav
+¦   ¦               tts_0085.wav
+¦   ¦               tts_0086.wav
+¦   ¦               tts_0087.wav
+¦   ¦               tts_0088.wav
+¦   ¦               tts_0089.wav
+¦   ¦               tts_0090.wav
+¦   ¦               tts_0091.wav
+¦   ¦               tts_0092.wav
+¦   ¦               tts_0093.wav
+¦   ¦               tts_0094.wav
+¦   ¦               tts_0095.wav
+¦   ¦               tts_0096.wav
+¦   ¦               tts_0097.wav
+¦   ¦               tts_0098.wav
+¦   ¦               tts_0099.wav
+¦   ¦               tts_0100.wav
+¦   ¦               tts_0101.wav
+¦   ¦               tts_0102.wav
+¦   ¦               tts_0103.wav
+¦   ¦               tts_0104.wav
+¦   ¦               tts_0105.wav
+¦   ¦               tts_0106.wav
+¦   ¦               tts_0107.wav
+¦   ¦               tts_0108.wav
+¦   ¦               tts_0109.wav
+¦   ¦               tts_0110.wav
+¦   ¦               tts_0111.wav
+¦   ¦               tts_0112.wav
+¦   ¦               tts_0113.wav
+¦   ¦               tts_0114.wav
+¦   ¦               tts_0115.wav
+¦   ¦               tts_0116.wav
+¦   ¦               tts_0117.wav
+¦   ¦               tts_0118.wav
+¦   ¦               tts_0119.wav
+¦   ¦               tts_0120.wav
+¦   ¦               tts_0121.wav
+¦   ¦               tts_0122.wav
+¦   ¦               tts_0123.wav
+¦   ¦               tts_0124.wav
+¦   ¦               tts_0125.wav
+¦   ¦               tts_0126.wav
+¦   ¦               tts_0127.wav
+¦   ¦               tts_0128.wav
+¦   ¦               tts_0129.wav
+¦   ¦               tts_0130.wav
+¦   ¦               tts_0131.wav
+¦   ¦               tts_0132.wav
+¦   ¦               tts_0133.wav
+¦   ¦               tts_0134.wav
+¦   ¦               tts_0135.wav
+¦   ¦               tts_0136.wav
+¦   ¦               tts_0137.wav
+¦   ¦               tts_0138.wav
+¦   ¦               tts_0139.wav
+¦   ¦               tts_0140.wav
+¦   ¦               tts_0141.wav
+¦   ¦               tts_0142.wav
+¦   ¦               tts_0143.wav
+¦   ¦               tts_0144.wav
+¦   ¦               tts_0145.wav
+¦   ¦               tts_0146.wav
+¦   ¦               tts_0147.wav
+¦   ¦               tts_0148.wav
+¦   ¦               tts_0149.wav
+¦   ¦               tts_0150.wav
+¦   ¦               tts_0151.wav
+¦   ¦               tts_0152.wav
+¦   ¦               tts_0153.wav
+¦   ¦               tts_0154.wav
+¦   ¦               tts_0155.wav
+¦   ¦               tts_0156.wav
+¦   ¦               tts_0157.wav
+¦   ¦               tts_0158.wav
+¦   ¦               tts_0159.wav
+¦   ¦               tts_0160.wav
+¦   ¦               tts_0161.wav
+¦   ¦               tts_0162.wav
+¦   ¦               tts_0163.wav
+¦   ¦               tts_0164.wav
+¦   ¦               tts_0165.wav
+¦   ¦               tts_0166.wav
+¦   ¦               tts_0167.wav
+¦   ¦               tts_0168.wav
+¦   ¦               tts_0169.wav
+¦   ¦               tts_0170.wav
+¦   ¦               tts_0171.wav
+¦   ¦               tts_0172.wav
+¦   ¦               tts_0173.wav
+¦   ¦               tts_0174.wav
+¦   ¦               tts_0175.wav
+¦   ¦               tts_0176.wav
+¦   ¦               tts_0177.wav
+¦   ¦               tts_0178.wav
+¦   ¦               tts_0179.wav
+¦   ¦               tts_0180.wav
+¦   ¦               tts_0181.wav
+¦   ¦               tts_0182.wav
+¦   ¦               tts_0183.wav
+¦   ¦               tts_0184.wav
+¦   ¦               tts_0185.wav
+¦   ¦               tts_0186.wav
+¦   ¦               tts_0187.wav
+¦   ¦               tts_0188.wav
+¦   ¦               tts_0189.wav
+¦   ¦               tts_0190.wav
+¦   ¦               tts_0191.wav
+¦   ¦               tts_0192.wav
+¦   ¦               tts_0193.wav
+¦   ¦               tts_0194.wav
+¦   ¦               tts_0195.wav
+¦   ¦               tts_0196.wav
+¦   ¦               tts_0197.wav
+¦   ¦               tts_0198.wav
+¦   ¦               tts_0199.wav
+¦   ¦               tts_0200.wav
+¦   ¦               tts_0201.wav
+¦   ¦               tts_0202.wav
+¦   ¦               tts_0203.wav
+¦   ¦               tts_0204.wav
+¦   ¦               tts_0205.wav
+¦   ¦               tts_0206.wav
+¦   ¦               tts_0207.wav
+¦   ¦               tts_0208.wav
+¦   ¦               tts_0209.wav
+¦   ¦               tts_0210.wav
+¦   ¦               tts_0211.wav
+¦   ¦               tts_0212.wav
+¦   ¦               tts_0213.wav
+¦   ¦               tts_0214.wav
+¦   ¦               tts_0215.wav
+¦   ¦               tts_0216.wav
+¦   ¦               tts_0217.wav
+¦   ¦               tts_0218.wav
+¦   ¦               tts_0219.wav
+¦   ¦               tts_0220.wav
+¦   ¦               tts_0221.wav
+¦   ¦               tts_0222.wav
+¦   ¦               tts_0223.wav
+¦   ¦               tts_0224.wav
+¦   ¦               tts_0225.wav
+¦   ¦               tts_0226.wav
+¦   ¦               tts_0227.wav
+¦   ¦               tts_0228.wav
+¦   ¦               tts_0229.wav
+¦   ¦               tts_0230.wav
+¦   ¦               tts_0231.wav
+¦   ¦               tts_0232.wav
+¦   ¦               tts_0233.wav
+¦   ¦               tts_0234.wav
+¦   ¦               tts_0235.wav
+¦   ¦               tts_0236.wav
+¦   ¦               tts_0237.wav
+¦   ¦               tts_0238.wav
+¦   ¦               tts_0239.wav
+¦   ¦               tts_0240.wav
+¦   ¦               tts_0241.wav
+¦   ¦               tts_0242.wav
+¦   ¦               tts_0243.wav
+¦   ¦               tts_0244.wav
+¦   ¦               tts_0245.wav
+¦   ¦               tts_0246.wav
+¦   ¦               tts_0247.wav
+¦   ¦               tts_0248.wav
+¦   ¦               tts_0249.wav
+¦   ¦               tts_0250.wav
+¦   ¦               tts_0251.wav
+¦   ¦               tts_0252.wav
+¦   ¦               tts_0253.wav
+¦   ¦               tts_0254.wav
+¦   ¦               tts_0255.wav
+¦   ¦               tts_0256.wav
+¦   ¦               tts_0257.wav
+¦   ¦               tts_0258.wav
+¦   ¦               tts_0259.wav
+¦   ¦               tts_0260.wav
+¦   ¦               tts_0261.wav
+¦   ¦               tts_0262.wav
+¦   ¦               tts_0263.wav
+¦   ¦               tts_0264.wav
+¦   ¦               tts_0265.wav
+¦   ¦               tts_0266.wav
+¦   ¦               tts_0267.wav
+¦   ¦               tts_0268.wav
+¦   ¦               tts_0269.wav
+¦   ¦               tts_0270.wav
+¦   ¦               tts_0271.wav
+¦   ¦               tts_0272.wav
+¦   ¦               tts_0273.wav
+¦   ¦               tts_0274.wav
+¦   ¦               tts_0275.wav
+¦   ¦               tts_0276.wav
+¦   ¦               tts_0277.wav
+¦   ¦               tts_0278.wav
+¦   ¦               tts_0279.wav
+¦   ¦               tts_0280.wav
+¦   ¦               tts_0281.wav
+¦   ¦               tts_0282.wav
+¦   ¦               tts_0283.wav
+¦   ¦               tts_0284.wav
+¦   ¦               tts_0285.wav
+¦   ¦               tts_0286.wav
+¦   ¦               tts_0287.wav
+¦   ¦               tts_0288.wav
+¦   ¦               tts_0289.wav
+¦   ¦               tts_0300.wav
+¦   ¦               tts_0301.wav
+¦   ¦               tts_0302.wav
+¦   ¦               tts_0303.wav
+¦   ¦               tts_0304.wav
+¦   ¦               tts_0305.wav
+¦   ¦               
+¦   +---models
+¦           punapu.kws
+¦           
++---main
+¦       audio.c
+¦       audio.h
+¦       audio_net.c
+¦       audio_net.h
+¦       audio_proto.h
+¦       CMakeLists.txt
+¦       Kconfig.projbuild
+¦       main.c
+¦       mic.c
+¦       mic.h
+¦       net.c
+¦       net.h
+¦       vsproto.c
+¦       vsproto.h
+¦       vs_app.c
+¦       vs_session.c
+¦       vs_session.h
+¦       wake.c
+¦       wake.h
+¦       xvf3800.c
+¦       xvf3800.h
+¦       
++---models
+¦       ggml-base.bin
+¦       ggml-large-v3-turbo-q8_0.bin
+¦       ggml-small.bin
+¦       ggml-tiny.bin
+¦       jfk.wav
+¦       pl_test.wav
+¦       pobierz_model.bat
+¦       
++---testdata
+¦   ¦   stream_test.txt
+¦   ¦   stream_test.wav
+¦   ¦   wilk2.wav
+¦   ¦   
+¦   +---tts
+¦           neg_0.wav
+¦           neg_1.wav
+¦           neg_2.wav
+¦           neg_3.wav
+¦           neg_4.wav
+¦           neg_5.wav
+¦           neg_6.wav
+¦           neg_7.wav
+¦           neg_8.wav
+¦           neg_9.wav
+¦           pos_0.wav
+¦           pos_1.wav
+¦           pos_2.wav
+¦           pos_3.wav
+¦           pos_4.wav
+¦           pos_5.wav
+¦           pos_6.wav
+¦           pos_7.wav
+¦           pos_8.wav
+¦           pos_9.wav
+¦           
++---tts
+    ¦   pobierz_tts.bat
+    ¦   specstrings.h
+    ¦   
+    +---bin
+    ¦   ¦   espeak-ng.dll
+    ¦   ¦   onnxruntime.dll
+    ¦   ¦   onnxruntime_providers_shared.dll
+    ¦   ¦   
+    ¦   +---espeak-ng-data
+    ¦       ¦   af_dict
+    ¦       ¦   am_dict
+    ¦       ¦   an_dict
+    ¦       ¦   ar_dict
+    ¦       ¦   as_dict
+    ¦       ¦   az_dict
+    ¦       ¦   ba_dict
+    ¦       ¦   be_dict
+    ¦       ¦   bg_dict
+    ¦       ¦   bn_dict
+    ¦       ¦   bpy_dict
+    ¦       ¦   bs_dict
+    ¦       ¦   ca_dict
+    ¦       ¦   chr_dict
+    ¦       ¦   cmn_dict
+    ¦       ¦   cs_dict
+    ¦       ¦   cv_dict
+    ¦       ¦   cy_dict
+    ¦       ¦   da_dict
+    ¦       ¦   de_dict
+    ¦       ¦   el_dict
+    ¦       ¦   en_dict
+    ¦       ¦   eo_dict
+    ¦       ¦   es_dict
+    ¦       ¦   et_dict
+    ¦       ¦   eu_dict
+    ¦       ¦   fa_dict
+    ¦       ¦   fi_dict
+    ¦       ¦   fr_dict
+    ¦       ¦   ga_dict
+    ¦       ¦   gd_dict
+    ¦       ¦   gn_dict
+    ¦       ¦   grc_dict
+    ¦       ¦   gu_dict
+    ¦       ¦   hak_dict
+    ¦       ¦   haw_dict
+    ¦       ¦   he_dict
+    ¦       ¦   hi_dict
+    ¦       ¦   hr_dict
+    ¦       ¦   ht_dict
+    ¦       ¦   hu_dict
+    ¦       ¦   hy_dict
+    ¦       ¦   ia_dict
+    ¦       ¦   id_dict
+    ¦       ¦   intonations
+    ¦       ¦   io_dict
+    ¦       ¦   is_dict
+    ¦       ¦   it_dict
+    ¦       ¦   ja_dict
+    ¦       ¦   jbo_dict
+    ¦       ¦   ka_dict
+    ¦       ¦   kk_dict
+    ¦       ¦   kl_dict
+    ¦       ¦   kn_dict
+    ¦       ¦   kok_dict
+    ¦       ¦   ko_dict
+    ¦       ¦   ku_dict
+    ¦       ¦   ky_dict
+    ¦       ¦   la_dict
+    ¦       ¦   lb_dict
+    ¦       ¦   lfn_dict
+    ¦       ¦   lt_dict
+    ¦       ¦   lv_dict
+    ¦       ¦   mi_dict
+    ¦       ¦   mk_dict
+    ¦       ¦   ml_dict
+    ¦       ¦   mr_dict
+    ¦       ¦   ms_dict
+    ¦       ¦   mto_dict
+    ¦       ¦   mt_dict
+    ¦       ¦   my_dict
+    ¦       ¦   nci_dict
+    ¦       ¦   ne_dict
+    ¦       ¦   nl_dict
+    ¦       ¦   nog_dict
+    ¦       ¦   no_dict
+    ¦       ¦   om_dict
+    ¦       ¦   or_dict
+    ¦       ¦   pap_dict
+    ¦       ¦   pa_dict
+    ¦       ¦   phondata
+    ¦       ¦   phondata-manifest
+    ¦       ¦   phonindex
+    ¦       ¦   phontab
+    ¦       ¦   piqd_dict
+    ¦       ¦   pl_dict
+    ¦       ¦   pt_dict
+    ¦       ¦   py_dict
+    ¦       ¦   qdb_dict
+    ¦       ¦   quc_dict
+    ¦       ¦   qu_dict
+    ¦       ¦   qya_dict
+    ¦       ¦   ro_dict
+    ¦       ¦   ru_dict
+    ¦       ¦   sd_dict
+    ¦       ¦   shn_dict
+    ¦       ¦   si_dict
+    ¦       ¦   sjn_dict
+    ¦       ¦   sk_dict
+    ¦       ¦   sl_dict
+    ¦       ¦   smj_dict
+    ¦       ¦   sq_dict
+    ¦       ¦   sr_dict
+    ¦       ¦   sv_dict
+    ¦       ¦   sw_dict
+    ¦       ¦   ta_dict
+    ¦       ¦   te_dict
+    ¦       ¦   th_dict
+    ¦       ¦   tk_dict
+    ¦       ¦   tn_dict
+    ¦       ¦   tr_dict
+    ¦       ¦   tt_dict
+    ¦       ¦   ug_dict
+    ¦       ¦   uk_dict
+    ¦       ¦   ur_dict
+    ¦       ¦   uz_dict
+    ¦       ¦   vi_dict
+    ¦       ¦   yue_dict
+    ¦       ¦   
+    ¦       +---lang
+    ¦       ¦   ¦   eu
+    ¦       ¦   ¦   ko
+    ¦       ¦   ¦   qu
+    ¦       ¦   ¦   
+    ¦       ¦   +---aav
+    ¦       ¦   ¦       vi
+    ¦       ¦   ¦       vi-VN-x-central
+    ¦       ¦   ¦       vi-VN-x-south
+    ¦       ¦   ¦       
+    ¦       ¦   +---art
+    ¦       ¦   ¦       eo
+    ¦       ¦   ¦       ia
+    ¦       ¦   ¦       io
+    ¦       ¦   ¦       jbo
+    ¦       ¦   ¦       lfn
+    ¦       ¦   ¦       piqd
+    ¦       ¦   ¦       py
+    ¦       ¦   ¦       qdb
+    ¦       ¦   ¦       qya
+    ¦       ¦   ¦       sjn
+    ¦       ¦   ¦       
+    ¦       ¦   +---azc
+    ¦       ¦   ¦       nci
+    ¦       ¦   ¦       
+    ¦       ¦   +---bat
+    ¦       ¦   ¦       lt
+    ¦       ¦   ¦       ltg
+    ¦       ¦   ¦       lv
+    ¦       ¦   ¦       
+    ¦       ¦   +---bnt
+    ¦       ¦   ¦       sw
+    ¦       ¦   ¦       tn
+    ¦       ¦   ¦       
+    ¦       ¦   +---ccs
+    ¦       ¦   ¦       ka
+    ¦       ¦   ¦       
+    ¦       ¦   +---cel
+    ¦       ¦   ¦       cy
+    ¦       ¦   ¦       ga
+    ¦       ¦   ¦       gd
+    ¦       ¦   ¦       
+    ¦       ¦   +---cus
+    ¦       ¦   ¦       om
+    ¦       ¦   ¦       
+    ¦       ¦   +---dra
+    ¦       ¦   ¦       kn
+    ¦       ¦   ¦       ml
+    ¦       ¦   ¦       ta
+    ¦       ¦   ¦       te
+    ¦       ¦   ¦       
+    ¦       ¦   +---esx
+    ¦       ¦   ¦       kl
+    ¦       ¦   ¦       
+    ¦       ¦   +---gmq
+    ¦       ¦   ¦       da
+    ¦       ¦   ¦       is
+    ¦       ¦   ¦       nb
+    ¦       ¦   ¦       sv
+    ¦       ¦   ¦       
+    ¦       ¦   +---gmw
+    ¦       ¦   ¦       af
+    ¦       ¦   ¦       de
+    ¦       ¦   ¦       en
+    ¦       ¦   ¦       en-029
+    ¦       ¦   ¦       en-GB-scotland
+    ¦       ¦   ¦       en-GB-x-gbclan
+    ¦       ¦   ¦       en-GB-x-gbcwmd
+    ¦       ¦   ¦       en-GB-x-rp
+    ¦       ¦   ¦       en-US
+    ¦       ¦   ¦       en-US-nyc
+    ¦       ¦   ¦       lb
+    ¦       ¦   ¦       nl
+    ¦       ¦   ¦       
+    ¦       ¦   +---grk
+    ¦       ¦   ¦       el
+    ¦       ¦   ¦       grc
+    ¦       ¦   ¦       
+    ¦       ¦   +---inc
+    ¦       ¦   ¦       as
+    ¦       ¦   ¦       bn
+    ¦       ¦   ¦       bpy
+    ¦       ¦   ¦       gu
+    ¦       ¦   ¦       hi
+    ¦       ¦   ¦       kok
+    ¦       ¦   ¦       mr
+    ¦       ¦   ¦       ne
+    ¦       ¦   ¦       or
+    ¦       ¦   ¦       pa
+    ¦       ¦   ¦       sd
+    ¦       ¦   ¦       si
+    ¦       ¦   ¦       ur
+    ¦       ¦   ¦       
+    ¦       ¦   +---ine
+    ¦       ¦   ¦       hy
+    ¦       ¦   ¦       hyw
+    ¦       ¦   ¦       sq
+    ¦       ¦   ¦       
+    ¦       ¦   +---ira
+    ¦       ¦   ¦       fa
+    ¦       ¦   ¦       fa-Latn
+    ¦       ¦   ¦       ku
+    ¦       ¦   ¦       
+    ¦       ¦   +---iro
+    ¦       ¦   ¦       chr
+    ¦       ¦   ¦       
+    ¦       ¦   +---itc
+    ¦       ¦   ¦       la
+    ¦       ¦   ¦       
+    ¦       ¦   +---jpx
+    ¦       ¦   ¦       ja
+    ¦       ¦   ¦       
+    ¦       ¦   +---map
+    ¦       ¦   ¦       haw
+    ¦       ¦   ¦       
+    ¦       ¦   +---miz
+    ¦       ¦   ¦       mto
+    ¦       ¦   ¦       
+    ¦       ¦   +---myn
+    ¦       ¦   ¦       quc
+    ¦       ¦   ¦       
+    ¦       ¦   +---poz
+    ¦       ¦   ¦       id
+    ¦       ¦   ¦       mi
+    ¦       ¦   ¦       ms
+    ¦       ¦   ¦       
+    ¦       ¦   +---roa
+    ¦       ¦   ¦       an
+    ¦       ¦   ¦       ca
+    ¦       ¦   ¦       es
+    ¦       ¦   ¦       es-419
+    ¦       ¦   ¦       fr
+    ¦       ¦   ¦       fr-BE
+    ¦       ¦   ¦       fr-CH
+    ¦       ¦   ¦       ht
+    ¦       ¦   ¦       it
+    ¦       ¦   ¦       pap
+    ¦       ¦   ¦       pt
+    ¦       ¦   ¦       pt-BR
+    ¦       ¦   ¦       ro
+    ¦       ¦   ¦       
+    ¦       ¦   +---sai
+    ¦       ¦   ¦       gn
+    ¦       ¦   ¦       
+    ¦       ¦   +---sem
+    ¦       ¦   ¦       am
+    ¦       ¦   ¦       ar
+    ¦       ¦   ¦       he
+    ¦       ¦   ¦       mt
+    ¦       ¦   ¦       
+    ¦       ¦   +---sit
+    ¦       ¦   ¦       cmn
+    ¦       ¦   ¦       cmn-Latn-pinyin
+    ¦       ¦   ¦       hak
+    ¦       ¦   ¦       my
+    ¦       ¦   ¦       yue
+    ¦       ¦   ¦       yue-Latn-jyutping
+    ¦       ¦   ¦       
+    ¦       ¦   +---tai
+    ¦       ¦   ¦       shn
+    ¦       ¦   ¦       th
+    ¦       ¦   ¦       
+    ¦       ¦   +---trk
+    ¦       ¦   ¦       az
+    ¦       ¦   ¦       ba
+    ¦       ¦   ¦       cv
+    ¦       ¦   ¦       kk
+    ¦       ¦   ¦       ky
+    ¦       ¦   ¦       nog
+    ¦       ¦   ¦       tk
+    ¦       ¦   ¦       tr
+    ¦       ¦   ¦       tt
+    ¦       ¦   ¦       ug
+    ¦       ¦   ¦       uz
+    ¦       ¦   ¦       
+    ¦       ¦   +---urj
+    ¦       ¦   ¦       et
+    ¦       ¦   ¦       fi
+    ¦       ¦   ¦       hu
+    ¦       ¦   ¦       smj
+    ¦       ¦   ¦       
+    ¦       ¦   +---zle
+    ¦       ¦   ¦       be
+    ¦       ¦   ¦       ru
+    ¦       ¦   ¦       ru-cl
+    ¦       ¦   ¦       ru-LV
+    ¦       ¦   ¦       uk
+    ¦       ¦   ¦       
+    ¦       ¦   +---zls
+    ¦       ¦   ¦       bg
+    ¦       ¦   ¦       bs
+    ¦       ¦   ¦       hr
+    ¦       ¦   ¦       mk
+    ¦       ¦   ¦       sl
+    ¦       ¦   ¦       sr
+    ¦       ¦   ¦       
+    ¦       ¦   +---zlw
+    ¦       ¦           cs
+    ¦       ¦           pl
+    ¦       ¦           sk
+    ¦       ¦           
+    ¦       +---voices
+    ¦           +---!v
+    ¦                   adam
+    ¦                   Alex
+    ¦                   Alicia
+    ¦                   Andrea
+    ¦                   Andy
+    ¦                   anika
+    ¦                   anikaRobot
+    ¦                   Annie
+    ¦                   announcer
+    ¦                   antonio
+    ¦                   AnxiousAndy
+    ¦                   aunty
+    ¦                   belinda
+    ¦                   benjamin
+    ¦                   boris
+    ¦                   caleb
+    ¦                   croak
+    ¦                   david
+    ¦                   Demonic
+    ¦                   Denis
+    ¦                   Diogo
+    ¦                   ed
+    ¦                   edward
+    ¦                   edward2
+    ¦                   f1
+    ¦                   f2
+    ¦                   f3
+    ¦                   f4
+    ¦                   f5
+    ¦                   fast
+    ¦                   Gene
+    ¦                   Gene2
+    ¦                   grandma
+    ¦                   grandpa
+    ¦                   gustave
+    ¦                   Henrique
+    ¦                   Hugo
+    ¦                   ian
+    ¦                   iven
+    ¦                   iven2
+    ¦                   iven3
+    ¦                   iven4
+    ¦                   Jacky
+    ¦                   john
+    ¦                   kaukovalta
+    ¦                   klatt
+    ¦                   klatt2
+    ¦                   klatt3
+    ¦                   klatt4
+    ¦                   klatt5
+    ¦                   klatt6
+    ¦                   Lee
+    ¦                   linda
+    ¦                   m1
+    ¦                   m2
+    ¦                   m3
+    ¦                   m4
+    ¦                   m5
+    ¦                   m6
+    ¦                   m7
+    ¦                   m8
+    ¦                   marcelo
+    ¦                   Marco
+    ¦                   Mario
+    ¦                   max
+    ¦                   Michael
+    ¦                   michel
+    ¦                   miguel
+    ¦                   Mike
+    ¦                   mike2
+    ¦                   Mr serious
+    ¦                   Nguyen
+    ¦                   norbert
+    ¦                   pablo
+    ¦                   paul
+    ¦                   pedro
+    ¦                   quincy
+    ¦                   Reed
+    ¦                   RicishayMax
+    ¦                   RicishayMax2
+    ¦                   RicishayMax3
+    ¦                   rob
+    ¦                   robert
+    ¦                   robosoft
+    ¦                   robosoft2
+    ¦                   robosoft3
+    ¦                   robosoft4
+    ¦                   robosoft5
+    ¦                   robosoft6
+    ¦                   robosoft7
+    ¦                   robosoft8
+    ¦                   sandro
+    ¦                   shelby
+    ¦                   steph
+    ¦                   steph2
+    ¦                   steph3
+    ¦                   Storm
+    ¦                   travis
+    ¦                   Tweaky
+    ¦                   UniRobot
+    ¦                   victor
+    ¦                   whisper
+    ¦                   whisperf
+    ¦                   zac
+    ¦                   
+    +---bin_dml
+    ¦   ¦   DirectML.dll
+    ¦   ¦   espeak-ng.dll
+    ¦   ¦   onnxruntime.dll
+    ¦   ¦   
+    ¦   +---espeak-ng-data
+    ¦       ¦   af_dict
+    ¦       ¦   am_dict
+    ¦       ¦   an_dict
+    ¦       ¦   ar_dict
+    ¦       ¦   as_dict
+    ¦       ¦   az_dict
+    ¦       ¦   ba_dict
+    ¦       ¦   be_dict
+    ¦       ¦   bg_dict
+    ¦       ¦   bn_dict
+    ¦       ¦   bpy_dict
+    ¦       ¦   bs_dict
+    ¦       ¦   ca_dict
+    ¦       ¦   chr_dict
+    ¦       ¦   cmn_dict
+    ¦       ¦   cs_dict
+    ¦       ¦   cv_dict
+    ¦       ¦   cy_dict
+    ¦       ¦   da_dict
+    ¦       ¦   de_dict
+    ¦       ¦   el_dict
+    ¦       ¦   en_dict
+    ¦       ¦   eo_dict
+    ¦       ¦   es_dict
+    ¦       ¦   et_dict
+    ¦       ¦   eu_dict
+    ¦       ¦   fa_dict
+    ¦       ¦   fi_dict
+    ¦       ¦   fr_dict
+    ¦       ¦   ga_dict
+    ¦       ¦   gd_dict
+    ¦       ¦   gn_dict
+    ¦       ¦   grc_dict
+    ¦       ¦   gu_dict
+    ¦       ¦   hak_dict
+    ¦       ¦   haw_dict
+    ¦       ¦   he_dict
+    ¦       ¦   hi_dict
+    ¦       ¦   hr_dict
+    ¦       ¦   ht_dict
+    ¦       ¦   hu_dict
+    ¦       ¦   hy_dict
+    ¦       ¦   ia_dict
+    ¦       ¦   id_dict
+    ¦       ¦   intonations
+    ¦       ¦   io_dict
+    ¦       ¦   is_dict
+    ¦       ¦   it_dict
+    ¦       ¦   ja_dict
+    ¦       ¦   jbo_dict
+    ¦       ¦   ka_dict
+    ¦       ¦   kk_dict
+    ¦       ¦   kl_dict
+    ¦       ¦   kn_dict
+    ¦       ¦   kok_dict
+    ¦       ¦   ko_dict
+    ¦       ¦   ku_dict
+    ¦       ¦   ky_dict
+    ¦       ¦   la_dict
+    ¦       ¦   lb_dict
+    ¦       ¦   lfn_dict
+    ¦       ¦   lt_dict
+    ¦       ¦   lv_dict
+    ¦       ¦   mi_dict
+    ¦       ¦   mk_dict
+    ¦       ¦   ml_dict
+    ¦       ¦   mr_dict
+    ¦       ¦   ms_dict
+    ¦       ¦   mto_dict
+    ¦       ¦   mt_dict
+    ¦       ¦   my_dict
+    ¦       ¦   nci_dict
+    ¦       ¦   ne_dict
+    ¦       ¦   nl_dict
+    ¦       ¦   nog_dict
+    ¦       ¦   no_dict
+    ¦       ¦   om_dict
+    ¦       ¦   or_dict
+    ¦       ¦   pap_dict
+    ¦       ¦   pa_dict
+    ¦       ¦   phondata
+    ¦       ¦   phondata-manifest
+    ¦       ¦   phonindex
+    ¦       ¦   phontab
+    ¦       ¦   piqd_dict
+    ¦       ¦   pl_dict
+    ¦       ¦   pt_dict
+    ¦       ¦   py_dict
+    ¦       ¦   qdb_dict
+    ¦       ¦   quc_dict
+    ¦       ¦   qu_dict
+    ¦       ¦   qya_dict
+    ¦       ¦   ro_dict
+    ¦       ¦   ru_dict
+    ¦       ¦   sd_dict
+    ¦       ¦   shn_dict
+    ¦       ¦   si_dict
+    ¦       ¦   sjn_dict
+    ¦       ¦   sk_dict
+    ¦       ¦   sl_dict
+    ¦       ¦   smj_dict
+    ¦       ¦   sq_dict
+    ¦       ¦   sr_dict
+    ¦       ¦   sv_dict
+    ¦       ¦   sw_dict
+    ¦       ¦   ta_dict
+    ¦       ¦   te_dict
+    ¦       ¦   th_dict
+    ¦       ¦   tk_dict
+    ¦       ¦   tn_dict
+    ¦       ¦   tr_dict
+    ¦       ¦   tt_dict
+    ¦       ¦   ug_dict
+    ¦       ¦   uk_dict
+    ¦       ¦   ur_dict
+    ¦       ¦   uz_dict
+    ¦       ¦   vi_dict
+    ¦       ¦   yue_dict
+    ¦       ¦   
+    ¦       +---lang
+    ¦       ¦   ¦   eu
+    ¦       ¦   ¦   ko
+    ¦       ¦   ¦   qu
+    ¦       ¦   ¦   
+    ¦       ¦   +---aav
+    ¦       ¦   ¦       vi
+    ¦       ¦   ¦       vi-VN-x-central
+    ¦       ¦   ¦       vi-VN-x-south
+    ¦       ¦   ¦       
+    ¦       ¦   +---art
+    ¦       ¦   ¦       eo
+    ¦       ¦   ¦       ia
+    ¦       ¦   ¦       io
+    ¦       ¦   ¦       jbo
+    ¦       ¦   ¦       lfn
+    ¦       ¦   ¦       piqd
+    ¦       ¦   ¦       py
+    ¦       ¦   ¦       qdb
+    ¦       ¦   ¦       qya
+    ¦       ¦   ¦       sjn
+    ¦       ¦   ¦       
+    ¦       ¦   +---azc
+    ¦       ¦   ¦       nci
+    ¦       ¦   ¦       
+    ¦       ¦   +---bat
+    ¦       ¦   ¦       lt
+    ¦       ¦   ¦       ltg
+    ¦       ¦   ¦       lv
+    ¦       ¦   ¦       
+    ¦       ¦   +---bnt
+    ¦       ¦   ¦       sw
+    ¦       ¦   ¦       tn
+    ¦       ¦   ¦       
+    ¦       ¦   +---ccs
+    ¦       ¦   ¦       ka
+    ¦       ¦   ¦       
+    ¦       ¦   +---cel
+    ¦       ¦   ¦       cy
+    ¦       ¦   ¦       ga
+    ¦       ¦   ¦       gd
+    ¦       ¦   ¦       
+    ¦       ¦   +---cus
+    ¦       ¦   ¦       om
+    ¦       ¦   ¦       
+    ¦       ¦   +---dra
+    ¦       ¦   ¦       kn
+    ¦       ¦   ¦       ml
+    ¦       ¦   ¦       ta
+    ¦       ¦   ¦       te
+    ¦       ¦   ¦       
+    ¦       ¦   +---esx
+    ¦       ¦   ¦       kl
+    ¦       ¦   ¦       
+    ¦       ¦   +---gmq
+    ¦       ¦   ¦       da
+    ¦       ¦   ¦       is
+    ¦       ¦   ¦       nb
+    ¦       ¦   ¦       sv
+    ¦       ¦   ¦       
+    ¦       ¦   +---gmw
+    ¦       ¦   ¦       af
+    ¦       ¦   ¦       de
+    ¦       ¦   ¦       en
+    ¦       ¦   ¦       en-029
+    ¦       ¦   ¦       en-GB-scotland
+    ¦       ¦   ¦       en-GB-x-gbclan
+    ¦       ¦   ¦       en-GB-x-gbcwmd
+    ¦       ¦   ¦       en-GB-x-rp
+    ¦       ¦   ¦       en-US
+    ¦       ¦   ¦       en-US-nyc
+    ¦       ¦   ¦       lb
+    ¦       ¦   ¦       nl
+    ¦       ¦   ¦       
+    ¦       ¦   +---grk
+    ¦       ¦   ¦       el
+    ¦       ¦   ¦       grc
+    ¦       ¦   ¦       
+    ¦       ¦   +---inc
+    ¦       ¦   ¦       as
+    ¦       ¦   ¦       bn
+    ¦       ¦   ¦       bpy
+    ¦       ¦   ¦       gu
+    ¦       ¦   ¦       hi
+    ¦       ¦   ¦       kok
+    ¦       ¦   ¦       mr
+    ¦       ¦   ¦       ne
+    ¦       ¦   ¦       or
+    ¦       ¦   ¦       pa
+    ¦       ¦   ¦       sd
+    ¦       ¦   ¦       si
+    ¦       ¦   ¦       ur
+    ¦       ¦   ¦       
+    ¦       ¦   +---ine
+    ¦       ¦   ¦       hy
+    ¦       ¦   ¦       hyw
+    ¦       ¦   ¦       sq
+    ¦       ¦   ¦       
+    ¦       ¦   +---ira
+    ¦       ¦   ¦       fa
+    ¦       ¦   ¦       fa-Latn
+    ¦       ¦   ¦       ku
+    ¦       ¦   ¦       
+    ¦       ¦   +---iro
+    ¦       ¦   ¦       chr
+    ¦       ¦   ¦       
+    ¦       ¦   +---itc
+    ¦       ¦   ¦       la
+    ¦       ¦   ¦       
+    ¦       ¦   +---jpx
+    ¦       ¦   ¦       ja
+    ¦       ¦   ¦       
+    ¦       ¦   +---map
+    ¦       ¦   ¦       haw
+    ¦       ¦   ¦       
+    ¦       ¦   +---miz
+    ¦       ¦   ¦       mto
+    ¦       ¦   ¦       
+    ¦       ¦   +---myn
+    ¦       ¦   ¦       quc
+    ¦       ¦   ¦       
+    ¦       ¦   +---poz
+    ¦       ¦   ¦       id
+    ¦       ¦   ¦       mi
+    ¦       ¦   ¦       ms
+    ¦       ¦   ¦       
+    ¦       ¦   +---roa
+    ¦       ¦   ¦       an
+    ¦       ¦   ¦       ca
+    ¦       ¦   ¦       es
+    ¦       ¦   ¦       es-419
+    ¦       ¦   ¦       fr
+    ¦       ¦   ¦       fr-BE
+    ¦       ¦   ¦       fr-CH
+    ¦       ¦   ¦       ht
+    ¦       ¦   ¦       it
+    ¦       ¦   ¦       pap
+    ¦       ¦   ¦       pt
+    ¦       ¦   ¦       pt-BR
+    ¦       ¦   ¦       ro
+    ¦       ¦   ¦       
+    ¦       ¦   +---sai
+    ¦       ¦   ¦       gn
+    ¦       ¦   ¦       
+    ¦       ¦   +---sem
+    ¦       ¦   ¦       am
+    ¦       ¦   ¦       ar
+    ¦       ¦   ¦       he
+    ¦       ¦   ¦       mt
+    ¦       ¦   ¦       
+    ¦       ¦   +---sit
+    ¦       ¦   ¦       cmn
+    ¦       ¦   ¦       cmn-Latn-pinyin
+    ¦       ¦   ¦       hak
+    ¦       ¦   ¦       my
+    ¦       ¦   ¦       yue
+    ¦       ¦   ¦       yue-Latn-jyutping
+    ¦       ¦   ¦       
+    ¦       ¦   +---tai
+    ¦       ¦   ¦       shn
+    ¦       ¦   ¦       th
+    ¦       ¦   ¦       
+    ¦       ¦   +---trk
+    ¦       ¦   ¦       az
+    ¦       ¦   ¦       ba
+    ¦       ¦   ¦       cv
+    ¦       ¦   ¦       kk
+    ¦       ¦   ¦       ky
+    ¦       ¦   ¦       nog
+    ¦       ¦   ¦       tk
+    ¦       ¦   ¦       tr
+    ¦       ¦   ¦       tt
+    ¦       ¦   ¦       ug
+    ¦       ¦   ¦       uz
+    ¦       ¦   ¦       
+    ¦       ¦   +---urj
+    ¦       ¦   ¦       et
+    ¦       ¦   ¦       fi
+    ¦       ¦   ¦       hu
+    ¦       ¦   ¦       smj
+    ¦       ¦   ¦       
+    ¦       ¦   +---zle
+    ¦       ¦   ¦       be
+    ¦       ¦   ¦       ru
+    ¦       ¦   ¦       ru-cl
+    ¦       ¦   ¦       ru-LV
+    ¦       ¦   ¦       uk
+    ¦       ¦   ¦       
+    ¦       ¦   +---zls
+    ¦       ¦   ¦       bg
+    ¦       ¦   ¦       bs
+    ¦       ¦   ¦       hr
+    ¦       ¦   ¦       mk
+    ¦       ¦   ¦       sl
+    ¦       ¦   ¦       sr
+    ¦       ¦   ¦       
+    ¦       ¦   +---zlw
+    ¦       ¦           cs
+    ¦       ¦           pl
+    ¦       ¦           sk
+    ¦       ¦           
+    ¦       +---voices
+    ¦           +---!v
+    ¦                   adam
+    ¦                   Alex
+    ¦                   Alicia
+    ¦                   Andrea
+    ¦                   Andy
+    ¦                   anika
+    ¦                   anikaRobot
+    ¦                   Annie
+    ¦                   announcer
+    ¦                   antonio
+    ¦                   AnxiousAndy
+    ¦                   aunty
+    ¦                   belinda
+    ¦                   benjamin
+    ¦                   boris
+    ¦                   caleb
+    ¦                   croak
+    ¦                   david
+    ¦                   Demonic
+    ¦                   Denis
+    ¦                   Diogo
+    ¦                   ed
+    ¦                   edward
+    ¦                   edward2
+    ¦                   f1
+    ¦                   f2
+    ¦                   f3
+    ¦                   f4
+    ¦                   f5
+    ¦                   fast
+    ¦                   Gene
+    ¦                   Gene2
+    ¦                   grandma
+    ¦                   grandpa
+    ¦                   gustave
+    ¦                   Henrique
+    ¦                   Hugo
+    ¦                   ian
+    ¦                   iven
+    ¦                   iven2
+    ¦                   iven3
+    ¦                   iven4
+    ¦                   Jacky
+    ¦                   john
+    ¦                   kaukovalta
+    ¦                   klatt
+    ¦                   klatt2
+    ¦                   klatt3
+    ¦                   klatt4
+    ¦                   klatt5
+    ¦                   klatt6
+    ¦                   Lee
+    ¦                   linda
+    ¦                   m1
+    ¦                   m2
+    ¦                   m3
+    ¦                   m4
+    ¦                   m5
+    ¦                   m6
+    ¦                   m7
+    ¦                   m8
+    ¦                   marcelo
+    ¦                   Marco
+    ¦                   Mario
+    ¦                   max
+    ¦                   Michael
+    ¦                   michel
+    ¦                   miguel
+    ¦                   Mike
+    ¦                   mike2
+    ¦                   Mr serious
+    ¦                   Nguyen
+    ¦                   norbert
+    ¦                   pablo
+    ¦                   paul
+    ¦                   pedro
+    ¦                   quincy
+    ¦                   Reed
+    ¦                   RicishayMax
+    ¦                   RicishayMax2
+    ¦                   RicishayMax3
+    ¦                   rob
+    ¦                   robert
+    ¦                   robosoft
+    ¦                   robosoft2
+    ¦                   robosoft3
+    ¦                   robosoft4
+    ¦                   robosoft5
+    ¦                   robosoft6
+    ¦                   robosoft7
+    ¦                   robosoft8
+    ¦                   sandro
+    ¦                   shelby
+    ¦                   steph
+    ¦                   steph2
+    ¦                   steph3
+    ¦                   Storm
+    ¦                   travis
+    ¦                   Tweaky
+    ¦                   UniRobot
+    ¦                   victor
+    ¦                   whisper
+    ¦                   whisperf
+    ¦                   zac
+    ¦                   
+    +---bin_linux
+    ¦   ¦   libespeak-ng.so.1
+    ¦   ¦   libonnxruntime.so
+    ¦   ¦   
+    ¦   +---espeak-ng-data
+    ¦       ¦   af_dict
+    ¦       ¦   am_dict
+    ¦       ¦   an_dict
+    ¦       ¦   ar_dict
+    ¦       ¦   as_dict
+    ¦       ¦   az_dict
+    ¦       ¦   ba_dict
+    ¦       ¦   be_dict
+    ¦       ¦   bg_dict
+    ¦       ¦   bn_dict
+    ¦       ¦   bpy_dict
+    ¦       ¦   bs_dict
+    ¦       ¦   ca_dict
+    ¦       ¦   chr_dict
+    ¦       ¦   cmn_dict
+    ¦       ¦   cs_dict
+    ¦       ¦   cv_dict
+    ¦       ¦   cy_dict
+    ¦       ¦   da_dict
+    ¦       ¦   de_dict
+    ¦       ¦   el_dict
+    ¦       ¦   en_dict
+    ¦       ¦   eo_dict
+    ¦       ¦   es_dict
+    ¦       ¦   et_dict
+    ¦       ¦   eu_dict
+    ¦       ¦   fa_dict
+    ¦       ¦   fi_dict
+    ¦       ¦   fr_dict
+    ¦       ¦   ga_dict
+    ¦       ¦   gd_dict
+    ¦       ¦   gn_dict
+    ¦       ¦   grc_dict
+    ¦       ¦   gu_dict
+    ¦       ¦   hak_dict
+    ¦       ¦   haw_dict
+    ¦       ¦   he_dict
+    ¦       ¦   hi_dict
+    ¦       ¦   hr_dict
+    ¦       ¦   ht_dict
+    ¦       ¦   hu_dict
+    ¦       ¦   hy_dict
+    ¦       ¦   ia_dict
+    ¦       ¦   id_dict
+    ¦       ¦   intonations
+    ¦       ¦   io_dict
+    ¦       ¦   is_dict
+    ¦       ¦   it_dict
+    ¦       ¦   ja_dict
+    ¦       ¦   jbo_dict
+    ¦       ¦   ka_dict
+    ¦       ¦   kk_dict
+    ¦       ¦   kl_dict
+    ¦       ¦   kn_dict
+    ¦       ¦   kok_dict
+    ¦       ¦   ko_dict
+    ¦       ¦   ku_dict
+    ¦       ¦   ky_dict
+    ¦       ¦   la_dict
+    ¦       ¦   lb_dict
+    ¦       ¦   lfn_dict
+    ¦       ¦   lt_dict
+    ¦       ¦   lv_dict
+    ¦       ¦   mi_dict
+    ¦       ¦   mk_dict
+    ¦       ¦   ml_dict
+    ¦       ¦   mr_dict
+    ¦       ¦   ms_dict
+    ¦       ¦   mto_dict
+    ¦       ¦   mt_dict
+    ¦       ¦   my_dict
+    ¦       ¦   nci_dict
+    ¦       ¦   ne_dict
+    ¦       ¦   nl_dict
+    ¦       ¦   nog_dict
+    ¦       ¦   no_dict
+    ¦       ¦   om_dict
+    ¦       ¦   or_dict
+    ¦       ¦   pap_dict
+    ¦       ¦   pa_dict
+    ¦       ¦   phondata
+    ¦       ¦   phondata-manifest
+    ¦       ¦   phonindex
+    ¦       ¦   phontab
+    ¦       ¦   piqd_dict
+    ¦       ¦   pl_dict
+    ¦       ¦   pt_dict
+    ¦       ¦   py_dict
+    ¦       ¦   qdb_dict
+    ¦       ¦   quc_dict
+    ¦       ¦   qu_dict
+    ¦       ¦   qya_dict
+    ¦       ¦   ro_dict
+    ¦       ¦   ru_dict
+    ¦       ¦   sd_dict
+    ¦       ¦   shn_dict
+    ¦       ¦   si_dict
+    ¦       ¦   sjn_dict
+    ¦       ¦   sk_dict
+    ¦       ¦   sl_dict
+    ¦       ¦   smj_dict
+    ¦       ¦   sq_dict
+    ¦       ¦   sr_dict
+    ¦       ¦   sv_dict
+    ¦       ¦   sw_dict
+    ¦       ¦   ta_dict
+    ¦       ¦   te_dict
+    ¦       ¦   th_dict
+    ¦       ¦   tk_dict
+    ¦       ¦   tn_dict
+    ¦       ¦   tr_dict
+    ¦       ¦   tt_dict
+    ¦       ¦   ug_dict
+    ¦       ¦   uk_dict
+    ¦       ¦   ur_dict
+    ¦       ¦   uz_dict
+    ¦       ¦   vi_dict
+    ¦       ¦   yue_dict
+    ¦       ¦   
+    ¦       +---lang
+    ¦       ¦   ¦   eu
+    ¦       ¦   ¦   ko
+    ¦       ¦   ¦   qu
+    ¦       ¦   ¦   
+    ¦       ¦   +---aav
+    ¦       ¦   ¦       vi
+    ¦       ¦   ¦       vi-VN-x-central
+    ¦       ¦   ¦       vi-VN-x-south
+    ¦       ¦   ¦       
+    ¦       ¦   +---art
+    ¦       ¦   ¦       eo
+    ¦       ¦   ¦       ia
+    ¦       ¦   ¦       io
+    ¦       ¦   ¦       jbo
+    ¦       ¦   ¦       lfn
+    ¦       ¦   ¦       piqd
+    ¦       ¦   ¦       py
+    ¦       ¦   ¦       qdb
+    ¦       ¦   ¦       qya
+    ¦       ¦   ¦       sjn
+    ¦       ¦   ¦       
+    ¦       ¦   +---azc
+    ¦       ¦   ¦       nci
+    ¦       ¦   ¦       
+    ¦       ¦   +---bat
+    ¦       ¦   ¦       lt
+    ¦       ¦   ¦       ltg
+    ¦       ¦   ¦       lv
+    ¦       ¦   ¦       
+    ¦       ¦   +---bnt
+    ¦       ¦   ¦       sw
+    ¦       ¦   ¦       tn
+    ¦       ¦   ¦       
+    ¦       ¦   +---ccs
+    ¦       ¦   ¦       ka
+    ¦       ¦   ¦       
+    ¦       ¦   +---cel
+    ¦       ¦   ¦       cy
+    ¦       ¦   ¦       ga
+    ¦       ¦   ¦       gd
+    ¦       ¦   ¦       
+    ¦       ¦   +---cus
+    ¦       ¦   ¦       om
+    ¦       ¦   ¦       
+    ¦       ¦   +---dra
+    ¦       ¦   ¦       kn
+    ¦       ¦   ¦       ml
+    ¦       ¦   ¦       ta
+    ¦       ¦   ¦       te
+    ¦       ¦   ¦       
+    ¦       ¦   +---esx
+    ¦       ¦   ¦       kl
+    ¦       ¦   ¦       
+    ¦       ¦   +---gmq
+    ¦       ¦   ¦       da
+    ¦       ¦   ¦       is
+    ¦       ¦   ¦       nb
+    ¦       ¦   ¦       sv
+    ¦       ¦   ¦       
+    ¦       ¦   +---gmw
+    ¦       ¦   ¦       af
+    ¦       ¦   ¦       de
+    ¦       ¦   ¦       en
+    ¦       ¦   ¦       en-029
+    ¦       ¦   ¦       en-GB-scotland
+    ¦       ¦   ¦       en-GB-x-gbclan
+    ¦       ¦   ¦       en-GB-x-gbcwmd
+    ¦       ¦   ¦       en-GB-x-rp
+    ¦       ¦   ¦       en-US
+    ¦       ¦   ¦       en-US-nyc
+    ¦       ¦   ¦       lb
+    ¦       ¦   ¦       nl
+    ¦       ¦   ¦       
+    ¦       ¦   +---grk
+    ¦       ¦   ¦       el
+    ¦       ¦   ¦       grc
+    ¦       ¦   ¦       
+    ¦       ¦   +---inc
+    ¦       ¦   ¦       as
+    ¦       ¦   ¦       bn
+    ¦       ¦   ¦       bpy
+    ¦       ¦   ¦       gu
+    ¦       ¦   ¦       hi
+    ¦       ¦   ¦       kok
+    ¦       ¦   ¦       mr
+    ¦       ¦   ¦       ne
+    ¦       ¦   ¦       or
+    ¦       ¦   ¦       pa
+    ¦       ¦   ¦       sd
+    ¦       ¦   ¦       si
+    ¦       ¦   ¦       ur
+    ¦       ¦   ¦       
+    ¦       ¦   +---ine
+    ¦       ¦   ¦       hy
+    ¦       ¦   ¦       hyw
+    ¦       ¦   ¦       sq
+    ¦       ¦   ¦       
+    ¦       ¦   +---ira
+    ¦       ¦   ¦       fa
+    ¦       ¦   ¦       fa-Latn
+    ¦       ¦   ¦       ku
+    ¦       ¦   ¦       
+    ¦       ¦   +---iro
+    ¦       ¦   ¦       chr
+    ¦       ¦   ¦       
+    ¦       ¦   +---itc
+    ¦       ¦   ¦       la
+    ¦       ¦   ¦       
+    ¦       ¦   +---jpx
+    ¦       ¦   ¦       ja
+    ¦       ¦   ¦       
+    ¦       ¦   +---map
+    ¦       ¦   ¦       haw
+    ¦       ¦   ¦       
+    ¦       ¦   +---miz
+    ¦       ¦   ¦       mto
+    ¦       ¦   ¦       
+    ¦       ¦   +---myn
+    ¦       ¦   ¦       quc
+    ¦       ¦   ¦       
+    ¦       ¦   +---poz
+    ¦       ¦   ¦       id
+    ¦       ¦   ¦       mi
+    ¦       ¦   ¦       ms
+    ¦       ¦   ¦       
+    ¦       ¦   +---roa
+    ¦       ¦   ¦       an
+    ¦       ¦   ¦       ca
+    ¦       ¦   ¦       es
+    ¦       ¦   ¦       es-419
+    ¦       ¦   ¦       fr
+    ¦       ¦   ¦       fr-BE
+    ¦       ¦   ¦       fr-CH
+    ¦       ¦   ¦       ht
+    ¦       ¦   ¦       it
+    ¦       ¦   ¦       pap
+    ¦       ¦   ¦       pt
+    ¦       ¦   ¦       pt-BR
+    ¦       ¦   ¦       ro
+    ¦       ¦   ¦       
+    ¦       ¦   +---sai
+    ¦       ¦   ¦       gn
+    ¦       ¦   ¦       
+    ¦       ¦   +---sem
+    ¦       ¦   ¦       am
+    ¦       ¦   ¦       ar
+    ¦       ¦   ¦       he
+    ¦       ¦   ¦       mt
+    ¦       ¦   ¦       
+    ¦       ¦   +---sit
+    ¦       ¦   ¦       cmn
+    ¦       ¦   ¦       cmn-Latn-pinyin
+    ¦       ¦   ¦       hak
+    ¦       ¦   ¦       my
+    ¦       ¦   ¦       yue
+    ¦       ¦   ¦       yue-Latn-jyutping
+    ¦       ¦   ¦       
+    ¦       ¦   +---tai
+    ¦       ¦   ¦       shn
+    ¦       ¦   ¦       th
+    ¦       ¦   ¦       
+    ¦       ¦   +---trk
+    ¦       ¦   ¦       az
+    ¦       ¦   ¦       ba
+    ¦       ¦   ¦       cv
+    ¦       ¦   ¦       kk
+    ¦       ¦   ¦       ky
+    ¦       ¦   ¦       nog
+    ¦       ¦   ¦       tk
+    ¦       ¦   ¦       tr
+    ¦       ¦   ¦       tt
+    ¦       ¦   ¦       ug
+    ¦       ¦   ¦       uz
+    ¦       ¦   ¦       
+    ¦       ¦   +---urj
+    ¦       ¦   ¦       et
+    ¦       ¦   ¦       fi
+    ¦       ¦   ¦       hu
+    ¦       ¦   ¦       smj
+    ¦       ¦   ¦       
+    ¦       ¦   +---zle
+    ¦       ¦   ¦       be
+    ¦       ¦   ¦       ru
+    ¦       ¦   ¦       ru-cl
+    ¦       ¦   ¦       ru-LV
+    ¦       ¦   ¦       uk
+    ¦       ¦   ¦       
+    ¦       ¦   +---zls
+    ¦       ¦   ¦       bg
+    ¦       ¦   ¦       bs
+    ¦       ¦   ¦       hr
+    ¦       ¦   ¦       mk
+    ¦       ¦   ¦       sl
+    ¦       ¦   ¦       sr
+    ¦       ¦   ¦       
+    ¦       ¦   +---zlw
+    ¦       ¦           cs
+    ¦       ¦           pl
+    ¦       ¦           sk
+    ¦       ¦           
+    ¦       +---voices
+    ¦           +---!v
+    ¦                   adam
+    ¦                   Alex
+    ¦                   Alicia
+    ¦                   Andrea
+    ¦                   Andy
+    ¦                   anika
+    ¦                   anikaRobot
+    ¦                   Annie
+    ¦                   announcer
+    ¦                   antonio
+    ¦                   AnxiousAndy
+    ¦                   aunty
+    ¦                   belinda
+    ¦                   benjamin
+    ¦                   boris
+    ¦                   caleb
+    ¦                   croak
+    ¦                   david
+    ¦                   Demonic
+    ¦                   Denis
+    ¦                   Diogo
+    ¦                   ed
+    ¦                   edward
+    ¦                   edward2
+    ¦                   f1
+    ¦                   f2
+    ¦                   f3
+    ¦                   f4
+    ¦                   f5
+    ¦                   fast
+    ¦                   Gene
+    ¦                   Gene2
+    ¦                   grandma
+    ¦                   grandpa
+    ¦                   gustave
+    ¦                   Henrique
+    ¦                   Hugo
+    ¦                   ian
+    ¦                   iven
+    ¦                   iven2
+    ¦                   iven3
+    ¦                   iven4
+    ¦                   Jacky
+    ¦                   john
+    ¦                   kaukovalta
+    ¦                   klatt
+    ¦                   klatt2
+    ¦                   klatt3
+    ¦                   klatt4
+    ¦                   klatt5
+    ¦                   klatt6
+    ¦                   Lee
+    ¦                   linda
+    ¦                   m1
+    ¦                   m2
+    ¦                   m3
+    ¦                   m4
+    ¦                   m5
+    ¦                   m6
+    ¦                   m7
+    ¦                   m8
+    ¦                   marcelo
+    ¦                   Marco
+    ¦                   Mario
+    ¦                   max
+    ¦                   Michael
+    ¦                   michel
+    ¦                   miguel
+    ¦                   Mike
+    ¦                   mike2
+    ¦                   Mr serious
+    ¦                   Nguyen
+    ¦                   norbert
+    ¦                   pablo
+    ¦                   paul
+    ¦                   pedro
+    ¦                   quincy
+    ¦                   Reed
+    ¦                   RicishayMax
+    ¦                   RicishayMax2
+    ¦                   RicishayMax3
+    ¦                   rob
+    ¦                   robert
+    ¦                   robosoft
+    ¦                   robosoft2
+    ¦                   robosoft3
+    ¦                   robosoft4
+    ¦                   robosoft5
+    ¦                   robosoft6
+    ¦                   robosoft7
+    ¦                   robosoft8
+    ¦                   sandro
+    ¦                   shelby
+    ¦                   steph
+    ¦                   steph2
+    ¦                   steph3
+    ¦                   Storm
+    ¦                   travis
+    ¦                   Tweaky
+    ¦                   UniRobot
+    ¦                   victor
+    ¦                   whisper
+    ¦                   whisperf
+    ¦                   zac
+    ¦                   
+    +---dl
+    ¦   ¦   ort.zip
+    ¦   ¦   ort_linux.tgz
+    ¦   ¦   piper.zip
+    ¦   ¦   piper_linux.tar.gz
+    ¦   ¦   
+    ¦   +---dml
+    ¦   ¦   ¦   directml.zip
+    ¦   ¦   ¦   ort_dml.zip
+    ¦   ¦   ¦   
+    ¦   ¦   +---bin
+    ¦   ¦   ¦   +---x64-win
+    ¦   ¦   ¦           DirectML.dll
+    ¦   ¦   ¦           
+    ¦   ¦   +---runtimes
+    ¦   ¦       +---win-x64
+    ¦   ¦           +---native
+    ¦   ¦                   onnxruntime.dll
+    ¦   ¦                   onnxruntime.lib
+    ¦   ¦                   
+    ¦   +---onnxruntime-linux-x64-1.20.1
+    ¦   ¦   ¦   GIT_COMMIT_ID
+    ¦   ¦   ¦   LICENSE
+    ¦   ¦   ¦   Privacy.md
+    ¦   ¦   ¦   README.md
+    ¦   ¦   ¦   ThirdPartyNotices.txt
+    ¦   ¦   ¦   VERSION_NUMBER
+    ¦   ¦   ¦   
+    ¦   ¦   +---include
+    ¦   ¦   ¦   ¦   cpu_provider_factory.h
+    ¦   ¦   ¦   ¦   onnxruntime_cxx_api.h
+    ¦   ¦   ¦   ¦   onnxruntime_cxx_inline.h
+    ¦   ¦   ¦   ¦   onnxruntime_c_api.h
+    ¦   ¦   ¦   ¦   onnxruntime_float16.h
+    ¦   ¦   ¦   ¦   onnxruntime_lite_custom_op.h
+    ¦   ¦   ¦   ¦   onnxruntime_run_options_config_keys.h
+    ¦   ¦   ¦   ¦   onnxruntime_session_options_config_keys.h
+    ¦   ¦   ¦   ¦   provider_options.h
+    ¦   ¦   ¦   ¦   
+    ¦   ¦   ¦   +---core
+    ¦   ¦   ¦       +---providers
+    ¦   ¦   ¦               custom_op_context.h
+    ¦   ¦   ¦               resource.h
+    ¦   ¦   ¦               
+    ¦   ¦   +---lib
+    ¦   ¦       ¦   libonnxruntime.so
+    ¦   ¦       ¦   libonnxruntime.so.1
+    ¦   ¦       ¦   libonnxruntime.so.1.20.1
+    ¦   ¦       ¦   libonnxruntime_providers_shared.so
+    ¦   ¦       ¦   
+    ¦   ¦       +---cmake
+    ¦   ¦       ¦   +---onnxruntime
+    ¦   ¦       ¦           onnxruntimeConfig.cmake
+    ¦   ¦       ¦           onnxruntimeConfigVersion.cmake
+    ¦   ¦       ¦           onnxruntimeTargets-release.cmake
+    ¦   ¦       ¦           onnxruntimeTargets.cmake
+    ¦   ¦       ¦           
+    ¦   ¦       +---pkgconfig
+    ¦   ¦               libonnxruntime.pc
+    ¦   ¦               
+    ¦   +---onnxruntime-win-x64-1.20.1
+    ¦   ¦   ¦   CodeSignSummary-373f1b20-cf8e-4286-b565-e629e70f1661.md
+    ¦   ¦   ¦   GIT_COMMIT_ID
+    ¦   ¦   ¦   LICENSE
+    ¦   ¦   ¦   Privacy.md
+    ¦   ¦   ¦   README.md
+    ¦   ¦   ¦   ThirdPartyNotices.txt
+    ¦   ¦   ¦   VERSION_NUMBER
+    ¦   ¦   ¦   
+    ¦   ¦   +---include
+    ¦   ¦   ¦       cpu_provider_factory.h
+    ¦   ¦   ¦       onnxruntime_cxx_api.h
+    ¦   ¦   ¦       onnxruntime_cxx_inline.h
+    ¦   ¦   ¦       onnxruntime_c_api.h
+    ¦   ¦   ¦       onnxruntime_float16.h
+    ¦   ¦   ¦       onnxruntime_lite_custom_op.h
+    ¦   ¦   ¦       onnxruntime_run_options_config_keys.h
+    ¦   ¦   ¦       onnxruntime_session_options_config_keys.h
+    ¦   ¦   ¦       onnxruntime_training_cxx_api.h
+    ¦   ¦   ¦       onnxruntime_training_cxx_inline.h
+    ¦   ¦   ¦       onnxruntime_training_c_api.h
+    ¦   ¦   ¦       provider_options.h
+    ¦   ¦   ¦       
+    ¦   ¦   +---lib
+    ¦   ¦           onnxruntime.dll
+    ¦   ¦           onnxruntime.lib
+    ¦   ¦           onnxruntime.pdb
+    ¦   ¦           onnxruntime_providers_shared.dll
+    ¦   ¦           onnxruntime_providers_shared.lib
+    ¦   ¦           onnxruntime_providers_shared.pdb
+    ¦   ¦           
+    ¦   +---piper
+    ¦   ¦   ¦   espeak-ng.dll
+    ¦   ¦   ¦   libtashkeel_model.ort
+    ¦   ¦   ¦   onnxruntime.dll
+    ¦   ¦   ¦   onnxruntime_providers_shared.dll
+    ¦   ¦   ¦   piper.exe
+    ¦   ¦   ¦   piper_phonemize.dll
+    ¦   ¦   ¦   
+    ¦   ¦   +---espeak-ng-data
+    ¦   ¦   ¦   ¦   af_dict
+    ¦   ¦   ¦   ¦   am_dict
+    ¦   ¦   ¦   ¦   an_dict
+    ¦   ¦   ¦   ¦   ar_dict
+    ¦   ¦   ¦   ¦   as_dict
+    ¦   ¦   ¦   ¦   az_dict
+    ¦   ¦   ¦   ¦   ba_dict
+    ¦   ¦   ¦   ¦   be_dict
+    ¦   ¦   ¦   ¦   bg_dict
+    ¦   ¦   ¦   ¦   bn_dict
+    ¦   ¦   ¦   ¦   bpy_dict
+    ¦   ¦   ¦   ¦   bs_dict
+    ¦   ¦   ¦   ¦   ca_dict
+    ¦   ¦   ¦   ¦   chr_dict
+    ¦   ¦   ¦   ¦   cmn_dict
+    ¦   ¦   ¦   ¦   cs_dict
+    ¦   ¦   ¦   ¦   cv_dict
+    ¦   ¦   ¦   ¦   cy_dict
+    ¦   ¦   ¦   ¦   da_dict
+    ¦   ¦   ¦   ¦   de_dict
+    ¦   ¦   ¦   ¦   el_dict
+    ¦   ¦   ¦   ¦   en_dict
+    ¦   ¦   ¦   ¦   eo_dict
+    ¦   ¦   ¦   ¦   es_dict
+    ¦   ¦   ¦   ¦   et_dict
+    ¦   ¦   ¦   ¦   eu_dict
+    ¦   ¦   ¦   ¦   fa_dict
+    ¦   ¦   ¦   ¦   fi_dict
+    ¦   ¦   ¦   ¦   fr_dict
+    ¦   ¦   ¦   ¦   ga_dict
+    ¦   ¦   ¦   ¦   gd_dict
+    ¦   ¦   ¦   ¦   gn_dict
+    ¦   ¦   ¦   ¦   grc_dict
+    ¦   ¦   ¦   ¦   gu_dict
+    ¦   ¦   ¦   ¦   hak_dict
+    ¦   ¦   ¦   ¦   haw_dict
+    ¦   ¦   ¦   ¦   he_dict
+    ¦   ¦   ¦   ¦   hi_dict
+    ¦   ¦   ¦   ¦   hr_dict
+    ¦   ¦   ¦   ¦   ht_dict
+    ¦   ¦   ¦   ¦   hu_dict
+    ¦   ¦   ¦   ¦   hy_dict
+    ¦   ¦   ¦   ¦   ia_dict
+    ¦   ¦   ¦   ¦   id_dict
+    ¦   ¦   ¦   ¦   intonations
+    ¦   ¦   ¦   ¦   io_dict
+    ¦   ¦   ¦   ¦   is_dict
+    ¦   ¦   ¦   ¦   it_dict
+    ¦   ¦   ¦   ¦   ja_dict
+    ¦   ¦   ¦   ¦   jbo_dict
+    ¦   ¦   ¦   ¦   ka_dict
+    ¦   ¦   ¦   ¦   kk_dict
+    ¦   ¦   ¦   ¦   kl_dict
+    ¦   ¦   ¦   ¦   kn_dict
+    ¦   ¦   ¦   ¦   kok_dict
+    ¦   ¦   ¦   ¦   ko_dict
+    ¦   ¦   ¦   ¦   ku_dict
+    ¦   ¦   ¦   ¦   ky_dict
+    ¦   ¦   ¦   ¦   la_dict
+    ¦   ¦   ¦   ¦   lb_dict
+    ¦   ¦   ¦   ¦   lfn_dict
+    ¦   ¦   ¦   ¦   lt_dict
+    ¦   ¦   ¦   ¦   lv_dict
+    ¦   ¦   ¦   ¦   mi_dict
+    ¦   ¦   ¦   ¦   mk_dict
+    ¦   ¦   ¦   ¦   ml_dict
+    ¦   ¦   ¦   ¦   mr_dict
+    ¦   ¦   ¦   ¦   ms_dict
+    ¦   ¦   ¦   ¦   mto_dict
+    ¦   ¦   ¦   ¦   mt_dict
+    ¦   ¦   ¦   ¦   my_dict
+    ¦   ¦   ¦   ¦   nci_dict
+    ¦   ¦   ¦   ¦   ne_dict
+    ¦   ¦   ¦   ¦   nl_dict
+    ¦   ¦   ¦   ¦   nog_dict
+    ¦   ¦   ¦   ¦   no_dict
+    ¦   ¦   ¦   ¦   om_dict
+    ¦   ¦   ¦   ¦   or_dict
+    ¦   ¦   ¦   ¦   pap_dict
+    ¦   ¦   ¦   ¦   pa_dict
+    ¦   ¦   ¦   ¦   phondata
+    ¦   ¦   ¦   ¦   phondata-manifest
+    ¦   ¦   ¦   ¦   phonindex
+    ¦   ¦   ¦   ¦   phontab
+    ¦   ¦   ¦   ¦   piqd_dict
+    ¦   ¦   ¦   ¦   pl_dict
+    ¦   ¦   ¦   ¦   pt_dict
+    ¦   ¦   ¦   ¦   py_dict
+    ¦   ¦   ¦   ¦   qdb_dict
+    ¦   ¦   ¦   ¦   quc_dict
+    ¦   ¦   ¦   ¦   qu_dict
+    ¦   ¦   ¦   ¦   qya_dict
+    ¦   ¦   ¦   ¦   ro_dict
+    ¦   ¦   ¦   ¦   ru_dict
+    ¦   ¦   ¦   ¦   sd_dict
+    ¦   ¦   ¦   ¦   shn_dict
+    ¦   ¦   ¦   ¦   si_dict
+    ¦   ¦   ¦   ¦   sjn_dict
+    ¦   ¦   ¦   ¦   sk_dict
+    ¦   ¦   ¦   ¦   sl_dict
+    ¦   ¦   ¦   ¦   smj_dict
+    ¦   ¦   ¦   ¦   sq_dict
+    ¦   ¦   ¦   ¦   sr_dict
+    ¦   ¦   ¦   ¦   sv_dict
+    ¦   ¦   ¦   ¦   sw_dict
+    ¦   ¦   ¦   ¦   ta_dict
+    ¦   ¦   ¦   ¦   te_dict
+    ¦   ¦   ¦   ¦   th_dict
+    ¦   ¦   ¦   ¦   tk_dict
+    ¦   ¦   ¦   ¦   tn_dict
+    ¦   ¦   ¦   ¦   tr_dict
+    ¦   ¦   ¦   ¦   tt_dict
+    ¦   ¦   ¦   ¦   ug_dict
+    ¦   ¦   ¦   ¦   uk_dict
+    ¦   ¦   ¦   ¦   ur_dict
+    ¦   ¦   ¦   ¦   uz_dict
+    ¦   ¦   ¦   ¦   vi_dict
+    ¦   ¦   ¦   ¦   yue_dict
+    ¦   ¦   ¦   ¦   
+    ¦   ¦   ¦   +---lang
+    ¦   ¦   ¦   ¦   ¦   eu
+    ¦   ¦   ¦   ¦   ¦   ko
+    ¦   ¦   ¦   ¦   ¦   qu
+    ¦   ¦   ¦   ¦   ¦   
+    ¦   ¦   ¦   ¦   +---aav
+    ¦   ¦   ¦   ¦   ¦       vi
+    ¦   ¦   ¦   ¦   ¦       vi-VN-x-central
+    ¦   ¦   ¦   ¦   ¦       vi-VN-x-south
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---art
+    ¦   ¦   ¦   ¦   ¦       eo
+    ¦   ¦   ¦   ¦   ¦       ia
+    ¦   ¦   ¦   ¦   ¦       io
+    ¦   ¦   ¦   ¦   ¦       jbo
+    ¦   ¦   ¦   ¦   ¦       lfn
+    ¦   ¦   ¦   ¦   ¦       piqd
+    ¦   ¦   ¦   ¦   ¦       py
+    ¦   ¦   ¦   ¦   ¦       qdb
+    ¦   ¦   ¦   ¦   ¦       qya
+    ¦   ¦   ¦   ¦   ¦       sjn
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---azc
+    ¦   ¦   ¦   ¦   ¦       nci
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---bat
+    ¦   ¦   ¦   ¦   ¦       lt
+    ¦   ¦   ¦   ¦   ¦       ltg
+    ¦   ¦   ¦   ¦   ¦       lv
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---bnt
+    ¦   ¦   ¦   ¦   ¦       sw
+    ¦   ¦   ¦   ¦   ¦       tn
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---ccs
+    ¦   ¦   ¦   ¦   ¦       ka
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---cel
+    ¦   ¦   ¦   ¦   ¦       cy
+    ¦   ¦   ¦   ¦   ¦       ga
+    ¦   ¦   ¦   ¦   ¦       gd
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---cus
+    ¦   ¦   ¦   ¦   ¦       om
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---dra
+    ¦   ¦   ¦   ¦   ¦       kn
+    ¦   ¦   ¦   ¦   ¦       ml
+    ¦   ¦   ¦   ¦   ¦       ta
+    ¦   ¦   ¦   ¦   ¦       te
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---esx
+    ¦   ¦   ¦   ¦   ¦       kl
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---gmq
+    ¦   ¦   ¦   ¦   ¦       da
+    ¦   ¦   ¦   ¦   ¦       is
+    ¦   ¦   ¦   ¦   ¦       nb
+    ¦   ¦   ¦   ¦   ¦       sv
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---gmw
+    ¦   ¦   ¦   ¦   ¦       af
+    ¦   ¦   ¦   ¦   ¦       de
+    ¦   ¦   ¦   ¦   ¦       en
+    ¦   ¦   ¦   ¦   ¦       en-029
+    ¦   ¦   ¦   ¦   ¦       en-GB-scotland
+    ¦   ¦   ¦   ¦   ¦       en-GB-x-gbclan
+    ¦   ¦   ¦   ¦   ¦       en-GB-x-gbcwmd
+    ¦   ¦   ¦   ¦   ¦       en-GB-x-rp
+    ¦   ¦   ¦   ¦   ¦       en-US
+    ¦   ¦   ¦   ¦   ¦       en-US-nyc
+    ¦   ¦   ¦   ¦   ¦       lb
+    ¦   ¦   ¦   ¦   ¦       nl
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---grk
+    ¦   ¦   ¦   ¦   ¦       el
+    ¦   ¦   ¦   ¦   ¦       grc
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---inc
+    ¦   ¦   ¦   ¦   ¦       as
+    ¦   ¦   ¦   ¦   ¦       bn
+    ¦   ¦   ¦   ¦   ¦       bpy
+    ¦   ¦   ¦   ¦   ¦       gu
+    ¦   ¦   ¦   ¦   ¦       hi
+    ¦   ¦   ¦   ¦   ¦       kok
+    ¦   ¦   ¦   ¦   ¦       mr
+    ¦   ¦   ¦   ¦   ¦       ne
+    ¦   ¦   ¦   ¦   ¦       or
+    ¦   ¦   ¦   ¦   ¦       pa
+    ¦   ¦   ¦   ¦   ¦       sd
+    ¦   ¦   ¦   ¦   ¦       si
+    ¦   ¦   ¦   ¦   ¦       ur
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---ine
+    ¦   ¦   ¦   ¦   ¦       hy
+    ¦   ¦   ¦   ¦   ¦       hyw
+    ¦   ¦   ¦   ¦   ¦       sq
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---ira
+    ¦   ¦   ¦   ¦   ¦       fa
+    ¦   ¦   ¦   ¦   ¦       fa-Latn
+    ¦   ¦   ¦   ¦   ¦       ku
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---iro
+    ¦   ¦   ¦   ¦   ¦       chr
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---itc
+    ¦   ¦   ¦   ¦   ¦       la
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---jpx
+    ¦   ¦   ¦   ¦   ¦       ja
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---map
+    ¦   ¦   ¦   ¦   ¦       haw
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---miz
+    ¦   ¦   ¦   ¦   ¦       mto
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---myn
+    ¦   ¦   ¦   ¦   ¦       quc
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---poz
+    ¦   ¦   ¦   ¦   ¦       id
+    ¦   ¦   ¦   ¦   ¦       mi
+    ¦   ¦   ¦   ¦   ¦       ms
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---roa
+    ¦   ¦   ¦   ¦   ¦       an
+    ¦   ¦   ¦   ¦   ¦       ca
+    ¦   ¦   ¦   ¦   ¦       es
+    ¦   ¦   ¦   ¦   ¦       es-419
+    ¦   ¦   ¦   ¦   ¦       fr
+    ¦   ¦   ¦   ¦   ¦       fr-BE
+    ¦   ¦   ¦   ¦   ¦       fr-CH
+    ¦   ¦   ¦   ¦   ¦       ht
+    ¦   ¦   ¦   ¦   ¦       it
+    ¦   ¦   ¦   ¦   ¦       pap
+    ¦   ¦   ¦   ¦   ¦       pt
+    ¦   ¦   ¦   ¦   ¦       pt-BR
+    ¦   ¦   ¦   ¦   ¦       ro
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---sai
+    ¦   ¦   ¦   ¦   ¦       gn
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---sem
+    ¦   ¦   ¦   ¦   ¦       am
+    ¦   ¦   ¦   ¦   ¦       ar
+    ¦   ¦   ¦   ¦   ¦       he
+    ¦   ¦   ¦   ¦   ¦       mt
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---sit
+    ¦   ¦   ¦   ¦   ¦       cmn
+    ¦   ¦   ¦   ¦   ¦       cmn-Latn-pinyin
+    ¦   ¦   ¦   ¦   ¦       hak
+    ¦   ¦   ¦   ¦   ¦       my
+    ¦   ¦   ¦   ¦   ¦       yue
+    ¦   ¦   ¦   ¦   ¦       yue-Latn-jyutping
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---tai
+    ¦   ¦   ¦   ¦   ¦       shn
+    ¦   ¦   ¦   ¦   ¦       th
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---trk
+    ¦   ¦   ¦   ¦   ¦       az
+    ¦   ¦   ¦   ¦   ¦       ba
+    ¦   ¦   ¦   ¦   ¦       cv
+    ¦   ¦   ¦   ¦   ¦       kk
+    ¦   ¦   ¦   ¦   ¦       ky
+    ¦   ¦   ¦   ¦   ¦       nog
+    ¦   ¦   ¦   ¦   ¦       tk
+    ¦   ¦   ¦   ¦   ¦       tr
+    ¦   ¦   ¦   ¦   ¦       tt
+    ¦   ¦   ¦   ¦   ¦       ug
+    ¦   ¦   ¦   ¦   ¦       uz
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---urj
+    ¦   ¦   ¦   ¦   ¦       et
+    ¦   ¦   ¦   ¦   ¦       fi
+    ¦   ¦   ¦   ¦   ¦       hu
+    ¦   ¦   ¦   ¦   ¦       smj
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---zle
+    ¦   ¦   ¦   ¦   ¦       be
+    ¦   ¦   ¦   ¦   ¦       ru
+    ¦   ¦   ¦   ¦   ¦       ru-cl
+    ¦   ¦   ¦   ¦   ¦       ru-LV
+    ¦   ¦   ¦   ¦   ¦       uk
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---zls
+    ¦   ¦   ¦   ¦   ¦       bg
+    ¦   ¦   ¦   ¦   ¦       bs
+    ¦   ¦   ¦   ¦   ¦       hr
+    ¦   ¦   ¦   ¦   ¦       mk
+    ¦   ¦   ¦   ¦   ¦       sl
+    ¦   ¦   ¦   ¦   ¦       sr
+    ¦   ¦   ¦   ¦   ¦       
+    ¦   ¦   ¦   ¦   +---zlw
+    ¦   ¦   ¦   ¦           cs
+    ¦   ¦   ¦   ¦           pl
+    ¦   ¦   ¦   ¦           sk
+    ¦   ¦   ¦   ¦           
+    ¦   ¦   ¦   +---voices
+    ¦   ¦   ¦       +---!v
+    ¦   ¦   ¦               adam
+    ¦   ¦   ¦               Alex
+    ¦   ¦   ¦               Alicia
+    ¦   ¦   ¦               Andrea
+    ¦   ¦   ¦               Andy
+    ¦   ¦   ¦               anika
+    ¦   ¦   ¦               anikaRobot
+    ¦   ¦   ¦               Annie
+    ¦   ¦   ¦               announcer
+    ¦   ¦   ¦               antonio
+    ¦   ¦   ¦               AnxiousAndy
+    ¦   ¦   ¦               aunty
+    ¦   ¦   ¦               belinda
+    ¦   ¦   ¦               benjamin
+    ¦   ¦   ¦               boris
+    ¦   ¦   ¦               caleb
+    ¦   ¦   ¦               croak
+    ¦   ¦   ¦               david
+    ¦   ¦   ¦               Demonic
+    ¦   ¦   ¦               Denis
+    ¦   ¦   ¦               Diogo
+    ¦   ¦   ¦               ed
+    ¦   ¦   ¦               edward
+    ¦   ¦   ¦               edward2
+    ¦   ¦   ¦               f1
+    ¦   ¦   ¦               f2
+    ¦   ¦   ¦               f3
+    ¦   ¦   ¦               f4
+    ¦   ¦   ¦               f5
+    ¦   ¦   ¦               fast
+    ¦   ¦   ¦               Gene
+    ¦   ¦   ¦               Gene2
+    ¦   ¦   ¦               grandma
+    ¦   ¦   ¦               grandpa
+    ¦   ¦   ¦               gustave
+    ¦   ¦   ¦               Henrique
+    ¦   ¦   ¦               Hugo
+    ¦   ¦   ¦               ian
+    ¦   ¦   ¦               iven
+    ¦   ¦   ¦               iven2
+    ¦   ¦   ¦               iven3
+    ¦   ¦   ¦               iven4
+    ¦   ¦   ¦               Jacky
+    ¦   ¦   ¦               john
+    ¦   ¦   ¦               kaukovalta
+    ¦   ¦   ¦               klatt
+    ¦   ¦   ¦               klatt2
+    ¦   ¦   ¦               klatt3
+    ¦   ¦   ¦               klatt4
+    ¦   ¦   ¦               klatt5
+    ¦   ¦   ¦               klatt6
+    ¦   ¦   ¦               Lee
+    ¦   ¦   ¦               linda
+    ¦   ¦   ¦               m1
+    ¦   ¦   ¦               m2
+    ¦   ¦   ¦               m3
+    ¦   ¦   ¦               m4
+    ¦   ¦   ¦               m5
+    ¦   ¦   ¦               m6
+    ¦   ¦   ¦               m7
+    ¦   ¦   ¦               m8
+    ¦   ¦   ¦               marcelo
+    ¦   ¦   ¦               Marco
+    ¦   ¦   ¦               Mario
+    ¦   ¦   ¦               max
+    ¦   ¦   ¦               Michael
+    ¦   ¦   ¦               michel
+    ¦   ¦   ¦               miguel
+    ¦   ¦   ¦               Mike
+    ¦   ¦   ¦               mike2
+    ¦   ¦   ¦               Mr serious
+    ¦   ¦   ¦               Nguyen
+    ¦   ¦   ¦               norbert
+    ¦   ¦   ¦               pablo
+    ¦   ¦   ¦               paul
+    ¦   ¦   ¦               pedro
+    ¦   ¦   ¦               quincy
+    ¦   ¦   ¦               Reed
+    ¦   ¦   ¦               RicishayMax
+    ¦   ¦   ¦               RicishayMax2
+    ¦   ¦   ¦               RicishayMax3
+    ¦   ¦   ¦               rob
+    ¦   ¦   ¦               robert
+    ¦   ¦   ¦               robosoft
+    ¦   ¦   ¦               robosoft2
+    ¦   ¦   ¦               robosoft3
+    ¦   ¦   ¦               robosoft4
+    ¦   ¦   ¦               robosoft5
+    ¦   ¦   ¦               robosoft6
+    ¦   ¦   ¦               robosoft7
+    ¦   ¦   ¦               robosoft8
+    ¦   ¦   ¦               sandro
+    ¦   ¦   ¦               shelby
+    ¦   ¦   ¦               steph
+    ¦   ¦   ¦               steph2
+    ¦   ¦   ¦               steph3
+    ¦   ¦   ¦               Storm
+    ¦   ¦   ¦               travis
+    ¦   ¦   ¦               Tweaky
+    ¦   ¦   ¦               UniRobot
+    ¦   ¦   ¦               victor
+    ¦   ¦   ¦               whisper
+    ¦   ¦   ¦               whisperf
+    ¦   ¦   ¦               zac
+    ¦   ¦   ¦               
+    ¦   ¦   +---pkgconfig
+    ¦   +---piper_linux
+    ¦       +---piper
+    ¦           ¦   espeak-ng
+    ¦           ¦   libespeak-ng.so
+    ¦           ¦   libespeak-ng.so.1
+    ¦           ¦   libespeak-ng.so.1.52.0.1
+    ¦           ¦   libonnxruntime.so
+    ¦           ¦   libonnxruntime.so.1.14.1
+    ¦           ¦   libpiper_phonemize.so
+    ¦           ¦   libpiper_phonemize.so.1
+    ¦           ¦   libpiper_phonemize.so.1.2.0
+    ¦           ¦   libtashkeel_model.ort
+    ¦           ¦   piper
+    ¦           ¦   piper_phonemize
+    ¦           ¦   
+    ¦           +---espeak-ng-data
+    ¦           ¦   ¦   af_dict
+    ¦           ¦   ¦   am_dict
+    ¦           ¦   ¦   an_dict
+    ¦           ¦   ¦   ar_dict
+    ¦           ¦   ¦   as_dict
+    ¦           ¦   ¦   az_dict
+    ¦           ¦   ¦   ba_dict
+    ¦           ¦   ¦   be_dict
+    ¦           ¦   ¦   bg_dict
+    ¦           ¦   ¦   bn_dict
+    ¦           ¦   ¦   bpy_dict
+    ¦           ¦   ¦   bs_dict
+    ¦           ¦   ¦   ca_dict
+    ¦           ¦   ¦   chr_dict
+    ¦           ¦   ¦   cmn_dict
+    ¦           ¦   ¦   cs_dict
+    ¦           ¦   ¦   cv_dict
+    ¦           ¦   ¦   cy_dict
+    ¦           ¦   ¦   da_dict
+    ¦           ¦   ¦   de_dict
+    ¦           ¦   ¦   el_dict
+    ¦           ¦   ¦   en_dict
+    ¦           ¦   ¦   eo_dict
+    ¦           ¦   ¦   es_dict
+    ¦           ¦   ¦   et_dict
+    ¦           ¦   ¦   eu_dict
+    ¦           ¦   ¦   fa_dict
+    ¦           ¦   ¦   fi_dict
+    ¦           ¦   ¦   fr_dict
+    ¦           ¦   ¦   ga_dict
+    ¦           ¦   ¦   gd_dict
+    ¦           ¦   ¦   gn_dict
+    ¦           ¦   ¦   grc_dict
+    ¦           ¦   ¦   gu_dict
+    ¦           ¦   ¦   hak_dict
+    ¦           ¦   ¦   haw_dict
+    ¦           ¦   ¦   he_dict
+    ¦           ¦   ¦   hi_dict
+    ¦           ¦   ¦   hr_dict
+    ¦           ¦   ¦   ht_dict
+    ¦           ¦   ¦   hu_dict
+    ¦           ¦   ¦   hy_dict
+    ¦           ¦   ¦   ia_dict
+    ¦           ¦   ¦   id_dict
+    ¦           ¦   ¦   intonations
+    ¦           ¦   ¦   io_dict
+    ¦           ¦   ¦   is_dict
+    ¦           ¦   ¦   it_dict
+    ¦           ¦   ¦   ja_dict
+    ¦           ¦   ¦   jbo_dict
+    ¦           ¦   ¦   ka_dict
+    ¦           ¦   ¦   kk_dict
+    ¦           ¦   ¦   kl_dict
+    ¦           ¦   ¦   kn_dict
+    ¦           ¦   ¦   kok_dict
+    ¦           ¦   ¦   ko_dict
+    ¦           ¦   ¦   ku_dict
+    ¦           ¦   ¦   ky_dict
+    ¦           ¦   ¦   la_dict
+    ¦           ¦   ¦   lb_dict
+    ¦           ¦   ¦   lfn_dict
+    ¦           ¦   ¦   lt_dict
+    ¦           ¦   ¦   lv_dict
+    ¦           ¦   ¦   mi_dict
+    ¦           ¦   ¦   mk_dict
+    ¦           ¦   ¦   ml_dict
+    ¦           ¦   ¦   mr_dict
+    ¦           ¦   ¦   ms_dict
+    ¦           ¦   ¦   mto_dict
+    ¦           ¦   ¦   mt_dict
+    ¦           ¦   ¦   my_dict
+    ¦           ¦   ¦   nci_dict
+    ¦           ¦   ¦   ne_dict
+    ¦           ¦   ¦   nl_dict
+    ¦           ¦   ¦   nog_dict
+    ¦           ¦   ¦   no_dict
+    ¦           ¦   ¦   om_dict
+    ¦           ¦   ¦   or_dict
+    ¦           ¦   ¦   pap_dict
+    ¦           ¦   ¦   pa_dict
+    ¦           ¦   ¦   phondata
+    ¦           ¦   ¦   phondata-manifest
+    ¦           ¦   ¦   phonindex
+    ¦           ¦   ¦   phontab
+    ¦           ¦   ¦   piqd_dict
+    ¦           ¦   ¦   pl_dict
+    ¦           ¦   ¦   pt_dict
+    ¦           ¦   ¦   py_dict
+    ¦           ¦   ¦   qdb_dict
+    ¦           ¦   ¦   quc_dict
+    ¦           ¦   ¦   qu_dict
+    ¦           ¦   ¦   qya_dict
+    ¦           ¦   ¦   ro_dict
+    ¦           ¦   ¦   ru_dict
+    ¦           ¦   ¦   sd_dict
+    ¦           ¦   ¦   shn_dict
+    ¦           ¦   ¦   si_dict
+    ¦           ¦   ¦   sjn_dict
+    ¦           ¦   ¦   sk_dict
+    ¦           ¦   ¦   sl_dict
+    ¦           ¦   ¦   smj_dict
+    ¦           ¦   ¦   sq_dict
+    ¦           ¦   ¦   sr_dict
+    ¦           ¦   ¦   sv_dict
+    ¦           ¦   ¦   sw_dict
+    ¦           ¦   ¦   ta_dict
+    ¦           ¦   ¦   te_dict
+    ¦           ¦   ¦   th_dict
+    ¦           ¦   ¦   tk_dict
+    ¦           ¦   ¦   tn_dict
+    ¦           ¦   ¦   tr_dict
+    ¦           ¦   ¦   tt_dict
+    ¦           ¦   ¦   ug_dict
+    ¦           ¦   ¦   uk_dict
+    ¦           ¦   ¦   ur_dict
+    ¦           ¦   ¦   uz_dict
+    ¦           ¦   ¦   vi_dict
+    ¦           ¦   ¦   yue_dict
+    ¦           ¦   ¦   
+    ¦           ¦   +---lang
+    ¦           ¦   ¦   ¦   eu
+    ¦           ¦   ¦   ¦   ko
+    ¦           ¦   ¦   ¦   qu
+    ¦           ¦   ¦   ¦   
+    ¦           ¦   ¦   +---aav
+    ¦           ¦   ¦   ¦       vi
+    ¦           ¦   ¦   ¦       vi-VN-x-central
+    ¦           ¦   ¦   ¦       vi-VN-x-south
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---art
+    ¦           ¦   ¦   ¦       eo
+    ¦           ¦   ¦   ¦       ia
+    ¦           ¦   ¦   ¦       io
+    ¦           ¦   ¦   ¦       jbo
+    ¦           ¦   ¦   ¦       lfn
+    ¦           ¦   ¦   ¦       piqd
+    ¦           ¦   ¦   ¦       py
+    ¦           ¦   ¦   ¦       qdb
+    ¦           ¦   ¦   ¦       qya
+    ¦           ¦   ¦   ¦       sjn
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---azc
+    ¦           ¦   ¦   ¦       nci
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---bat
+    ¦           ¦   ¦   ¦       lt
+    ¦           ¦   ¦   ¦       ltg
+    ¦           ¦   ¦   ¦       lv
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---bnt
+    ¦           ¦   ¦   ¦       sw
+    ¦           ¦   ¦   ¦       tn
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---ccs
+    ¦           ¦   ¦   ¦       ka
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---cel
+    ¦           ¦   ¦   ¦       cy
+    ¦           ¦   ¦   ¦       ga
+    ¦           ¦   ¦   ¦       gd
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---cus
+    ¦           ¦   ¦   ¦       om
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---dra
+    ¦           ¦   ¦   ¦       kn
+    ¦           ¦   ¦   ¦       ml
+    ¦           ¦   ¦   ¦       ta
+    ¦           ¦   ¦   ¦       te
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---esx
+    ¦           ¦   ¦   ¦       kl
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---gmq
+    ¦           ¦   ¦   ¦       da
+    ¦           ¦   ¦   ¦       is
+    ¦           ¦   ¦   ¦       nb
+    ¦           ¦   ¦   ¦       sv
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---gmw
+    ¦           ¦   ¦   ¦       af
+    ¦           ¦   ¦   ¦       de
+    ¦           ¦   ¦   ¦       en
+    ¦           ¦   ¦   ¦       en-029
+    ¦           ¦   ¦   ¦       en-GB-scotland
+    ¦           ¦   ¦   ¦       en-GB-x-gbclan
+    ¦           ¦   ¦   ¦       en-GB-x-gbcwmd
+    ¦           ¦   ¦   ¦       en-GB-x-rp
+    ¦           ¦   ¦   ¦       en-US
+    ¦           ¦   ¦   ¦       en-US-nyc
+    ¦           ¦   ¦   ¦       lb
+    ¦           ¦   ¦   ¦       nl
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---grk
+    ¦           ¦   ¦   ¦       el
+    ¦           ¦   ¦   ¦       grc
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---inc
+    ¦           ¦   ¦   ¦       as
+    ¦           ¦   ¦   ¦       bn
+    ¦           ¦   ¦   ¦       bpy
+    ¦           ¦   ¦   ¦       gu
+    ¦           ¦   ¦   ¦       hi
+    ¦           ¦   ¦   ¦       kok
+    ¦           ¦   ¦   ¦       mr
+    ¦           ¦   ¦   ¦       ne
+    ¦           ¦   ¦   ¦       or
+    ¦           ¦   ¦   ¦       pa
+    ¦           ¦   ¦   ¦       sd
+    ¦           ¦   ¦   ¦       si
+    ¦           ¦   ¦   ¦       ur
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---ine
+    ¦           ¦   ¦   ¦       hy
+    ¦           ¦   ¦   ¦       hyw
+    ¦           ¦   ¦   ¦       sq
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---ira
+    ¦           ¦   ¦   ¦       fa
+    ¦           ¦   ¦   ¦       fa-Latn
+    ¦           ¦   ¦   ¦       ku
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---iro
+    ¦           ¦   ¦   ¦       chr
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---itc
+    ¦           ¦   ¦   ¦       la
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---jpx
+    ¦           ¦   ¦   ¦       ja
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---map
+    ¦           ¦   ¦   ¦       haw
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---miz
+    ¦           ¦   ¦   ¦       mto
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---myn
+    ¦           ¦   ¦   ¦       quc
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---poz
+    ¦           ¦   ¦   ¦       id
+    ¦           ¦   ¦   ¦       mi
+    ¦           ¦   ¦   ¦       ms
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---roa
+    ¦           ¦   ¦   ¦       an
+    ¦           ¦   ¦   ¦       ca
+    ¦           ¦   ¦   ¦       es
+    ¦           ¦   ¦   ¦       es-419
+    ¦           ¦   ¦   ¦       fr
+    ¦           ¦   ¦   ¦       fr-BE
+    ¦           ¦   ¦   ¦       fr-CH
+    ¦           ¦   ¦   ¦       ht
+    ¦           ¦   ¦   ¦       it
+    ¦           ¦   ¦   ¦       pap
+    ¦           ¦   ¦   ¦       pt
+    ¦           ¦   ¦   ¦       pt-BR
+    ¦           ¦   ¦   ¦       ro
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---sai
+    ¦           ¦   ¦   ¦       gn
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---sem
+    ¦           ¦   ¦   ¦       am
+    ¦           ¦   ¦   ¦       ar
+    ¦           ¦   ¦   ¦       he
+    ¦           ¦   ¦   ¦       mt
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---sit
+    ¦           ¦   ¦   ¦       cmn
+    ¦           ¦   ¦   ¦       cmn-Latn-pinyin
+    ¦           ¦   ¦   ¦       hak
+    ¦           ¦   ¦   ¦       my
+    ¦           ¦   ¦   ¦       yue
+    ¦           ¦   ¦   ¦       yue-Latn-jyutping
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---tai
+    ¦           ¦   ¦   ¦       shn
+    ¦           ¦   ¦   ¦       th
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---trk
+    ¦           ¦   ¦   ¦       az
+    ¦           ¦   ¦   ¦       ba
+    ¦           ¦   ¦   ¦       cv
+    ¦           ¦   ¦   ¦       kk
+    ¦           ¦   ¦   ¦       ky
+    ¦           ¦   ¦   ¦       nog
+    ¦           ¦   ¦   ¦       tk
+    ¦           ¦   ¦   ¦       tr
+    ¦           ¦   ¦   ¦       tt
+    ¦           ¦   ¦   ¦       ug
+    ¦           ¦   ¦   ¦       uz
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---urj
+    ¦           ¦   ¦   ¦       et
+    ¦           ¦   ¦   ¦       fi
+    ¦           ¦   ¦   ¦       hu
+    ¦           ¦   ¦   ¦       smj
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---zle
+    ¦           ¦   ¦   ¦       be
+    ¦           ¦   ¦   ¦       ru
+    ¦           ¦   ¦   ¦       ru-cl
+    ¦           ¦   ¦   ¦       ru-LV
+    ¦           ¦   ¦   ¦       uk
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---zls
+    ¦           ¦   ¦   ¦       bg
+    ¦           ¦   ¦   ¦       bs
+    ¦           ¦   ¦   ¦       hr
+    ¦           ¦   ¦   ¦       mk
+    ¦           ¦   ¦   ¦       sl
+    ¦           ¦   ¦   ¦       sr
+    ¦           ¦   ¦   ¦       
+    ¦           ¦   ¦   +---zlw
+    ¦           ¦   ¦           cs
+    ¦           ¦   ¦           pl
+    ¦           ¦   ¦           sk
+    ¦           ¦   ¦           
+    ¦           ¦   +---voices
+    ¦           ¦       +---!v
+    ¦           ¦               adam
+    ¦           ¦               Alex
+    ¦           ¦               Alicia
+    ¦           ¦               Andrea
+    ¦           ¦               Andy
+    ¦           ¦               anika
+    ¦           ¦               anikaRobot
+    ¦           ¦               Annie
+    ¦           ¦               announcer
+    ¦           ¦               antonio
+    ¦           ¦               AnxiousAndy
+    ¦           ¦               aunty
+    ¦           ¦               belinda
+    ¦           ¦               benjamin
+    ¦           ¦               boris
+    ¦           ¦               caleb
+    ¦           ¦               croak
+    ¦           ¦               david
+    ¦           ¦               Demonic
+    ¦           ¦               Denis
+    ¦           ¦               Diogo
+    ¦           ¦               ed
+    ¦           ¦               edward
+    ¦           ¦               edward2
+    ¦           ¦               f1
+    ¦           ¦               f2
+    ¦           ¦               f3
+    ¦           ¦               f4
+    ¦           ¦               f5
+    ¦           ¦               fast
+    ¦           ¦               Gene
+    ¦           ¦               Gene2
+    ¦           ¦               grandma
+    ¦           ¦               grandpa
+    ¦           ¦               gustave
+    ¦           ¦               Henrique
+    ¦           ¦               Hugo
+    ¦           ¦               ian
+    ¦           ¦               iven
+    ¦           ¦               iven2
+    ¦           ¦               iven3
+    ¦           ¦               iven4
+    ¦           ¦               Jacky
+    ¦           ¦               john
+    ¦           ¦               kaukovalta
+    ¦           ¦               klatt
+    ¦           ¦               klatt2
+    ¦           ¦               klatt3
+    ¦           ¦               klatt4
+    ¦           ¦               klatt5
+    ¦           ¦               klatt6
+    ¦           ¦               Lee
+    ¦           ¦               linda
+    ¦           ¦               m1
+    ¦           ¦               m2
+    ¦           ¦               m3
+    ¦           ¦               m4
+    ¦           ¦               m5
+    ¦           ¦               m6
+    ¦           ¦               m7
+    ¦           ¦               m8
+    ¦           ¦               marcelo
+    ¦           ¦               Marco
+    ¦           ¦               Mario
+    ¦           ¦               max
+    ¦           ¦               Michael
+    ¦           ¦               michel
+    ¦           ¦               miguel
+    ¦           ¦               Mike
+    ¦           ¦               mike2
+    ¦           ¦               Mr serious
+    ¦           ¦               Nguyen
+    ¦           ¦               norbert
+    ¦           ¦               pablo
+    ¦           ¦               paul
+    ¦           ¦               pedro
+    ¦           ¦               quincy
+    ¦           ¦               Reed
+    ¦           ¦               RicishayMax
+    ¦           ¦               RicishayMax2
+    ¦           ¦               RicishayMax3
+    ¦           ¦               rob
+    ¦           ¦               robert
+    ¦           ¦               robosoft
+    ¦           ¦               robosoft2
+    ¦           ¦               robosoft3
+    ¦           ¦               robosoft4
+    ¦           ¦               robosoft5
+    ¦           ¦               robosoft6
+    ¦           ¦               robosoft7
+    ¦           ¦               robosoft8
+    ¦           ¦               sandro
+    ¦           ¦               shelby
+    ¦           ¦               steph
+    ¦           ¦               steph2
+    ¦           ¦               steph3
+    ¦           ¦               Storm
+    ¦           ¦               travis
+    ¦           ¦               Tweaky
+    ¦           ¦               UniRobot
+    ¦           ¦               victor
+    ¦           ¦               whisper
+    ¦           ¦               whisperf
+    ¦           ¦               zac
+    ¦           ¦               
+    ¦           +---pkgconfig
+    +---include
+    ¦       cpu_provider_factory.h
+    ¦       onnxruntime_cxx_api.h
+    ¦       onnxruntime_cxx_inline.h
+    ¦       onnxruntime_c_api.h
+    ¦       onnxruntime_float16.h
+    ¦       onnxruntime_lite_custom_op.h
+    ¦       onnxruntime_run_options_config_keys.h
+    ¦       onnxruntime_session_options_config_keys.h
+    ¦       onnxruntime_training_cxx_api.h
+    ¦       onnxruntime_training_cxx_inline.h
+    ¦       onnxruntime_training_c_api.h
+    ¦       provider_options.h
+    ¦       
+    +---voices
+            pl_PL-darkman-medium.onnx
+            pl_PL-darkman-medium.onnx.json
+            pl_PL-gosia-medium.onnx
+            pl_PL-gosia-medium.onnx.json
+            pl_PL-jarvis_wg_glos-medium.onnx
+            pl_PL-jarvis_wg_glos-medium.onnx.json
+            pl_PL-justyna_wg_glos-medium.onnx
+            pl_PL-justyna_wg_glos-medium.onnx.json
+            pl_PL-mc_speech-medium.onnx
+            pl_PL-mc_speech-medium.onnx.json
+            

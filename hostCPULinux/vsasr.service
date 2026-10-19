@@ -1,0 +1,20 @@
+# Przykladowa usluga systemd - vsasr_cpu startuje z systemem i laczy sie z ReSpeakerem.
+# Popraw sciezke, uzytkownika i adres IP urzadzenia, potem:
+#   sudo cp vsasr.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now vsasr
+#   journalctl -u vsasr -f          (podglad: rozpoznane polecenia i komunikaty)
+[Unit]
+Description=ReSpeaker XVF3800 - rozpoznawanie mowy Whisper (vsasr_cpu)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=respeaker
+WorkingDirectory=/opt/respeaker_xvf3800Key/hostCPULinux
+ExecStart=/opt/respeaker_xvf3800Key/hostCPULinux/vsasr_cpu 192.168.1.50 -doa -v
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

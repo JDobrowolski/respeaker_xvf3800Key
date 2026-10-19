@@ -1,0 +1,28 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "net.c"
+        "vsproto.c"
+        "vs_session.c"
+        "vs_app.c"
+        "xvf3800.c"
+        "audio.c"
+        "audio_net.c"
+        "mic.c"
+        "wake.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        kws
+        esp_partition
+        esp_driver_i2s
+        esp_driver_i2c
+        esp_driver_gpio
+        esp_wifi
+        esp_netif
+        esp_event
+        nvs_flash
+        lwip
+        esp_timer
+        esp_hw_support
+)
