@@ -24,6 +24,8 @@
  hostGPU\build.bat    -> vsasr_gpu.exe   (Whisper CUDA + Piper TTS; kernels.ptx obok exe)
  kws\build.bat        -> kwstool.exe     (slowo kluczowe: record / train / test / upload)
  host\build_win.bat   -> vsmic.exe       (WAV)
+ bridge\build.bat     -> vsbridge.exe    (C++/RtAudio; most ReSpeaker <-> audio Windows,
+                                         bridge\build.bat gcc = MinGW; opis: bridge\README.md)
  TTS dolacza sie automatycznie, gdy jest tts\include (z pobierz_tts.bat).
 
 --- 3. UZYCIE -----------------------------------------------------------------
@@ -32,6 +34,8 @@
  vsasr_gpu <ip> -say "tekst"     powiedz tekst glosnikiem ReSpeakera
  vsasr_cpu -saywav "tekst" a.wav synteza do pliku
  vsasr_cpu -f plik.wav -l auto   transkrypcja pliku
+ vsbridge <ip>                   ReSpeaker jako mikrofon/glosnik Windows (VB-CABLE +
+                                 Virtual-Audio-Driver); -recmic / -recspk plik.wav = zapis
 
 --- 4. WLASNE SLOWO KLUCZOWE ---------------------------------------------------
  cd kws

@@ -27,6 +27,7 @@ Whisperem, wypisuje tekst i **odpowiada głosem** (Piper TTS) w głośniku ReSpe
 | `hostCPU/`, `hostGPU/` | `vsasr_cpu.exe` / `vsasr_gpu.exe` (Whisper na CPU / CUDA) — oba ze słowem kluczowym i TTS |
 | `tts/` | `pobierz_tts.bat` (espeak-ng, onnxruntime, polskie głosy), `specstrings.h` (podkładka dla TCC) |
 | `host/` | `vsmic` (nagrywanie/odtwarzanie WAV) — bez zmian, działa z nowym firmware |
+| `bridge/` | `vsbridge` (C++, RtAudio): ReSpeaker jako **mikrofon i głośnik Windows** przez wirtualne sterowniki audio, opcjonalny zapis obu kierunków do WAV — patrz `bridge/README.md` |
 
 ## Szybki start
 
@@ -128,6 +129,7 @@ Powitanie: bajt 7 = flagi (`AUDIO_FL_KWS`, `AUDIO_FL_MODEL`). Nowe ramki:
 | `L` AF_LISTEN | host → urządzenie | 1 = słuchaj teraz (bez słowa), 0 = przerwij |
 | `T` AF_THR | host → urządzenie | próg 0..255 (0 = z modelu), zapis w NVS |
 | `X` AF_MODEL | host → urządzenie | wgrywanie `.kws`: begin / dane / end + CRC → `S` „OK …" |
+| `R` AF_REC 2 | host → urządzenie | stały strumień bez dokładania polecenia po słowie (flaga powitania `AUDIO_FL_RECONLY`) — `vsbridge` |
 
 `AF_REC 1` nadal włącza stały strumień (`vsmic record`, `kwstool record`, `vsasr -cont`).
 

@@ -35,6 +35,7 @@
 /* flagi powitania (bajt 7) */
 #define AUDIO_FL_KWS    0x01   /* urzadzenie obsluguje slowo kluczowe */
 #define AUDIO_FL_MODEL  0x02   /* model slowa kluczowego wczytany - nasluchuje */
+#define AUDIO_FL_RECONLY 0x04  /* obsluguje AF_REC = AF_REC_ONLY (strumien bez polecen) */
 
 /* urzadzenie -> klient */
 #define AF_MIC     'M'   /* dane PCM z mikrofonu (s16le, interleaved wg channels) */
@@ -52,10 +53,14 @@
 #define AF_PLAY    'P'   /* dane PCM do glosnika (s16le, mono, sample_rate urzadzenia) */
 #define AF_VOLUME  'V'   /* u8 glosnosc glosnika 0..100 */
 #define AF_GAIN    'G'   /* s8 wzmocnienie mikrofonu w dB (zakres -12..+36) */
-#define AF_REC     'R'   /* u8: 1 = wlacz staly strumien mikrofonu, 0 = wylacz */
+#define AF_REC     'R'   /* u8: 1 = wlacz staly strumien mikrofonu, 0 = wylacz, 2 = AF_REC_ONLY */
 #define AF_LISTEN  'L'   /* u8: 1 = sluchaj polecenia teraz (jak po slowie), 0 = zakoncz polecenie */
 #define AF_THR     'T'   /* u8 prog slowa kluczowego 1..254 (/255); 0 = domyslny z modelu */
 #define AF_MODEL   'X'   /* wgrywanie modelu: u8 op + dane (AF_MODEL_*) */
+
+#define AF_REC_ONLY 2      /* staly strumien BEZ dokladania polecen po slowie kluczowym: urzadzenie
+                            * nadal pika i wysyla AF_WAKE / AF_END, ale nie AF_MIC z poleceniem
+                            * (inaczej dwa strumienie AF_MIC przeplataja sie - vsbridge) */
 
 #define AF_MODEL_BEGIN 0   /* + u32 rozmiar pliku .kws */
 #define AF_MODEL_DATA  1   /* + kolejny kawalek pliku */

@@ -61,7 +61,7 @@ static int send_hello(int s)
     h[4] = AUDIO_PROTO_VERSION;
     h[5] = (uint8_t)audio_channels();
     h[6] = AUDIO_BITS;
-    h[7] = AUDIO_FL_KWS | (wake_model_ok() ? AUDIO_FL_MODEL : 0);
+    h[7] = AUDIO_FL_KWS | AUDIO_FL_RECONLY | (wake_model_ok() ? AUDIO_FL_MODEL : 0);
     h[8] = (uint8_t)(sr & 0xFF);
     h[9] = (uint8_t)((sr >> 8) & 0xFF);
     h[10] = (uint8_t)((sr >> 16) & 0xFF);
@@ -71,6 +71,7 @@ static int send_hello(int s)
 
 typedef struct {
     bool     rec;            /* staly strumien */
+    bool     rec_only;       /* AF_REC_ONLY: polecen po slowie nie dokladamy do strumienia */
     uint32_t rec_pos;
     bool     cmd;            /* wysylamy polecenie */
     uint32_t cmd_pos, seq;
@@ -93,8 +94,10 @@ static int on_frame(int s, cli_t *c, uint8_t type, const uint8_t *d, int len)
     case AF_REC:
         if (len >= 1) {
             c->rec = d[0] != 0;
+            c->rec_only = d[0] == AF_REC_ONLY;
             c->rec_pos = mic_wpos();
-            ESP_LOGI(TAG, "staly strumien mikrofonu %s", c->rec ? "wlaczony" : "wylaczony");
+            ESP_LOGI(TAG, "staly strumien mikrofonu %s%s", c->rec ? "wlaczony" : "wylaczony",
+                     c->rec_only ? " (bez polecen)" : "");
         }
         break;
     case AF_LISTEN:
@@ -196,7 +199,8 @@ static void handle_client(int cs)
         }
         if (c.cmd) {
             uint32_t limit = wc.end ? wc.end : mic_wpos();
-            if (pump(cs, &c.cmd_pos, limit) < 0) break;
+            if (c.rec && c.rec_only) c.cmd_pos = limit;   /* polecenie juz jest w stalym strumieniu */
+            else if (pump(cs, &c.cmd_pos, limit) < 0) break;
             if (wc.end && (int32_t)(wc.end - c.cmd_pos) <= 0) {
                 uint8_t why = (uint8_t)wc.reason;
                 if (send_frame(cs, AF_END, &why, 1) < 0) break;
