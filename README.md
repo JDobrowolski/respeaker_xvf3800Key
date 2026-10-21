@@ -1,5 +1,7 @@
 # respeaker_xvf3800Key — słowo kluczowe, rozpoznawanie mowy i odpowiedź głosowa
 
+Uwaga Do xvf3800 został wgrany firmware z Home Asistanata ktory ustawia ten DSP jako I2S master wiec ESp32s3 w tym przypadku ma ustawiony I2S na Slave!
+
 Rozwinięcie `respeaker_xvf3800` (ESP32-S3 + ReSpeaker XVF3800 4-Mic Array, firmware XMOS po I2S).
 Urządzenie **samo nasłuchuje słowa kluczowego** (np. „punapu") siecią neuronową liczoną na
 ESP32-S3 i **nic nie wysyła**, dopóki go nie usłyszy. Host w tym czasie **śpi** (zablokowany
